@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Salomao da Silva Santos - Solution Architect, Technical Lead, AEM Evangelist, and AWS AI Vibe Coding Tools Evangelist. Explore insights on Cloud Technologies and Adobe Experience Manager.">
+    <meta name="keywords"
+        content="Salomao Santos, Solution Architect, Technical Lead, AEM Evangelist, AWS AI Vibe Coding Tools, Adobe Experience Manager, Cloud Technologies, Developer">
+    <meta name="author" content="Salomao da Silva Santos">
+    <meta name="theme-color" content="#0b0e14">
+
+    <title>Salomao da Silva Santos - Solution Architect, Tech Lead & Evangelist</title>
+
+    <!-- Performance: Preconnect to font domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Defer non-critical scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" role="banner">Salomao Santos</div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#blogs" data-i18n="nav_blogs">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher" aria-label="Language Switcher">
+            <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+            <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
+            <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="https://ui-avatars.com/api/?name=Salomao+Santos&background=232F3E&color=FF9900&size=160&font-size=0.33"
+                    alt="Salomao da Silva Santos" class="avatar" width="160" height="160">
+
+                <h3><span data-i18n="hero_greeting">Hello, I'm</span> <span
+                        style="color: var(--aws-orange);">Salomao</span></h3>
+                <h1 data-i18n="hero_role">Solution Architect</h1>
+                <p data-i18n="hero_desc">Passionate about building scalable solutions and sharing knowledge on Adobe
+                    Experience Manager and Cloud Technologies.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p data-i18n="about_text" style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.8;">
+                    I am a dedicated professional...
+                </p>
+            </div>
+        </section>
+
+        <section id="blogs">
+            <h2 class="section-title" data-i18n="blogs_title">My Blogs</h2>
+            <div class="cards-grid">
+                <!-- AWS AI Coding Tools Blog -->
+                <article class="card">
+                    <div>
+                        <h3 data-i18n="blog_aws_title">AWS AI Vibe Coding Tools</h3>
+                        <p data-i18n="blog_aws_desc">Comprehensive insights on AWS AI-powered development tools
+                            including Amazon Q, CodeWhisperer, and more.</p>
+                    </div>
+                    <a href="aws/ai-vibe-coding-toos/index.html" class="btn" data-i18n="btn_read_more"
+                        aria-label="Read more about AWS AI Vibe Coding Tools">Read More</a>
+                </article>
+
+                <!-- AEM Blog -->
+                <article class="card">
+                    <div>
+                        <h3 data-i18n="blog_aem_title">AEM Cloud Service</h3>
+                        <p data-i18n="blog_aem_desc">Deep dive into Adobe Experience Manager, Cloud Service, and version
+                            6.5 best practices.</p>
+                    </div>
+                    <a href="aem/index.html" class="btn" data-i18n="btn_read_more"
+                        aria-label="Read more about AEM Cloud Service">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Salomao da Silva Santos. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </footer>
+
+</body>
+
+</html>

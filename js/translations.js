@@ -1,0 +1,53 @@
+const translations = {
+    en: {
+        nav_home: "Home",
+        nav_about: "About",
+        nav_blogs: "Blogs",
+        hero_greeting: "Hello, I'm",
+        hero_role: "Solution Architect | Tech Lead | AEM & AWS AI Vibe Coding Tools Evangelist",
+        hero_desc: "Passionate about building scalable solutions and sharing knowledge on Adobe Experience Manager and Cloud Technologies.",
+        about_title: "About Me",
+        about_text: "I am Salomao da Silva Santos, a Solution Architect and Technical Lead with extensive experience in building scalable enterprise solutions. As an evangelist for Adobe Experience Manager (AEM) and AWS AI Vibe Coding Tools, I am passionate about sharing knowledge and helping teams leverage cutting-edge technologies to solve complex business challenges.",
+        blogs_title: "My Blogs & Projects",
+        blog_aws_title: "AWS AI Vibe Coding Tools",
+        blog_aws_desc: "Comprehensive insights on AWS AI-powered development tools including Amazon Q, CodeWhisperer, and more. Learn how these tools revolutionize modern software development.",
+        blog_aem_title: "AEM Cloud Service",
+        blog_aem_desc: "Deep dive into Adobe Experience Manager, Cloud Service, and version 6.5 best practices.",
+        btn_read_more: "Read More",
+        footer_rights: "All rights reserved."
+    },
+    pt: {
+        nav_home: "Início",
+        nav_about: "Sobre",
+        nav_blogs: "Blogs",
+        hero_greeting: "Olá, eu sou",
+        hero_role: "Arquiteto de Soluções | Líder Técnico | Evangelista AEM e AWS AI Vibe Coding Tools",
+        hero_desc: "Apaixonado por construir soluções escaláveis e compartilhar conhecimento sobre Adobe Experience Manager e Tecnologias de Nuvem.",
+        about_title: "Sobre Mim",
+        about_text: "Sou Salomão da Silva Santos, Arquiteto de Soluções e Líder Técnico com vasta experiência na construção de soluções empresariais escaláveis. Como evangelista do Adobe Experience Manager (AEM) e das ferramentas AWS AI Vibe Coding Tools, sou apaixonado por compartilhar conhecimento e ajudar equipes a aproveitar tecnologias de ponta para resolver desafios complexos de negócios.",
+        blogs_title: "Meus Blogs e Projetos",
+        blog_aws_title: "AWS AI Vibe Coding Tools",
+        blog_aws_desc: "Insights abrangentes sobre ferramentas de desenvolvimento com IA da AWS, incluindo Amazon Q, CodeWhisperer e mais. Aprenda como essas ferramentas revolucionam o desenvolvimento de software moderno.",
+        blog_aem_title: "AEM Cloud Service",
+        blog_aem_desc: "Mergulhe fundo no Adobe Experience Manager, Cloud Service e melhores práticas da versão 6.5.",
+        btn_read_more: "Ler Mais",
+        footer_rights: "Todos os direitos reservados."
+    },
+    es: {
+        nav_home: "Inicio",
+        nav_about: "Sobre Mí",
+        nav_blogs: "Blogs",
+        hero_greeting: "Hola, soy",
+        hero_role: "Arquitecto de Soluciones | Líder Técnico | Evangelista AEM y AWS AI Vibe Coding Tools",
+        hero_desc: "Apasionado por construir soluciones escalables y compartir conocimientos sobre Adobe Experience Manager y Tecnologías en la Nube.",
+        about_title: "Sobre Mí",
+        about_text: "Soy Salomao da Silva Santos, Arquitecto de Soluciones y Líder Técnico con amplia experiencia en la construcción de soluciones empresariales escalables. Como evangelista de Adobe Experience Manager (AEM) y las herramientas AWS AI Vibe Coding Tools, me apasiona compartir conocimientos y ayudar a los equipos a aprovechar tecnologías de vanguardia para resolver desafíos comerciales complejos.",
+        blogs_title: "Mis Blogs y Proyectos",
+        blog_aws_title: "AWS AI Vibe Coding Tools",
+        blog_aws_desc: "Conocimientos completos sobre herramientas de desarrollo con IA de AWS, incluidos Amazon Q, CodeWhisperer y más. Aprenda cómo estas herramientas revolucionan el desarrollo de software moderno.",
+        blog_aem_title: "AEM Cloud Service",
+        blog_aem_desc: "Profundice en Adobe Experience Manager, Cloud Service y las mejores prácticas de la versión 6.5.",
+        btn_read_more: "Leer Más",
+        footer_rights: "Todos los derechos reservados."
+    }
+};

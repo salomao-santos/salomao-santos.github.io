@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>AWS AI Coding Tools: Amazon Q vs Kiro - Guia Completo 2025</title>
+    <meta name="description"
+        content="Comparação completa entre Amazon Q Developer e Kiro: IntelliJ, VS Code, CLI e IDE. Comandos, funcionalidades, migração Q CLI → Kiro CLI, novos modelos Claude 4 e exemplos práticos.">
+    <meta name="keywords"
+        content="Amazon Q Developer, Kiro CLI, Kiro IDE, AWS AI, coding tools, IntelliJ, VS Code, Claude Sonnet 4, vibe code, AI programming, developer tools 2025">
+    <meta name="author" content="Community Guide">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://salomao-santos.github.io/aws/ai-vibe-coding-toos/index.html">
+    <meta property="og:title" content="AWS AI Coding Tools: Amazon Q vs Kiro - Guia Completo 2025">
+    <meta property="og:description"
+        content="Comparação completa entre Amazon Q Developer e Kiro com comandos, funcionalidades e migração.">
+    <meta property="og:image" content="https://seu-dominio.com/og-image.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://salomao-santos.github.io/aws/ai-vibe-coding-toos/index.html">
+    <meta name="twitter:title" content="AWS AI Coding Tools: Amazon Q vs Kiro">
+    <meta name="twitter:description" content="Guia completo de comparação entre ferramentas de AI coding da AWS">
+    <meta name="twitter:image" content="https://seu-dominio.com/twitter-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://salomao-santos.github.io/aws/ai-vibe-coding-toos/index.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Preconnect para Performance -->
+    <link rel="preconnect" href="https://code.jquery.com">
+    <link rel="dns-prefetch" href="https://code.jquery.com">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="aws-ai-coding-tools-amazon-q-vs-kiro-guia-completo-2025.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AWS AI Coding Tools: Amazon Q vs Kiro - Guia Completo 2025",
+      "description": "Comparação completa entre Amazon Q Developer e Kiro: IntelliJ, VS Code, CLI e IDE",
+      "author": {
+        "@type": "Organization",
+        "name": "Community Contributors"
+      },
+      "datePublished": "2025-01-11",
+      "dateModified": "2025-11-27",
+      "keywords": "Amazon Q Developer, Kiro CLI, AWS AI, coding tools",
+      "articleSection": "Developer Tools",
+      "inLanguage": "pt-BR"
+    }
+    </script>
+
+    <!-- jQuery com defer para performance -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip to main content para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div style="text-align: right; padding: 10px;">
+            <select id="lang-selector" onchange="setLanguage(this.value)"
+                style="padding: 8px; font-size: 14px; border-radius: 4px;">
+                <option value="en">🇺🇸 English</option>
+                <option value="pt">🇧🇷 Português</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="ko">🇰🇷 한국어</option>
+            </select>
+        </div>
+        <h1>🚀 AWS AI Coding Tools: Amazon Q vs Kiro</h1>
+        <p class="subtitle">Guia Completo 2025 | IntelliJ • VS Code • CLI • IDE | Comandos, Funcionalidades e Migração
+        </p>
+    </header>
+
+    <nav class="tabs" role="navigation" aria-label="Navegação principal">
+        <button class="tab-btn active" data-tab="versoes" aria-label="Ver versões atuais"
+            aria-pressed="true">Versões</button>
+        <button class="tab-btn" data-tab="novidades" aria-label="Ver novidades" aria-pressed="false">Novidades</button>
+        <button class="tab-btn" data-tab="comparacao" aria-label="Ver comparação"
+            aria-pressed="false">Comparação</button>
+        <button class="tab-btn" data-tab="detalhes" aria-label="Ver detalhes" aria-pressed="false">Detalhes</button>
+        <button class="tab-btn" data-tab="prompts" aria-label="Ver exemplos de prompts"
+            aria-pressed="false">Prompts</button>
+    </nav>
+
+    <main id="main-content" class="container" role="main">
+        <!-- Tab: Versões -->
+        <section id="versoes" class="tab-content active">
+            <h2>Versões Atuais</h2>
+            <div class="version-grid">
+                <div class="version-card">
+                    <h3>Kiro CLI</h3>
+                    <p class="version">v1.19.7 → Kiro CLI</p>
+                    <p class="date">17/11/2025 (lançamento)<br>24/11/2025 (auto-update)</p>
+                    <a href="https://kiro.dev/" target="_blank">kiro.dev</a>
+                </div>
+                <div class="version-card">
+                    <h3>Visual Studio Code (Toolkit)</h3>
+                    <p class="version">v3.89.0</p>
+                    <p class="date">25/11/2025</p>
+                    <a href="https://github.com/aws/aws-toolkit-vscode/releases" target="_blank">GitHub</a>
+                </div>
+                <div class="version-card">
+                    <h3>IntelliJ</h3>
+                    <p class="version">v3.99</p>
+                    <p class="date">21/11/2025</p>
+                    <a href="https://github.com/aws/aws-toolkit-jetbrains/releases" target="_blank">GitHub</a>
+                </div>
+                <div class="version-card">
+                    <h3>Kiro IDE</h3>
+                    <p class="version">GA</p>
+                    <p class="date">17/11/2025</p>
+                    <a href="https://kiro.dev/" target="_blank">kiro.dev</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: Novidades -->
+        <section id="novidades" class="tab-content">
+            <h2>Novidades Recentes</h2>
+
+            <div class="news-card highlight">
+                <h3>🚀 Amazon Q CLI → Kiro CLI (17/11/2025)</h3>
+                <p class="important">MUDANÇA IMPORTANTE: Amazon Q Developer CLI foi renomeado para Kiro CLI</p>
+
+                <h4>Datas Importantes:</h4>
+                <ul>
+                    <li><strong>17/11/2025</strong>: Lançamento do Kiro CLI</li>
+                    <li><strong>24/11/2025</strong>: Auto-update automático do Q CLI para Kiro CLI</li>
+                </ul>
+
+                <h4>O que mudou:</h4>
+                <ul>
+                    <li>✅ Retrocompatibilidade total: <code>q</code> e <code>q chat</code> continuam funcionando</li>
+                    <li>🆕 Novo entry point: <code>kiro-cli</code> e <code>kiro-cli chat</code></li>
+                    <li>🔐 Novas autenticações: GitHub e Gmail</li>
+                    <li>📁 Novos caminhos: <code>~/.kiro/</code> em vez de <code>~/.aws/amazonq/</code></li>
+                    <li>🛠️ Nomes de ferramentas simplificados</li>
+                    <li>📜 Nova licença: AWS Intellectual Property License</li>
+                </ul>
+            </div>
+
+            <div class="news-card">
+                <h3>Novos Modelos Claude (2025)</h3>
+                <ul>
+                    <li><strong>Claude Opus 4</strong> (Março 2025): Modelo mais poderoso para coding</li>
+                    <li><strong>Claude Sonnet 4</strong> (Junho 2025): Novo padrão para geração de código</li>
+                    <li><strong>Claude Sonnet 4.5</strong> (Setembro 2025): Mais inteligente para agents complexos</li>
+                    <li><strong>Claude 3.7 Sonnet</strong> (Dezembro 2024): Primeiro modelo híbrido</li>
+                </ul>
+            </div>
+
+            <div class="news-card deprecation">
+                <h3>⚠️ Comandos Descontinuados</h3>
+                <ul>
+                    <li><code>/dev</code>, <code>/test</code>, <code>/doc</code>: <strong>v3.85 (10/07/2025)</strong>
+                    </li>
+                    <li><code>/review</code>: <strong>v3.68 (23/04/2025)</strong></li>
+                </ul>
+                <p><strong>Alternativa:</strong> Use conversação natural no chat do Amazon Q</p>
+            </div>
+        </section>
+
+        <!-- Tab: Comparação -->
+        <section id="comparacao" class="tab-content">
+            <h2>Tabela Comparativa por Plataforma</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Funcionalidade</th>
+                            <th>IntelliJ</th>
+                            <th>Visual Studio Code</th>
+                            <th>Kiro CLI</th>
+                            <th>Kiro IDE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sugestões Inline</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Chat sobre Código</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td>Desenvolvimento de Features</td>
+                            <td class="yes">✅ <span class="dep">/dev - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/dev - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ spec-driven</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td>Geração de Testes</td>
+                            <td class="yes">✅ <span class="dep">/test - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/test - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ automático</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td>Geração de Documentação</td>
+                            <td class="yes">✅ <span class="dep">/doc - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/doc - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ automático</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td>Revisão de Código</td>
+                            <td class="yes">✅ <span class="dep">/review - v3.68</span></td>
+                            <td class="yes">✅ <span class="dep">/review - v3.68</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td>MCP Server Management</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ <code>/mcp</code></td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Agents</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ <code>/agent</code></td>
+                            <td class="yes">✅ built-in</td>
+                        </tr>
+                        <tr>
+                            <td>Spec-Driven Development</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ core</td>
+                        </tr>
+                        <tr>
+                            <td>Autenticação GitHub/Gmail</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ Kiro CLI</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tab: Detalhes -->
+        <section id="detalhes" class="tab-content">
+            <h2>Detalhes por Plataforma</h2>
+
+            <div class="platform-card">
+                <h3>Amazon Q Developer IntelliJ (AWS Toolkit)</h3>
+                <p><strong>Versão:</strong> 3.99 (21/11/2025)</p>
+                <p><strong>IDEs Suportadas:</strong> Todos os JetBrains IDEs 2023.3+</p>
+                <p><em>IntelliJ IDEA, PyCharm, WebStorm, PhpStorm, GoLand, Rider, CLion, RubyMine, DataGrip,
+                        AppCode</em></p>
+
+                <h4>Comandos de Chat:</h4>
+                <ul>
+                    <li><code>/clear</code> - Limpar conversa atual</li>
+                    <li><code>/compact</code> - Compactar histórico de chat</li>
+                    <li><code>/help</code> - Exibir ajuda e comandos disponíveis</li>
+                    <li><code>/dev</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/test</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/doc</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/review</code> - ⚠️ Depreciado v3.68 (use conversação natural)</li>
+                </ul>
+
+                <h4>Funcionalidades Principais:</h4>
+                <ul>
+                    <li>✅ Sugestões inline em tempo real (auto-trigger)</li>
+                    <li>✅ Chat contextual sobre código</li>
+                    <li>✅ Agentic coding (atualiza arquivos diretamente)</li>
+                    <li>✅ Desenvolvimento de features (conversação natural)</li>
+                    <li>✅ Geração de testes unitários (conversação natural)</li>
+                    <li>✅ Geração de documentação (conversação natural)</li>
+                    <li>✅ Revisão de código e segurança (conversação natural)</li>
+                    <li>✅ Transformação e modernização de código</li>
+                    <li>✅ Customizações com modelos personalizados</li>
+                    <li>✅ Integração com GitHub/GitLab</li>
+                    <li>✅ Project Rules (<code>.amazonq/rules/</code>)</li>
+                    <li>✅ Seleção de modelo (<code>/model</code>)</li>
+                    <li>✅ MCP Server Management</li>
+                    <li>✅ Context management (@workspace)</li>
+                </ul>
+
+                <h4>Serviços AWS Integrados:</h4>
+                <ul>
+                    <li>☁️ <strong>CloudFormation</strong>: View events, resources, outputs</li>
+                    <li>📊 <strong>CloudWatch Logs</strong>: View e search de log streams</li>
+                    <li>λ <strong>Lambda</strong>: Run/Debug local, invoke remote, package & deploy</li>
+                    <li>📊 <strong>RDS/Redshift</strong>: Conexão com credenciais temporárias (IAM/SecretsManager)</li>
+                    <li>📦 <strong>S3</strong>: View, manage, upload/download buckets</li>
+                    <li>🚀 <strong>SAM</strong>: Sync & track SAM-based applications</li>
+                </ul>
+
+                <h4>Linguagens Suportadas (SAM):</h4>
+                <p>Java, Python, Node.js, .NET Core, Go</p>
+            </div>
+
+            <div class="platform-card">
+                <h3>Amazon Q Developer Visual Studio Code</h3>
+                <p><strong>Versão:</strong> 3.89.0 (25/11/2025)</p>
+                <p><strong>IDE:</strong> Visual Studio Code</p>
+
+                <h4>Comandos de Chat:</h4>
+                <ul>
+                    <li><code>/clear</code> - Limpar conversa atual</li>
+                    <li><code>/compact</code> - Compactar histórico de chat</li>
+                    <li><code>/help</code> - Exibir ajuda e comandos disponíveis</li>
+                    <li><code>/dev</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/test</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/doc</code> - ⚠️ Depreciado v3.85 (use conversação natural)</li>
+                    <li><code>/review</code> - ⚠️ Depreciado v3.68 (use conversação natural)</li>
+                </ul>
+
+                <h4>Funcionalidades Principais:</h4>
+                <ul>
+                    <li>✅ Sugestões inline em tempo real (auto-trigger)</li>
+                    <li>✅ Chat contextual sobre código</li>
+                    <li>✅ Agentic coding (atualiza arquivos diretamente)</li>
+                    <li>✅ Desenvolvimento de features (conversação natural)</li>
+                    <li>✅ Geração de testes unitários (conversação natural)</li>
+                    <li>✅ Geração de documentação (conversação natural)</li>
+                    <li>✅ Revisão de código e segurança (conversação natural)</li>
+                    <li>✅ Transformação e modernização de código</li>
+                    <li>✅ Customizações com modelos personalizados</li>
+                    <li>✅ Integração com GitHub/GitLab</li>
+                    <li>✅ Project Rules (<code>.amazonq/rules/</code>)</li>
+                    <li>✅ Seleção de modelo (<code>/model</code>)</li>
+                    <li>✅ MCP Server Management</li>
+                    <li>✅ Context management (@workspace)</li>
+                    <li>✅ Inline chat (Ctrl+I / Cmd+I)</li>
+                </ul>
+
+                <h4>Serviços AWS Integrados:</h4>
+                <ul>
+                    <li>☁️ <strong>CloudFormation</strong>: Deploy e gerenciamento de stacks</li>
+                    <li>λ <strong>Lambda</strong>: Run/Debug local, invoke remote, deploy</li>
+                    <li>📦 <strong>S3</strong>: Browse, upload/download de arquivos</li>
+                    <li>🚀 <strong>SAM</strong>: Sync & track SAM applications</li>
+                    <li>📊 <strong>CloudWatch Logs</strong>: View e stream de logs</li>
+                    <li>🐳 <strong>ECS</strong>: Terminal access, log streaming</li>
+                    <li>📊 <strong>DynamoDB</strong>: Table viewer</li>
+                </ul>
+
+                <h4>Linguagens Suportadas:</h4>
+                <p>Java, Python, JavaScript, TypeScript, C#, Go, Ruby, PHP, Kotlin, Rust, Scala, Shell, SQL, C, C++</p>
+            </div>
+
+            <div class="platform-card">
+                <h3>Kiro CLI (ex-Amazon Q CLI)</h3>
+                <p><strong>Versão:</strong> v1.19.7 → Kiro CLI</p>
+                <p><strong>Ambientes:</strong> macOS, Linux (AppImage, Ubuntu), AWS CloudShell</p>
+
+                <h4>⚠️ IMPORTANTE:</h4>
+                <p class="important">Amazon Q CLI foi renomeado para Kiro CLI em 17/11/2025. Comandos <code>q</code> e
+                    <code>q chat</code> continuam funcionando (retrocompatibilidade).</p>
+
+                <h4>Comandos Principais:</h4>
+                <ul>
+                    <li><code>kiro-cli chat</code> ou <code>q chat</code> - Iniciar sessão de chat interativa</li>
+                    <li><code>q translate</code> - Traduzir linguagem natural para comandos shell</li>
+                    <li><code>q inline enable/disable</code> - Gerenciar sugestões inline (ghost text)</li>
+                    <li><code>q doctor</code> - Diagnosticar problemas de configuração</li>
+                    <li><code>q update</code> ou <code>kiro-cli update</code> - Atualizar CLI</li>
+                    <li><code>q login</code> - Autenticar (Builder ID, IAM Identity Center, GitHub, Gmail)</li>
+                    <li><code>q logout</code> - Desconectar</li>
+                    <li><code>q whoami</code> - Informações do usuário autenticado</li>
+                    <li><code>q settings</code> - Gerenciar configurações</li>
+                </ul>
+
+                <h4>Comandos de Chat (dentro de <code>kiro-cli chat</code> ou <code>q chat</code>):</h4>
+                <ul>
+                    <li><code>/clear</code> - Limpar histórico de chat</li>
+                    <li><code>/compact</code> - Compactar conversa (resumir contexto)</li>
+                    <li><code>/help</code> - Exibir ajuda</li>
+                    <li><code>/usage</code> - Exibir uso do contexto (tokens)</li>
+                    <li><code>/editor</code> - Abrir editor para compor prompts longos</li>
+                    <li><code>/model</code> - Selecionar modelo (Claude Sonnet 4, 3.7, 3.5)</li>
+                    <li><code>/quit</code> - Sair do chat</li>
+                    <li><code>/save</code> - Exportar conversa para JSON</li>
+                    <li><code>/load</code> - Importar conversa de JSON</li>
+                    <li><code>/tools</code> - Gerenciar ferramentas disponíveis</li>
+                    <li><code>/mcp</code> - Gerenciar servidores MCP</li>
+                    <li><code>/context</code> - Gerenciar contexto da conversa</li>
+                    <li><code>/agent</code> - Gerenciar agentes customizados</li>
+                    <li><code>/experiment</code> - Gerenciar features experimentais</li>
+                    <li><code>/knowledge</code> - Gerenciar base de conhecimento (PDFs, docs)</li>
+                    <li><code>/tangent</code> - Criar checkpoints de conversa</li>
+                    <li><code>/changelog</code> - Exibir atualizações recentes</li>
+                    <li><code>!</code> - Executar comando shell diretamente</li>
+                </ul>
+
+                <h4>Funcionalidades Principais:</h4>
+                <ul>
+                    <li>✅ Autocompletar para CLIs populares (git, npm, docker, aws, kubectl)</li>
+                    <li>✅ Tradução de linguagem natural para comandos shell</li>
+                    <li>✅ Chat no terminal com contexto de arquivos</li>
+                    <li>✅ Git-aware file selection</li>
+                    <li>✅ Inline suggestions (ghost text no terminal)</li>
+                    <li>✅ Custom agents (agentes personalizados)</li>
+                    <li>✅ Enhanced thinking mode (raciocínio estendido)</li>
+                    <li>✅ Knowledge base (PDFs, documentos)</li>
+                    <li>✅ Tangent conversations (checkpoints)</li>
+                    <li>✅ MCP Server support (Model Context Protocol)</li>
+                    <li>✅ Suporte a imagens (paste)</li>
+                    <li>✅ Suporte a PDF para knowledge base</li>
+                    <li>✅ OAuth redirect URI configurável</li>
+                    <li>✅ HTTP MCP headers via env vars</li>
+                    <li>✅ Deny by default para comandos bash (segurança)</li>
+                    <li>✅ Bloqueio de padrões perigosos</li>
+                    <li>✅ Namespace de ferramentas built-in</li>
+                    <li>✅ Hooks para agents</li>
+                </ul>
+
+                <h4>Autenticação Suportada:</h4>
+                <ul>
+                    <li>AWS Builder ID</li>
+                    <li>IAM Identity Center (SSO)</li>
+                    <li>GitHub (Kiro CLI)</li>
+                    <li>Gmail (Kiro CLI)</li>
+                </ul>
+
+                <h4>Instalação:</h4>
+                <ul>
+                    <li><strong>macOS:</strong> <code>brew install --cask amazon-q</code> ou DMG</li>
+                    <li><strong>Linux:</strong> AppImage ou Ubuntu/Debian package</li>
+                </ul>
+            </div>
+
+            <div class="platform-card highlight">
+                <h3>Kiro IDE</h3>
+                <p><strong>Status:</strong> General Availability (GA) desde 17/11/2025</p>
+                <p><strong>Preview Público:</strong> 14/07/2025</p>
+                <p><strong>Base:</strong> VS Code (Code-OSS)</p>
+                <p><strong>Modelos AI:</strong> Claude Sonnet 4 (principal), Claude 3.7 Sonnet (fallback)</p>
+
+                <h4>Workflow Único (Spec-Driven Development):</h4>
+                <ol>
+                    <li><strong>Prompt</strong> → Descreva o que quer construir em linguagem natural</li>
+                    <li><strong>Spec</strong> → Kiro transforma em especificações técnicas detalhadas</li>
+                    <li><strong>Code</strong> → Gera código funcional, documentação e testes automaticamente</li>
+                </ol>
+
+                <h4>Funcionalidades Principais:</h4>
+                <ul>
+                    <li>✅ Desenvolvimento spec-driven (diferencial único)</li>
+                    <li>✅ Agentes integrados para resolver problemas complexos</li>
+                    <li>✅ Geração automática de documentação e testes unitários</li>
+                    <li>✅ Foco em código production-ready (não apenas protótipos)</li>
+                    <li>✅ Controle total do desenvolvedor em cada etapa</li>
+                    <li>✅ Property-based tests (testes baseados em propriedades)</li>
+                    <li>✅ Checkpointing (rewind de modificações do agent)</li>
+                    <li>✅ Suporte a múltiplas base folders</li>
+                    <li>✅ Sugestões inline em tempo real</li>
+                    <li>✅ Chat contextual sobre código</li>
+                    <li>✅ MCP (Model Context Protocol) support</li>
+                    <li>✅ Custom agents e hooks</li>
+                    <li>✅ Steering (regras de projeto)</li>
+                    <li>✅ Seleção de múltiplos modelos</li>
+                    <li>✅ Integração com Kiro CLI</li>
+                </ul>
+
+                <h4>Autenticação Suportada:</h4>
+                <ul>
+                    <li>AWS Builder ID</li>
+                    <li>GitHub</li>
+                    <li>Gmail</li>
+                    <li>IAM Identity Center</li>
+                </ul>
+
+                <h4>Modelos Disponíveis:</h4>
+                <ul>
+                    <li>Claude Sonnet 4 (padrão)</li>
+                    <li>Claude 3.7 Sonnet (fallback)</li>
+                    <li>Claude 3.5 Sonnet</li>
+                    <li>Seleção via <code>/model</code></li>
+                </ul>
+
+                <h4>Planos de Assinatura:</h4>
+                <ul>
+                    <li><strong>Free:</strong> Uso básico com limitações</li>
+                    <li><strong>Pro:</strong> Recursos avançados</li>
+                    <li><strong>Pro+:</strong> Recursos premium</li>
+                    <li><strong>Power:</strong> Uso ilimitado para equipes</li>
+                    <li>Suporte a overages (uso além do plano)</li>
+                </ul>
+
+                <h4>Diferenciais vs Outras IDEs:</h4>
+                <ul>
+                    <li>🎯 Workflow completo: Prompt → Spec → Code</li>
+                    <li>🎯 Código production-ready desde o início</li>
+                    <li>🎯 Especificações técnicas detalhadas antes do código</li>
+                    <li>🎯 Validação automática contra especificações</li>
+                    <li>🎯 Rewind de modificações (checkpointing)</li>
+                    <li>🎯 Property-based testing integrado</li>
+                </ul>
+
+                <h4>Integração com Kiro CLI:</h4>
+                <p>Mesma experiência agêntica disponível no terminal. Comandos <code>kiro-cli</code> ou <code>q</code>
+                    (retrocompatível). Migração automática de configurações do Q CLI.</p>
+            </div>
+
+            <div class="platform-card">
+                <h3>Idiomas Suportados (Chat)</h3>
+                <p>Todos os ambientes suportam chat em <strong>10 idiomas</strong>:</p>
+                <ul>
+                    <li>🇺🇸 Inglês</li>
+                    <li>🇨🇳 Mandarim</li>
+                    <li>🇫🇷 Francês</li>
+                    <li>🇩🇪 Alemão</li>
+                    <li>🇮🇹 Italiano</li>
+                    <li>🇯🇵 Japonês</li>
+                    <li>🇪🇸 Espanhol</li>
+                    <li>🇰🇷 Coreano</li>
+                    <li>🇮🇳 Hindi</li>
+                    <li>🇧🇷 Português</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tab: Prompts -->
+        <section id="prompts" class="tab-content">
+            <h2>Exemplos de Prompts Alternativos</h2>
+            <p class="info">Use conversação natural em vez dos comandos slash depreciados</p>
+
+            <div class="prompt-card">
+                <h3>Em vez de <code>/dev</code></h3>
+                <div class="prompt-example">
+                    <p class="old">❌ Antigo: <code>/dev Criar uma API REST para gerenciar usuários</code></p>
+                    <p class="new">✅ Novo:</p>
+                    <pre>Desenvolva uma API REST completa e robusta para gerenciar usuários com os seguintes requisitos:
+
+ENDPOINTS:
+- POST /api/v1/users - criar usuário
+- GET /api/v1/users - listar todos (com paginação)
+- GET /api/v1/users/:id - buscar por ID
+- PUT /api/v1/users/:id - atualizar
+- DELETE /api/v1/users/:id - remover
+
+VALIDAÇÕES:
+- Validar todos os parâmetros de entrada (email, CPF, telefone)
+- Validar formato de dados (regex para email, CPF)
+- Validar campos obrigatórios e tamanhos máximos
+- Retornar mensagens de erro claras e específicas
+
+TRATAMENTO DE ERROS:
+- Implementar exception handlers globais
+- Retornar códigos HTTP apropriados (400, 404, 409, 500)
+- Incluir mensagens de erro padronizadas com timestamp
+- Logar exceções com stack trace
+
+RESILIÊNCIA:
+- Implementar retry com backoff exponencial para operações de banco
+- Configurar timeouts para todas as operações (conexão: 5s, leitura: 30s)
+- Implementar circuit breaker para dependências externas
+- Adicionar health check endpoint (/actuator/health)
+
+SEGURANÇA:
+- Implementar autenticação JWT
+- Validar e sanitizar inputs contra SQL injection
+- Implementar rate limiting (100 req/min por IP)
+- Adicionar CORS configurado
+
+OBSERVABILIDADE:
+- Adicionar logs estruturados (JSON) com correlation ID
+- Implementar métricas (Micrometer/Prometheus)
+- Adicionar tracing distribuído
+- Documentar API com OpenAPI/Swagger
+
+TECNOLOGIAS:
+Use Spring Boot 3.x, Spring Data JPA, Bean Validation, Resilience4j, 
+e boas práticas de Clean Architecture.</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>Em vez de <code>/test</code></h3>
+                <div class="prompt-example">
+                    <p class="old">❌ Antigo: <code>/test</code></p>
+                    <p class="new">✅ Novo (continuação da API de usuários):</p>
+                    <pre>Gere uma suíte completa de testes para a API REST de gerenciamento de usuários:
+
+TESTES UNITÁRIOS:
+- Testar todos os métodos do UserService
+- Testar validações de entrada (email, CPF, telefone)
+- Testar tratamento de exceções (UserNotFoundException, DuplicateUserException)
+- Testar lógica de negócio (regras de criação, atualização)
+- Mockar dependências (UserRepository, EmailService)
+- Cobertura mínima: 80%
+- Framework: JUnit 5 + Mockito + AssertJ
+
+TESTES DE MUTAÇÃO:
+- Configurar PIT (Pitest) para mutation testing
+- Garantir mutation score > 75%
+- Focar em validações críticas e lógica de negócio
+- Identificar testes fracos que não detectam mutações
+
+TESTES DE INTEGRAÇÃO:
+- Testar endpoints completos com @SpringBootTest
+- Testar integração com banco de dados (H2 in-memory)
+- Testar serialização/deserialização JSON
+- Testar códigos HTTP retornados (200, 201, 400, 404, 409)
+- Testar headers (Content-Type, Location)
+- Testar paginação e filtros
+- Usar TestContainers para PostgreSQL real
+
+TESTES DE CONTRATO:
+- Implementar testes com Spring Cloud Contract
+- Validar contratos de API entre producer/consumer
+- Gerar stubs para testes de consumidores
+
+TESTES DE PERFORMANCE:
+- Criar testes de carga com JMeter ou Gatling
+- Simular 1000 requisições concorrentes
+- Validar tempo de resposta < 200ms (p95)
+- Testar comportamento sob stress
+
+ESTRUTURA:
+Organize em: 
+- src/test/java/unit/
+- src/test/java/integration/
+- src/test/java/contract/
+- src/test/resources/
+
+Inclua fixtures, builders e dados de teste realistas.</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>Em vez de <code>/doc</code></h3>
+                <div class="prompt-example">
+                    <p class="old">❌ Antigo: <code>/doc</code></p>
+                    <p class="new">✅ Novo (continuação da API de usuários):</p>
+                    <pre>Gere documentação completa e profissional para a API REST de gerenciamento de usuários:
+
+README.md:
+- Visão geral do projeto e propósito
+- Arquitetura da solução (diagrama de componentes)
+- Tecnologias utilizadas (Spring Boot 3.x, PostgreSQL, Redis, etc.)
+- Pré-requisitos (Java 17+, Docker, Maven)
+- Instruções de instalação e configuração
+- Como executar localmente (com Docker Compose)
+- Como executar testes (unitários, integração, mutação)
+- Variáveis de ambiente necessárias
+- Exemplos de uso da API com curl
+- Troubleshooting comum
+
+OPENAPI/SWAGGER:
+- Documentar todos os endpoints com @Operation
+- Incluir exemplos de request/response
+- Documentar códigos de erro possíveis
+- Adicionar descrições detalhadas de parâmetros
+- Incluir schemas de validação
+- Configurar Swagger UI em /swagger-ui.html
+
+JAVADOC:
+- Documentar todas as classes públicas
+- Documentar métodos com @param, @return, @throws
+- Incluir exemplos de uso em @code
+- Documentar exceções customizadas
+- Adicionar @since e @version
+
+GUIA DE ARQUITETURA (ARCHITECTURE.md):
+- Explicar camadas (Controller, Service, Repository)
+- Documentar padrões utilizados (DTO, Builder, Factory)
+- Explicar estratégias de tratamento de erros
+- Documentar configurações de resiliência (retry, circuit breaker)
+- Diagramas de sequência para fluxos principais
+
+GUIA DE CONTRIBUIÇÃO (CONTRIBUTING.md):
+- Padrões de código e style guide
+- Processo de code review
+- Como reportar bugs
+- Como submeter pull requests
+- Convenções de commit (Conventional Commits)
+
+CHANGELOG.md:
+- Histórico de versões
+- Features, fixes e breaking changes
+
+API_EXAMPLES.md:
+- Exemplos práticos de uso de cada endpoint
+- Casos de uso comuns
+- Exemplos com diferentes linguagens (curl, JavaScript, Python)</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>Em vez de <code>/review</code></h3>
+                <div class="prompt-example">
+                    <p class="old">❌ Antigo: <code>/review</code></p>
+                    <p class="new">✅ Novo (continuação da API de usuários):</p>
+                    <pre>Revise o código da API REST de gerenciamento de usuários identificando:
+
+VULNERABILIDADES DE SEGURANÇA:
+- SQL Injection em queries dinâmicas
+- Exposição de dados sensíveis em logs ou responses
+- Falta de validação/sanitização de inputs
+- Autenticação/autorização inadequada
+- Secrets hardcoded no código
+- Dependências com vulnerabilidades conhecidas (OWASP)
+- CORS mal configurado
+- Rate limiting ausente ou inadequado
+
+PROBLEMAS DE QUALIDADE:
+- Violações de princípios SOLID
+- Code smells (métodos longos, classes god, duplicação)
+- Complexidade ciclomática alta (> 10)
+- Falta de tratamento de exceções
+- Uso inadequado de Optional
+- Transações mal gerenciadas
+- N+1 queries no banco de dados
+- Falta de índices em queries frequentes
+
+PROBLEMAS DE PERFORMANCE:
+- Queries não otimizadas
+- Falta de cache em operações custosas
+- Lazy loading causando múltiplas queries
+- Serialização ineficiente
+- Falta de paginação em listagens
+- Connection pool mal configurado
+- Timeouts inadequados
+
+PROBLEMAS DE RESILIÊNCIA:
+- Falta de retry em operações transientes
+- Circuit breaker não implementado
+- Timeouts não configurados
+- Falta de fallbacks
+- Logs inadequados para troubleshooting
+- Métricas ausentes
+
+BOAS PRÁTICAS NÃO SEGUIDAS:
+- Falta de versionamento de API
+- DTOs não utilizados (exposição de entidades)
+- Validações inconsistentes
+- Nomenclatura não padronizada
+- Falta de testes para cenários críticos
+- Documentação ausente ou desatualizada
+- Configurações hardcoded (deveria usar externalized config)
+
+Para cada problema identificado:
+1. Indique a localização exata (classe, método, linha)
+2. Explique o impacto e severidade (crítico, alto, médio, baixo)
+3. Sugira correção específica com exemplo de código
+4. Referencie boas práticas ou padrões aplicáveis</pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>Data de Geração:</strong> <time datetime="2025-01-11">11 de Janeiro de 2025</time></p>
+        <p><strong>Última Atualização:</strong> <time datetime="2025-11-27">27 de Novembro de 2025</time></p>
+        <p><strong>Fonte:</strong> Documentação oficial AWS via MCPs + Repositórios GitHub</p>
+        <p><small>Conteúdo educacional baseado em documentação pública. Não afiliado à AWS.</small></p>
+    </footer>
+
+    <script src="i18n.js"></script>
+
+    <script src="aws-ai-coding-tools-amazon-q-vs-kiro-guia-completo-2025.js" defer></script>
+</body>
+
+</html>
