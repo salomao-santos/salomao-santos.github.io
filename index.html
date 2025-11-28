@@ -1,102 +1,715 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Salomao da Silva Santos - Solution Architect, Technical Lead, AEM Evangelist, and AWS AI Vibe Coding Tools Evangelist. Explore insights on Cloud Technologies and Adobe Experience Manager.">
-    <meta name="keywords"
-        content="Salomao Santos, Solution Architect, Technical Lead, AEM Evangelist, AWS AI Vibe Coding Tools, Adobe Experience Manager, Cloud Technologies, Developer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags (will be updated by i18n) -->
+    <meta name="description" content="Solution Architect and Technical Lead with extensive experience in Adobe Experience Manager (AEM) and AWS AI Coding Tools. Passionate about sharing knowledge and building scalable enterprise solutions.">
     <meta name="author" content="Salomao da Silva Santos">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0b0e14">
-
+    
     <title>Salomao da Silva Santos - Solution Architect, Tech Lead & Evangelist</title>
-
-    <!-- Performance: Preconnect to font domains -->
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salomao-santos.github.io/">
+    <meta property="og:title" content="Salomao da Silva Santos - Solution Architect & Tech Lead">
+    <meta property="og:description" content="Solution Architect and Technical Lead specializing in AEM and AWS AI Technologies.">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://salomao-santos.github.io/">
+    <meta name="twitter:title" content="Salomao da Silva Santos - Solution Architect">
+    <meta name="twitter:description" content="Solution Architect specializing in AEM and AWS AI Technologies.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://salomao-santos.github.io/">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Internationalization (hreflang) -->
+    <link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/?lang=en">
+    <link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/?lang=pt-BR">
+    <link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://salomao-santos.github.io/">
+    
+    <!-- Performance: Preconnect & DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Defer non-critical scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="js/translations.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Performance: Preload Critical Resources -->
+    <link rel="preload" href="assets/css/core.css" as="style">
+    <link rel="preload" href="assets/js/i18n.js" as="script">
+    
+    <!-- Google Fonts - Optimized with Latin subset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap&subset=latin" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Salomao da Silva Santos",
+      "jobTitle": "Solution Architect",
+      "description": "Solution Architect and Technical Lead specializing in Adobe Experience Manager and AWS AI Technologies",
+      "url": "https://salomao-santos.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/salomao-santos",
+        "https://github.com/salomao-santos"
+      ],
+      "knowsAbout": [
+        "Adobe Experience Manager",
+        "AWS Cloud Services",
+        "Solution Architecture",
+        "AI-Powered Development Tools",
+        "Enterprise Software Development"
+      ]
+    }
+    </script>
+    
+    <!-- Scripts (deferred for performance) -->
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/core.js" defer></script>
 </head>
 
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="common.skip_to_content">Skip to main content</a>
 
-    <header>
-        <div class="logo" role="banner">Salomao da Silva Santos</div>
-        <nav aria-label="Main Navigation">
-            <ul class="nav-links">
-                <li><a href="#home" data-i18n="nav_home">Home</a></li>
-                <li><a href="#about" data-i18n="nav_about">About</a></li>
-                <li><a href="#blogs" data-i18n="nav_blogs">Blogs</a></li>
-            </ul>
-        </nav>
-        <div class="language-switcher" aria-label="Language Switcher">
-            <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
-            <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
-            <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+    <!-- Header with Navigation -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <a href="#home" class="logo" aria-label="Salomao da Silva Santos">
+                Salomao Santos
+            </a>
+            
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher" aria-label="Language Switcher">
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="pt-BR" aria-label="Mudar para Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <main>
+    <!-- Screen Reader Announcements (Live Region) -->
+    <div class="sr-only" aria-live="polite" aria-atomic="true" id="sr-announcements"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <img src="https://ui-avatars.com/api/?name=Salomao+Santos&background=232F3E&color=FF9900&size=160&font-size=0.33"
-                    alt="Salomao da Silva Santos" class="avatar" width="160" height="160">
+            <div class="container">
+                <div class="hero-content" data-animate="fade-in">
+                    <img src="https://ui-avatars.com/api/?name=Salomao+Santos&background=232F3E&color=FF9900&size=160&font-size=0.33"
+                        alt="Salomao da Silva Santos Avatar" 
+                        class="avatar" 
+                        width="160" 
+                        height="160"
+                        loading="eager">
 
-                <h3><span data-i18n="hero_greeting">Hello, I'm</span> <span
-                        style="color: var(--aws-orange);">Salomao</span></h3>
-                <h1 data-i18n="hero_role">Solution Architect</h1>
-                <p data-i18n="hero_desc">Passionate about building scalable solutions and sharing knowledge on Adobe
-                    Experience Manager and Cloud Technologies.</p>
+                    <h1>
+                        <span data-i18n="hero.greeting">Hello, I'm</span> 
+                        <span style="background: var(--gradient-primary); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-i18n="hero.name">Salomao</span>
+                    </h1>
+                    
+                    <h2 data-i18n="hero.role">Solution Architect & Tech Lead</h2>
+                    
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">AEM & AWS AI Vibe Coding Tools Evangelist</p>
+                    
+                    <p class="hero-description" data-i18n="hero.description">
+                        Passionate about building scalable solutions and sharing knowledge on Adobe Experience Manager and Cloud Technologies.
+                    </p>
+                    
+                    <div class="hero-actions" style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-top: var(--space-8);">
+                        <a href="#blog" class="btn btn-primary" data-i18n="hero.cta_blog">View Blog</a>
+                        <a href="#about" class="btn btn-secondary" data-i18n="hero.cta_contact">Learn More</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2 class="section-title" data-i18n="about_title">About Me</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p data-i18n="about_text" style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.8;">
-                    I am a dedicated professional...
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <p style="font-size: var(--font-size-lg); color: var(--text-secondary); line-height: var(--line-height-relaxed); text-align: center; margin-bottom: var(--space-8);" data-i18n="about.intro">
+                        I am Salomao da Silva Santos, a Solution Architect and Technical Lead with extensive experience in building scalable enterprise solutions.
+                    </p>
+                    
+                    <p style="font-size: var(--font-size-base); color: var(--text-tertiary); line-height: var(--line-height-relaxed); text-align: center; margin-bottom: var(--space-12);" data-i18n="about.expertise">
+                        As an evangelist for Adobe Experience Manager (AEM) and AWS AI Vibe Coding Tools, I am passionate about sharing knowledge and helping teams leverage cutting-edge technologies to solve complex business challenges.
+                    </p>
+                    
+                    <!-- Skills Grid -->
+                    <div style="margin-top: var(--space-12);">
+                        <h3 style="text-align: center; margin-bottom: var(--space-6);" data-i18n="about.skills_title">Core Expertise</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4);">
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.architecture">Solution Architecture</span>
+                            </div>
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.aem">Adobe Experience Manager</span>
+                            </div>
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.aws">AWS Cloud Services</span>
+                            </div>
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.ai">AI-Powered Development</span>
+                            </div>
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.leadership">Technical Leadership</span>
+                            </div>
+                            <div class="tag" style="justify-content: center; padding: var(--space-4);">
+                                <span data-i18n="about.skills.mentoring">Team Mentoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section-padding" style="background: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="blog.title">Latest Articles</h2>
+                <p style="text-align: center; color: var(--text-tertiary); margin-bottom: var(--space-4); font-size: var(--font-size-lg);" data-i18n="blog.subtitle">
+                    Insights on AEM, AWS, and Cloud Technologies
                 </p>
-            </div>
-        </section>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: var(--space-12); font-size: var(--font-size-sm);">
+                    📚 20+ in-depth articles covering AEM Cloud Service and AWS AI Tools
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-8); margin-top: var(--space-12);">
+                    <!-- AEM 2025 Updates -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-danger">
+                                    <span data-i18n="blog.new_badge">New</span>
+                                </span>
+                                <span class="tag">#AEM</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aem2025.title">
+                                Adobe Experience Manager 2025: Complete Update Guide
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aem2025.description">
+                                Comprehensive guide to AEM Cloud Service 2025 updates: new features, deprecated APIs, Java 21 migration, Edge Computing, and best practices.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 15 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#CloudService</span>
+                                <span class="tag">#Java21</span>
+                                <span class="tag">#EdgeComputing</span>
+                            </div>
+                            <a href="/blog/aem-2025-updates/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
 
-        <section id="blogs">
-            <h2 class="section-title" data-i18n="blogs_title">My Blogs</h2>
-            <div class="cards-grid">
-                <!-- AWS AI Coding Tools Blog -->
-                <article class="card">
-                    <div>
-                        <h3 data-i18n="blog_aws_title">AWS AI Vibe Coding Tools</h3>
-                        <p data-i18n="blog_aws_desc">Comprehensive insights on AWS AI-powered development tools
-                            including Amazon Q, CodeWhisperer, and more.</p>
-                    </div>
-                    <a href="aws/ai-vibe-coding-toos/index.html" class="btn" data-i18n="btn_read_more"
-                        aria-label="Read more about AWS AI Vibe Coding Tools">Read More</a>
-                </article>
+                    <!-- AWS AI Coding Tools -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-warning">
+                                    <span data-i18n="blog.featured_badge">Featured</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws.title">
+                                AWS AI Coding Tools: Amazon Q vs Kiro Complete Guide
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws.description">
+                                Deep comparison between Amazon Q Developer and Kiro: IntelliJ, VS Code, CLI, IDE features, commands, and migration guide.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 12 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#AmazonQ</span>
+                                <span class="tag">#Kiro</span>
+                                <span class="tag">#AI</span>
+                            </div>
+                            <a href="/aws/ai-vibe-coding-tools/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
 
-                <!-- AEM Blog -->
-                <article class="card">
-                    <div>
-                        <h3 data-i18n="blog_aem_title">AEM Cloud Service</h3>
-                        <p data-i18n="blog_aem_desc">Deep dive into Adobe Experience Manager, Cloud Service, and version
-                            6.5 best practices.</p>
-                    </div>
-                    <a href="aem/index.html" class="btn" data-i18n="btn_read_more"
-                        aria-label="Read more about AEM Cloud Service">Read More</a>
-                </article>
+                    <!-- AWS AI Tools - Versões Atuais -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-primary">
+                                    <span data-i18n="blog.series_badge">Series</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws_versions.title">
+                                AWS AI Tools: Current Versions & Release Dates
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws_versions.description">
+                                Track the latest versions of Kiro CLI v1.19.7, VS Code v3.89.0, IntelliJ v3.99, and Kiro IDE GA with release dates and official links.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 5 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Versions</span>
+                                <span class="tag">#KiroCLI</span>
+                                <span class="tag">#KiroIDE</span>
+                            </div>
+                            <a href="/blog/aws-amazon-q-vs-kiro-versions/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AWS AI Tools - Novidades -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-danger">
+                                    <span data-i18n="blog.new_badge">New</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws_features.title">
+                                New Features: Claude 4 Models & Kiro Exclusives
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws_features.description">
+                                Discover new Claude 4 models (Sonnet, Opus, Haiku), Kiro IDE's spec-driven development, custom agents, and exclusive features.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 7 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Claude4</span>
+                                <span class="tag">#SpecDriven</span>
+                                <span class="tag">#Agents</span>
+                            </div>
+                            <a href="/blog/aws-amazon-q-vs-kiro-features/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AWS AI Tools - Comparação -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-warning">
+                                    <span data-i18n="blog.comparison_badge">Comparison</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws_comparison.title">
+                                Amazon Q vs Kiro: Feature & Pricing Comparison
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws_comparison.description">
+                                Detailed comparison of features, pricing, plans, and capabilities across IntelliJ, VS Code, CLI, and IDE platforms.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 8 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Pricing</span>
+                                <span class="tag">#Features</span>
+                                <span class="tag">#Plans</span>
+                            </div>
+                            <a href="/blog/aws-amazon-q-vs-kiro-comparison/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AWS AI Tools - Instalação -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-primary">
+                                    <span data-i18n="blog.guide_badge">Guide</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws_details.title">
+                                Installation & Configuration: Step-by-Step Guide
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws_details.description">
+                                Complete installation guides for Kiro CLI, VS Code, IntelliJ, and Kiro IDE across Windows, macOS, and Linux platforms.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 6 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Installation</span>
+                                <span class="tag">#Config</span>
+                                <span class="tag">#Tutorial</span>
+                            </div>
+                            <a href="/blog/aws-amazon-q-vs-kiro-details/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AWS AI Tools - Prompts -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-warning">
+                                    <span data-i18n="blog.practical_badge">Practical</span>
+                                </span>
+                                <span class="tag">#AWS</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.aws_prompts.title">
+                                Prompt Examples: Maximize Your Productivity
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.aws_prompts.description">
+                                Real-world prompt examples and best practices to maximize productivity with AWS AI coding tools and natural conversation.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 10 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Prompts</span>
+                                <span class="tag">#Examples</span>
+                                <span class="tag">#BestPractices</span>
+                            </div>
+                            <a href="/blog/aws-amazon-q-vs-kiro-prompts/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AEM Edge Computing -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-primary">
+                                    <span data-i18n="blog.tech_badge">Tech Deep Dive</span>
+                                </span>
+                                <span class="tag">#AEM</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.edge.title">
+                                AEM Edge Computing: CDN-Level JavaScript Execution
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.edge.description">
+                                Learn how to leverage Edge Computing in AEM: personalization, middleware, API composition, and performance optimization at the CDN layer.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 10 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#EdgeDelivery</span>
+                                <span class="tag">#Performance</span>
+                                <span class="tag">#CDN</span>
+                            </div>
+                            <a href="/blog/aem-edge-computing/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AEM Java 21 Migration -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-warning">
+                                    <span data-i18n="blog.important_badge">Important</span>
+                                </span>
+                                <span class="tag">#AEM</span>
+                            </div>
+                            <h3 class="card-title" data-i18n="blog.articles.java21.title">
+                                AEM Java 21 Migration: Complete Checklist
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p data-i18n="blog.articles.java21.description">
+                                Step-by-step guide to migrating your AEM Cloud Service from Java 11 to Java 21: timeline, dependencies, testing, and best practices.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 8 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Java21</span>
+                                <span class="tag">#Migration</span>
+                                <span class="tag">#DevOps</span>
+                            </div>
+                            <a href="/blog/aem-cs-java21-migration/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AEM CS New Features -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-danger">
+                                    <span data-i18n="blog.new_badge">New</span>
+                                </span>
+                                <span class="tag">#AEM</span>
+                            </div>
+                            <h3 class="card-title">
+                                AEM Cloud Service: Principais Novidades 2025
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p>
+                                Descubra as principais novidades do AEM Cloud Service 2025: Edge Computing, pausar atualizações, edge authentication, canary deployments e snapshots para RDEs.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 8 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#EdgeComputing</span>
+                                <span class="tag">#RDE</span>
+                                <span class="tag">#Beta</span>
+                            </div>
+                            <a href="/blog/aem-cs-new-features/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- AEM CS Sites -->
+                    <article class="card" data-animate="slide-up">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-3);">
+                                <span class="badge badge-primary">
+                                    <span data-i18n="blog.tech_badge">Tech Deep Dive</span>
+                                </span>
+                                <span class="tag">#AEM</span>
+                            </div>
+                            <h3 class="card-title">
+                                AEM Sites: Componentes Core e Page Editor
+                            </h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p>
+                                Guia completo sobre AEM Sites: componentes core, templates editáveis, page editor, content fragments e experiências headless.
+                            </p>
+                            
+                            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4); flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    📅 27 Nov 2025
+                                </span>
+                                <span style="color: var(--text-muted); font-size: var(--font-size-sm);">
+                                    ⏱️ 12 <span data-i18n="blog.reading_time">min read</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                                <span class="tag">#Sites</span>
+                                <span class="tag">#Components</span>
+                                <span class="tag">#Headless</span>
+                            </div>
+                            <a href="/blog/aem-cs-sites/" class="btn btn-primary btn-sm">
+                                <span data-i18n="blog.read_more">Read Article</span> →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div style="text-align: center; margin-top: var(--space-12);">
+                    <a href="#blog" class="btn btn-primary" onclick="event.preventDefault(); document.getElementById('all-articles').style.display='block'; this.style.display='none';">
+                        <span data-i18n="blog.view_all">Ver Todos os Artigos</span> →
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Salomao da Silva Santos. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3 class="footer-title" data-i18n="footer.title">Salomao Santos</h3>
+                <p style="color: var(--text-tertiary); margin-bottom: var(--space-4);" data-i18n="footer.description">
+                    Solution Architect & Tech Lead sharing knowledge on enterprise technologies.
+                </p>
+            </div>
+            
+            <!-- Navigation Section -->
+            <div class="footer-section">
+                <h4 class="footer-title" data-i18n="footer.sections.navigation.title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link" data-i18n="footer.sections.navigation.home">Home</a></li>
+                    <li><a href="#about" class="footer-link" data-i18n="footer.sections.navigation.about">About</a></li>
+                    <li><a href="#blog" class="footer-link" data-i18n="footer.sections.navigation.blog">Blog</a></li>
+                </ul>
+            </div>
+            
+            <!-- Content Section -->
+            <div class="footer-section">
+                <h4 class="footer-title" data-i18n="footer.sections.content.title">Content</h4>
+                <ul class="footer-links">
+                    <li><a href="aem/aem-cloud-service/index.html" class="footer-link" data-i18n="footer.sections.content.aem_articles">AEM Articles</a></li>
+                    <li><a href="aws/ai-vibe-coding-tools/index.html" class="footer-link" data-i18n="footer.sections.content.aws_articles">AWS Articles</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 Salomao da Silva Santos. <span data-i18n="footer.copyright">All rights reserved.</span>
+            </p>
+            <p style="margin-top: var(--space-2); font-size: var(--font-size-xs);">
+                <span data-i18n="footer.made_with">Made with</span> ❤️ <span data-i18n="footer.and">and</span> ☕ <span data-i18n="footer.coffee">coffee</span>
+            </p>
+        </div>
     </footer>
 
 </body>

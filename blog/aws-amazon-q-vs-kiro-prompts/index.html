@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Exemplos de Prompts AWS AI: Alternativas aos Comandos Descontinuados</title>
+    <meta name="description" data-i18n="description" content="Exemplos práticos de prompts para substituir comandos descontinuados /dev, /test, /doc e /review. Aprenda a usar conversação natural com Amazon Q.">
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/aws-amazon-q-vs-kiro-prompts/">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="language-selector" id="language-selector">
+        </div>
+        <h1 data-i18n="pageTitle">💬 Prompts Profissionais AWS AI Tools</h1>
+        <p class="subtitle" data-i18n="pageSubtitle">Conversação Natural • Alternativas aos Comandos Descontinuados</p>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <section class="intro">
+            <p data-i18n="intro">Com a descontinuação dos comandos <code>/dev</code>, <code>/test</code>, <code>/doc</code> e <code>/review</code>, o Amazon Q agora funciona melhor com conversação natural. Aprenda a criar prompts detalhados e eficazes.</p>
+            
+            <div class="tip">
+                <h3 data-i18n="tipTitle">💡 Dica Principal:</h3>
+                <p data-i18n="tipContent">Prompts mais detalhados e específicos geram código de melhor qualidade. Seja explícito sobre requisitos, validações, tratamento de erros e tecnologias.</p>
+            </div>
+        </section>
+
+        <section class="prompt-examples">
+            <article class="prompt-card">
+                <h2 data-i18n="devTitle">Desenvolvimento de Features (substituindo /dev)</h2>
+                
+                <div class="comparison">
+                    <div class="old-way">
+                        <h3 class="label-old" data-i18n="oldWay">❌ Forma Antiga:</h3>
+                        <code>/dev Criar uma API REST para gerenciar usuários</code>
+                    </div>
+
+                    <div class="new-way">
+                        <h3 class="label-new" data-i18n="newWay">✅ Forma Nova (Conversação Natural):</h3>
+                        <div class="code-block">
+                            <pre data-i18n="devPrompt">Desenvolva uma API REST completa e robusta para gerenciar usuários com os seguintes requisitos:
+
+ENDPOINTS:
+- POST /api/v1/users - criar usuário
+- GET /api/v1/users - listar todos (com paginação)
+- GET /api/v1/users/:id - buscar por ID
+- PUT /api/v1/users/:id - atualizar
+- DELETE /api/v1/users/:id - remover
+
+VALIDAÇÕES:
+- Validar todos os parâmetros de entrada (email, CPF, telefone)
+- Validar formato de dados (regex para email, CPF)
+- Validar campos obrigatórios e tamanhos máximos
+- Retornar mensagens de erro claras e específicas
+
+TRATAMENTO DE ERROS:
+- Implementar exception handlers globais
+- Retornar códigos HTTP apropriados (400, 404, 409, 500)
+- Incluir mensagens de erro padronizadas com timestamp
+- Logar exceções com stack trace
+
+RESILIÊNCIA:
+- Implementar retry com backoff exponencial para operações de banco
+- Configurar timeouts para todas as operações (conexão: 5s, leitura: 30s)
+- Implementar circuit breaker para dependências externas
+- Adicionar health check endpoint (/actuator/health)
+
+SEGURANÇA:
+- Implementar autenticação JWT
+- Validar e sanitizar inputs contra SQL injection
+- Implementar rate limiting (100 req/min por IP)
+- Adicionar CORS configurado
+
+OBSERVABILIDADE:
+- Adicionar logs estruturados (JSON) com correlation ID
+- Implementar métricas (Micrometer/Prometheus)
+- Adicionar tracing distribuído
+- Documentar API com OpenAPI/Swagger
+
+TECNOLOGIAS:
+Use Spring Boot 3.x, Spring Data JPA, Bean Validation, Resilience4j, 
+e boas práticas de Clean Architecture.</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits">
+                    <h4 data-i18n="benefitsTitle">Benefícios desta abordagem:</h4>
+                    <ul>
+                        <li data-i18n="benefit1">✅ Código mais completo e production-ready</li>
+                        <li data-i18n="benefit2">✅ Melhor tratamento de erros e validações</li>
+                        <li data-i18n="benefit3">✅ Resiliência e segurança desde o início</li>
+                        <li data-i18n="benefit4">✅ Observabilidade integrada</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="prompt-card">
+                <h2 data-i18n="testTitle">Geração de Testes (substituindo /test)</h2>
+                
+                <div class="comparison">
+                    <div class="old-way">
+                        <h3 class="label-old" data-i18n="oldWay">❌ Forma Antiga:</h3>
+                        <code>/test</code>
+                    </div>
+
+                    <div class="new-way">
+                        <h3 class="label-new" data-i18n="newWay">✅ Forma Nova:</h3>
+                        <div class="code-block">
+                            <pre data-i18n="testPrompt">Gere uma suíte completa de testes para a API REST de gerenciamento de usuários:
+
+TESTES UNITÁRIOS:
+- Testar todos os métodos do UserService
+- Testar validações de entrada (email, CPF, telefone)
+- Testar tratamento de exceções (UserNotFoundException, DuplicateUserException)
+- Testar lógica de negócio (regras de criação, atualização)
+- Mockar dependências (UserRepository, EmailService)
+- Cobertura mínima: 80%
+- Framework: JUnit 5 + Mockito + AssertJ
+
+TESTES DE MUTAÇÃO:
+- Configurar PIT (Pitest) para mutation testing
+- Garantir mutation score > 75%
+- Focar em validações críticas e lógica de negócio
+- Identificar testes fracos que não detectam mutações
+
+TESTES DE INTEGRAÇÃO:
+- Testar endpoints completos com @SpringBootTest
+- Testar integração com banco de dados (H2 in-memory)
+- Testar serialização/deserialização JSON
+- Testar códigos HTTP retornados (200, 201, 400, 404, 409)
+- Testar headers (Content-Type, Location)
+- Testar paginação e filtros
+- Usar TestContainers para PostgreSQL real
+
+TESTES DE CONTRATO:
+- Implementar testes com Spring Cloud Contract
+- Validar contratos de API entre producer/consumer
+- Gerar stubs para testes de consumidores
+
+TESTES DE PERFORMANCE:
+- Criar testes de carga com JMeter ou Gatling
+- Simular 1000 requisições concorrentes
+- Validar tempo de resposta < 200ms (p95)
+- Testar comportamento sob stress
+
+ESTRUTURA:
+Organize em: 
+- src/test/java/unit/
+- src/test/java/integration/
+- src/test/java/contract/
+- src/test/resources/
+
+Inclua fixtures, builders e dados de teste realistas.</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits">
+                    <h4 data-i18n="benefitsTitle">Benefícios desta abordagem:</h4>
+                    <ul>
+                        <li data-i18n="testBenefit1">✅ Cobertura de testes mais completa</li>
+                        <li data-i18n="testBenefit2">✅ Múltiplos tipos de testes (unitário, integração, mutação, performance)</li>
+                        <li data-i18n="testBenefit3">✅ Estrutura organizada e profissional</li>
+                        <li data-i18n="testBenefit4">✅ Dados de teste realistas</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="prompt-card">
+                <h2 data-i18n="docTitle">Geração de Documentação (substituindo /doc)</h2>
+                
+                <div class="comparison">
+                    <div class="old-way">
+                        <h3 class="label-old" data-i18n="oldWay">❌ Forma Antiga:</h3>
+                        <code>/doc</code>
+                    </div>
+
+                    <div class="new-way">
+                        <h3 class="label-new" data-i18n="newWay">✅ Forma Nova:</h3>
+                        <div class="code-block">
+                            <pre data-i18n="docPrompt">Gere documentação completa e profissional para a API REST de gerenciamento de usuários:
+
+README.md:
+- Visão geral do projeto e propósito
+- Arquitetura da solução (diagrama de componentes)
+- Tecnologias utilizadas (Spring Boot 3.x, PostgreSQL, Redis, etc.)
+- Pré-requisitos (Java 17+, Docker, Maven)
+- Instruções de instalação e configuração
+- Como executar localmente (com Docker Compose)
+- Como executar testes (unitários, integração, mutação)
+- Variáveis de ambiente necessárias
+- Exemplos de uso da API com curl
+- Troubleshooting comum
+
+OPENAPI/SWAGGER:
+- Documentar todos os endpoints com @Operation
+- Incluir exemplos de request/response
+- Documentar códigos de erro possíveis
+- Adicionar descrições detalhadas de parâmetros
+- Incluir schemas de validação
+- Configurar Swagger UI em /swagger-ui.html
+
+JAVADOC:
+- Documentar todas as classes públicas
+- Documentar métodos com @param, @return, @throws
+- Incluir exemplos de uso em @code
+- Documentar exceções customizadas
+- Adicionar @since e @version
+
+GUIA DE ARQUITETURA (ARCHITECTURE.md):
+- Explicar camadas (Controller, Service, Repository)
+- Documentar padrões utilizados (DTO, Builder, Factory)
+- Explicar estratégias de tratamento de erros
+- Documentar configurações de resiliência (retry, circuit breaker)
+- Diagramas de sequência para fluxos principais
+
+GUIA DE CONTRIBUIÇÃO (CONTRIBUTING.md):
+- Padrões de código e style guide
+- Processo de code review
+- Como reportar bugs
+- Como submeter pull requests
+- Convenções de commit (Conventional Commits)
+
+CHANGELOG.md:
+- Histórico de versões
+- Features, fixes e breaking changes
+
+API_EXAMPLES.md:
+- Exemplos práticos de uso de cada endpoint
+- Casos de uso comuns
+- Exemplos com diferentes linguagens (curl, JavaScript, Python)</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits">
+                    <h4 data-i18n="benefitsTitle">Benefícios desta abordagem:</h4>
+                    <ul>
+                        <li data-i18n="docBenefit1">✅ Documentação completa e profissional</li>
+                        <li data-i18n="docBenefit2">✅ Múltiplos formatos (README, OpenAPI, JavaDoc)</li>
+                        <li data-i18n="docBenefit3">✅ Guias de contribuição e arquitetura</li>
+                        <li data-i18n="docBenefit4">✅ Exemplos práticos de uso</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="prompt-card">
+                <h2 data-i18n="reviewTitle">Revisão de Código (substituindo /review)</h2>
+                
+                <div class="comparison">
+                    <div class="old-way">
+                        <h3 class="label-old" data-i18n="oldWay">❌ Forma Antiga:</h3>
+                        <code>/review</code>
+                    </div>
+
+                    <div class="new-way">
+                        <h3 class="label-new" data-i18n="newWay">✅ Forma Nova:</h3>
+                        <div class="code-block">
+                            <pre data-i18n="reviewPrompt">Revise o código da API REST de gerenciamento de usuários identificando:
+
+VULNERABILIDADES DE SEGURANÇA:
+- SQL Injection em queries dinâmicas
+- Exposição de dados sensíveis em logs ou responses
+- Falta de validação/sanitização de inputs
+- Autenticação/autorização inadequada
+- Secrets hardcoded no código
+- Dependências com vulnerabilidades conhecidas (OWASP)
+- CORS mal configurado
+- Rate limiting ausente ou inadequado
+
+PROBLEMAS DE QUALIDADE:
+- Violações de princípios SOLID
+- Code smells (métodos longos, classes god, duplicação)
+- Complexidade ciclomática alta (> 10)
+- Falta de tratamento de exceções
+- Uso inadequado de Optional
+- Transações mal gerenciadas
+- N+1 queries no banco de dados
+- Falta de índices em queries frequentes
+
+PROBLEMAS DE PERFORMANCE:
+- Queries não otimizadas
+- Falta de cache em operações custosas
+- Lazy loading causando múltiplas queries
+- Serialização ineficiente
+- Falta de paginação em listagens
+- Connection pool mal configurado
+- Timeouts inadequados
+
+PROBLEMAS DE RESILIÊNCIA:
+- Falta de retry em operações transientes
+- Circuit breaker não implementado
+- Timeouts não configurados
+- Falta de fallbacks
+- Logs inadequados para troubleshooting
+- Métricas ausentes
+
+BOAS PRÁTICAS NÃO SEGUIDAS:
+- Falta de versionamento de API
+- DTOs não utilizados (exposição de entidades)
+- Validações inconsistentes
+- Nomenclatura não padronizada
+- Falta de testes para cenários críticos
+- Documentação ausente ou desatualizada
+- Configurações hardcoded (deveria usar externalized config)
+
+Para cada problema identificado:
+1. Indique a localização exata (classe, método, linha)
+2. Explique o impacto e severidade (crítico, alto, médio, baixo)
+3. Sugira correção específica com exemplo de código
+4. Referencie boas práticas ou padrões aplicáveis</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits">
+                    <h4 data-i18n="benefitsTitle">Benefícios desta abordagem:</h4>
+                    <ul>
+                        <li data-i18n="reviewBenefit1">✅ Revisão mais abrangente e detalhada</li>
+                        <li data-i18n="reviewBenefit2">✅ Foco em segurança, qualidade e performance</li>
+                        <li data-i18n="reviewBenefit3">✅ Sugestões específicas de correção</li>
+                        <li data-i18n="reviewBenefit4">✅ Referências a boas práticas</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="best-practices">
+            <h2 data-i18n="bestPracticesTitle">Melhores Práticas para Prompts Eficazes</h2>
+            
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <h3 data-i18n="practice1Title">1. Seja Específico</h3>
+                    <p data-i18n="practice1Desc">Detalhe requisitos técnicos, tecnologias, frameworks e versões. Quanto mais específico, melhor o resultado.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3 data-i18n="practice2Title">2. Estruture o Prompt</h3>
+                    <p data-i18n="practice2Desc">Organize em seções (REQUISITOS, VALIDAÇÕES, SEGURANÇA, etc.). Prompts estruturados são mais fáceis de entender.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3 data-i18n="practice3Title">3. Inclua Exemplos</h3>
+                    <p data-i18n="practice3Desc">Forneça exemplos de endpoints, dados, ou comportamento esperado. Exemplos concretos geram código mais preciso.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3 data-i18n="practice4Title">4. Especifique Qualidade</h3>
+                    <p data-i18n="practice4Desc">Mencione padrões de código, princípios (SOLID), e boas práticas que devem ser seguidas.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3 data-i18n="practice5Title">5. Defina Critérios</h3>
+                    <p data-i18n="practice5Desc">Estabeleça métricas (cobertura de testes > 80%, mutation score > 75%, tempo de resposta < 200ms).</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3 data-i18n="practice6Title">6. Contextualize</h3>
+                    <p data-i18n="practice6Desc">Explique o contexto do projeto, arquitetura existente, e como o código deve se integrar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2 data-i18n="tipsTitle">Dicas Adicionais</h2>
+            
+            <ul class="tips-list">
+                <li data-i18n="tip1">💡 Use o comando <code>/editor</code> no Kiro CLI para escrever prompts longos e complexos</li>
+                <li data-i18n="tip2">💡 Divida tarefas grandes em prompts menores e iterativos</li>
+                <li data-i18n="tip3">💡 Revise e refine o código gerado, fornecendo feedback específico</li>
+                <li data-i18n="tip4">💡 Use <code>/model</code> para selecionar o modelo mais adequado à complexidade da tarefa</li>
+                <li data-i18n="tip5">💡 Em Kiro CLI, use <code>/tangent</code> para explorar alternativas sem perder o contexto principal</li>
+                <li data-i18n="tip6">💡 Aproveite <code>/knowledge</code> no Kiro CLI para adicionar PDFs e documentação de referência</li>
+            </ul>
+        </section>
+
+        <nav class="blog-nav">
+            <a href="/aws/ai-vibe-coding-tools/" class="nav-link" data-i18n="backToGuide">← Voltar ao Guia Completo</a>
+            <a href="/blog/aws-amazon-q-vs-kiro-details/" class="nav-link" data-i18n="prevPost">← Anterior: Detalhes das Plataformas</a>
+        </nav>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong data-i18n="publishDate">Data de Publicação:</strong> <time datetime="2025-11-27">27 de Novembro de 2025</time></p>
+        <p><small data-i18n="disclaimer">Conteúdo educacional baseado em documentação pública. Não afiliado à AWS.</small></p>
+    </footer>
+
+    <script src="/assets/js/core.js"></script>
+    <script src="i18n.js"></script>
+    <script src="/assets/js/local-i18n.js"></script>
+</body>
+
+</html>

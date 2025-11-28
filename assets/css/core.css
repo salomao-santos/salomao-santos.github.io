@@ -1,0 +1,554 @@
+/**
+ * ========================================
+ * DESIGN SYSTEM - CORE
+ * ========================================
+ * Salomao Santos - Professional Blog
+ * Version: 1.0.0
+ * Date: 2025-11-27
+ * 
+ * Design Tokens and Core Styles
+ * - Color System
+ * - Typography Scale
+ * - Spacing System
+ * - Breakpoints
+ * - Animations
+ * - Accessibility
+ */
+
+/* ========================================
+   1. RESET & BASE
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-padding-top: calc(var(--header-height) + var(--space-4));
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: calc(var(--header-height-mobile) + var(--space-4));
+  }
+}
+
+/* Support for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   2. DESIGN TOKENS
+   ======================================== */
+
+:root {
+  /* ===== COLOR SYSTEM ===== */
+  
+  /* Brand Colors - Primary */
+  --color-aws-orange: #FF9900;
+  --color-aws-orange-dark: #EC7211;
+  --color-aws-orange-light: #FFB347;
+  --color-aws-navy: #232F3E;
+  --color-aws-navy-dark: #161E2E;
+  --color-aws-navy-light: #37475A;
+  
+  --color-adobe-red: #FA0F00;
+  --color-adobe-red-dark: #C8102E;
+  --color-adobe-red-light: #FF4136;
+  --color-adobe-dark: #2C2C2C;
+  
+  /* Neutral Colors - Grayscale */
+  --color-white: #FFFFFF;
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+  --color-black: #000000;
+  
+  /* Semantic Colors */
+  --color-success: #00875A;
+  --color-success-light: #36B37E;
+  --color-warning: #FF8B00;
+  --color-warning-light: #FFAB00;
+  --color-danger: #DE350B;
+  --color-danger-light: #FF5630;
+  --color-info: #0065FF;
+  --color-info-light: #2684FF;
+  
+  /* Background Colors */
+  --bg-primary: #0B0E14;
+  --bg-secondary: #1A1F2E;
+  --bg-tertiary: #232933;
+  --bg-surface: rgba(35, 47, 62, 0.4);
+  --bg-surface-hover: rgba(35, 47, 62, 0.6);
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  --bg-glass-hover: rgba(255, 255, 255, 0.08);
+  
+  /* Text Colors */
+  --text-primary: #F0F6FC;
+  --text-secondary: #C9D1D9;
+  --text-tertiary: #8B949E;
+  --text-muted: #6E7681;
+  --text-inverse: #0B0E14;
+  
+  /* Border Colors */
+  --border-subtle: rgba(240, 246, 252, 0.1);
+  --border-default: rgba(240, 246, 252, 0.2);
+  --border-emphasis: rgba(240, 246, 252, 0.3);
+  
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, var(--color-adobe-red) 0%, var(--color-aws-orange) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-aws-navy) 0%, var(--color-aws-navy-dark) 100%);
+  --gradient-surface: linear-gradient(to right, rgba(250, 15, 0, 0.05) 0%, transparent 100%);
+  
+  /* Shadow & Effects */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.18);
+  --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(255, 153, 0, 0.15), 0 0 40px rgba(250, 15, 0, 0.1);
+  
+  /* Backdrop Blur */
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  
+  /* ===== TYPOGRAPHY SCALE ===== */
+  
+  /* Font Families */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+  
+  /* Font Sizes - Fluid Typography with clamp() */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);      /* 12-14px */
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);        /* 14-16px */
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);      /* 16-18px */
+  --font-size-md: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);       /* 18-20px */
+  --font-size-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);        /* 20-24px */
+  --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);              /* 24-32px */
+  --font-size-2xl: clamp(2rem, 1.6rem + 2vw, 3rem);               /* 32-48px */
+  --font-size-3xl: clamp(2.5rem, 2rem + 2.5vw, 4rem);             /* 40-64px */
+  --font-size-4xl: clamp(3rem, 2.5rem + 2.5vw, 5rem);             /* 48-80px */
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* ===== SPACING SYSTEM (4px base grid) ===== */
+  
+  --space-0: 0;
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+  
+  /* ===== LAYOUT ===== */
+  
+  /* Container Widths */
+  --container-xs: 640px;
+  --container-sm: 768px;
+  --container-md: 1024px;
+  --container-lg: 1280px;
+  --container-xl: 1536px;
+  
+  /* Header Heights */
+  --header-height: 80px;
+  --header-height-mobile: 64px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+  
+  /* ===== BREAKPOINTS (Mobile-First) ===== */
+  /* Used in @media queries */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* ===== ANIMATIONS ===== */
+  
+  /* Duration */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-medium: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  
+  /* Easing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
+  
+  /* Z-Index Scale */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  /* ===== ACCESSIBILITY ===== */
+  
+  /* Focus Ring */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: var(--color-aws-orange);
+  
+  /* Touch Target Size (minimum 44x44px) */
+  --touch-target-min: 44px;
+}
+
+/* ========================================
+   3. DARK THEME (Default)
+   ======================================== */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(250, 15, 0, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, rgba(255, 153, 0, 0.08) 0%, transparent 35%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   4. LIGHT THEME (Optional)
+   ======================================== */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    --bg-tertiary: #EEEEEE;
+    --bg-surface: rgba(0, 0, 0, 0.04);
+    --bg-surface-hover: rgba(0, 0, 0, 0.08);
+    --bg-glass: rgba(0, 0, 0, 0.02);
+    --bg-glass-hover: rgba(0, 0, 0, 0.04);
+    
+    --text-primary: #212121;
+    --text-secondary: #424242;
+    --text-tertiary: #616161;
+    --text-muted: #757575;
+    --text-inverse: #FFFFFF;
+    
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-default: rgba(0, 0, 0, 0.12);
+    --border-emphasis: rgba(0, 0, 0, 0.16);
+    
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.12);
+    --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  body {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(250, 15, 0, 0.03) 0%, transparent 35%),
+      radial-gradient(circle at 85% 85%, rgba(255, 153, 0, 0.03) 0%, transparent 35%);
+  }
+}
+
+/* Manual theme toggle class */
+body.theme-light {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5F5;
+  --bg-tertiary: #EEEEEE;
+  --bg-surface: rgba(0, 0, 0, 0.04);
+  --bg-surface-hover: rgba(0, 0, 0, 0.08);
+  
+  --text-primary: #212121;
+  --text-secondary: #424242;
+  --text-tertiary: #616161;
+  --text-muted: #757575;
+  
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(250, 15, 0, 0.03) 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, rgba(255, 153, 0, 0.03) 0%, transparent 35%);
+}
+
+/* ========================================
+   5. ACCESSIBILITY - FOCUS STYLES
+   ======================================== */
+
+/* Better focus indicators for keyboard navigation */
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--radius-sm);
+}
+
+/* Remove default focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border-subtle: rgba(240, 246, 252, 0.3);
+    --border-default: rgba(240, 246, 252, 0.5);
+    --border-emphasis: rgba(240, 246, 252, 0.7);
+  }
+  
+  button,
+  a,
+  .card {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ========================================
+   6. UTILITY CLASSES
+   ======================================== */
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-aws-orange);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  z-index: var(--z-index-tooltip);
+  transition: top var(--duration-base) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-lg);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* ========================================
+   7. TYPOGRAPHY BASE STYLES
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+h5 { font-size: var(--font-size-lg); }
+h6 { font-size: var(--font-size-md); }
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--color-aws-orange);
+  text-decoration: none;
+  transition: color var(--duration-base) var(--ease-out);
+}
+
+a:hover {
+  color: var(--color-aws-orange-light);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--color-aws-orange-dark);
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--bg-surface);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  color: var(--color-aws-orange-light);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  background: var(--bg-secondary);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--border-subtle);
+  line-height: var(--line-height-relaxed);
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   8. PRINT STYLES
+   ======================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  p, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  @page {
+    margin: 2cm;
+  }
+}
+
+/* ========================================
+   END OF CORE.CSS
+   ======================================== */

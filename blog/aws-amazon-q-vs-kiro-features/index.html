@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title data-i18n="title">Novidades AWS AI Tools 2025: Kiro CLI, Modelos Claude e Comandos Descontinuados</title>
+    <meta name="description" data-i18n="description" content="Novidades das ferramentas AWS AI: renomeação Q CLI para Kiro, novos modelos Claude 4 e Sonnet 4.5, comandos descontinuados /dev, /test, /doc e /review.">
+    <meta name="keywords" content="Kiro CLI, Amazon Q, Claude 4, Claude Sonnet 4.5, AWS AI, novidades 2025, comandos descontinuados">
+    <meta name="author" content="Salomão Santos">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" data-i18n="title" content="Novidades AWS AI Tools 2025: Kiro CLI, Modelos Claude e Comandos Descontinuados">
+    <meta property="og:description" data-i18n="description" content="Novidades das ferramentas AWS AI: renomeação Q CLI para Kiro, novos modelos Claude 4 e Sonnet 4.5.">
+    
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/aws-amazon-q-vs-kiro-features/">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Novidades AWS AI Tools 2025",
+      "author": {
+        "@type": "Person",
+        "name": "Salomão Santos"
+      },
+      "datePublished": "2025-11-27",
+      "dateModified": "2025-11-27"
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="language-selector" id="language-selector">
+        </div>
+        <h1 data-i18n="pageTitle">✨ Novidades e Funcionalidades AWS AI Tools</h1>
+        <p class="subtitle" data-i18n="pageSubtitle">Kiro CLI • Modelos Claude • Comandos Descontinuados | Novembro 2025</p>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <section class="intro">
+            <p data-i18n="intro">Descubra as principais novidades das ferramentas AWS AI em 2025: renomeação do Amazon Q CLI para Kiro, lançamento de novos modelos Claude, e mudanças nos comandos de chat.</p>
+        </section>
+
+        <section class="major-change highlight">
+            <h2 data-i18n="renameTitle">🚀 Amazon Q CLI → Kiro CLI (17/11/2025)</h2>
+            <p class="important" data-i18n="renameImportant">MUDANÇA IMPORTANTE: Amazon Q Developer CLI foi renomeado para Kiro CLI</p>
+
+            <div class="change-details">
+                <h3 data-i18n="importantDatesTitle">Datas Importantes:</h3>
+                <ul>
+                    <li><strong>17/11/2025</strong>: <span data-i18n="kiroLaunch">Lançamento oficial do Kiro CLI</span></li>
+                    <li><strong>24/11/2025</strong>: <span data-i18n="autoUpdate">Auto-update automático de Q CLI para Kiro CLI</span></li>
+                </ul>
+
+                <h3 data-i18n="whatChangedTitle">O que mudou:</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <span class="icon">✅</span>
+                        <div>
+                            <strong data-i18n="backwardCompatTitle">Retrocompatibilidade Total</strong>
+                            <p data-i18n="backwardCompatDesc">Comandos <code>q</code> e <code>q chat</code> continuam funcionando normalmente</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="icon">🆕</span>
+                        <div>
+                            <strong data-i18n="newEntryTitle">Novo Entry Point</strong>
+                            <p data-i18n="newEntryDesc"><code>kiro-cli</code> e <code>kiro-cli chat</code> são os novos comandos principais</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="icon">🔐</span>
+                        <div>
+                            <strong data-i18n="newAuthTitle">Novas Autenticações</strong>
+                            <p data-i18n="newAuthDesc">Suporte para login com GitHub e Gmail além de AWS Builder ID e IAM Identity Center</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="icon">📁</span>
+                        <div>
+                            <strong data-i18n="newPathsTitle">Novos Caminhos</strong>
+                            <p data-i18n="newPathsDesc">Configurações agora em <code>~/.kiro/</code> em vez de <code>~/.aws/amazonq/</code></p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="icon">🛠️</span>
+                        <div>
+                            <strong data-i18n="toolNamesTitle">Nomes Simplificados</strong>
+                            <p data-i18n="toolNamesDesc">Ferramentas renomeadas para nomenclatura mais clara e consistente</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="icon">📜</span>
+                        <div>
+                            <strong data-i18n="licenseTitle">Nova Licença</strong>
+                            <p data-i18n="licenseDesc">AWS Intellectual Property License substitui a licença anterior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="claude-models">
+            <h2 data-i18n="claudeModelsTitle">Novos Modelos Claude (2025)</h2>
+            <p data-i18n="claudeModelsIntro">A família Claude recebeu atualizações significativas ao longo de 2025, oferecendo melhor desempenho para geração de código e raciocínio complexo.</p>
+
+            <div class="models-grid">
+                <article class="model-card">
+                    <h3>Claude Opus 4</h3>
+                    <p class="release-date" data-i18n="opus4Date">Março 2025</p>
+                    <p class="description" data-i18n="opus4Desc">Modelo mais poderoso da linha Claude para tarefas complexas de coding. Excelente para arquiteturas sofisticadas e refatorações profundas.</p>
+                    <div class="model-features">
+                        <span class="badge" data-i18n="mostPowerful">Mais Poderoso</span>
+                        <span class="badge" data-i18n="complexCoding">Coding Complexo</span>
+                    </div>
+                </article>
+
+                <article class="model-card">
+                    <h3>Claude Sonnet 4</h3>
+                    <p class="release-date" data-i18n="sonnet4Date">Junho 2025</p>
+                    <p class="description" data-i18n="sonnet4Desc">Novo padrão para geração de código. Equilíbrio ideal entre velocidade e qualidade. Modelo principal usado em Kiro IDE.</p>
+                    <div class="model-features">
+                        <span class="badge primary" data-i18n="default">Padrão</span>
+                        <span class="badge" data-i18n="balanced">Equilibrado</span>
+                    </div>
+                </article>
+
+                <article class="model-card">
+                    <h3>Claude Sonnet 4.5</h3>
+                    <p class="release-date" data-i18n="sonnet45Date">Setembro 2025</p>
+                    <p class="description" data-i18n="sonnet45Desc">Versão mais inteligente para agentes complexos e tarefas que exigem raciocínio estendido. Melhor compreensão de contexto.</p>
+                    <div class="model-features">
+                        <span class="badge" data-i18n="smartest">Mais Inteligente</span>
+                        <span class="badge" data-i18n="agents">Agentes</span>
+                    </div>
+                </article>
+
+                <article class="model-card">
+                    <h3>Claude 3.7 Sonnet</h3>
+                    <p class="release-date" data-i18n="sonnet37Date">Dezembro 2024</p>
+                    <p class="description" data-i18n="sonnet37Desc">Primeiro modelo híbrido. Usado como fallback em Kiro IDE. Ainda oferece excelente performance para a maioria das tarefas.</p>
+                    <div class="model-features">
+                        <span class="badge" data-i18n="hybrid">Híbrido</span>
+                        <span class="badge" data-i18n="fallback">Fallback</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="model-selection">
+                <h3 data-i18n="modelSelectionTitle">Seleção de Modelo</h3>
+                <p data-i18n="modelSelectionDesc">Em todas as plataformas (IntelliJ, VS Code, Kiro CLI, Kiro IDE), você pode selecionar o modelo usando o comando:</p>
+                <div class="code-block">
+                    <pre><code>/model</code></pre>
+                </div>
+                <p data-i18n="modelSelectionNote">Isso permite escolher entre os modelos disponíveis de acordo com a complexidade da sua tarefa.</p>
+            </div>
+        </section>
+
+        <section class="deprecated warning">
+            <h2 data-i18n="deprecatedTitle">⚠️ Comandos Descontinuados</h2>
+            <p data-i18n="deprecatedIntro">Alguns comandos slash foram descontinuados em favor de conversação natural com Amazon Q. Esta mudança promove interações mais intuitivas e flexíveis.</p>
+
+            <div class="deprecated-grid">
+                <div class="deprecated-card">
+                    <h3>/dev, /test, /doc</h3>
+                    <p class="deprecation-date" data-i18n="devTestDocDate">Descontinuados em: v3.85 (10/07/2025)</p>
+                    <div class="deprecated-details">
+                        <p><strong data-i18n="formerUse">Uso anterior:</strong></p>
+                        <ul>
+                            <li><code>/dev</code> - <span data-i18n="devDesc">Desenvolvimento de features</span></li>
+                            <li><code>/test</code> - <span data-i18n="testDesc">Geração de testes unitários</span></li>
+                            <li><code>/doc</code> - <span data-i18n="docDesc">Geração de documentação</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="deprecated-card">
+                    <h3>/review</h3>
+                    <p class="deprecation-date" data-i18n="reviewDate">Descontinuado em: v3.68 (23/04/2025)</p>
+                    <div class="deprecated-details">
+                        <p><strong data-i18n="formerUse">Uso anterior:</strong></p>
+                        <ul>
+                            <li><code>/review</code> - <span data-i18n="reviewDesc">Revisão de código e segurança</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alternative-approach">
+                <h3 data-i18n="alternativeTitle">✅ Alternativa: Conversação Natural</h3>
+                <p data-i18n="alternativeDesc">Em vez de usar comandos slash, descreva o que você precisa em linguagem natural no chat do Amazon Q:</p>
+                
+                <div class="example-grid">
+                    <div class="example">
+                        <p class="example-label old" data-i18n="oldWay">❌ Forma Antiga:</p>
+                        <code>/dev Criar uma API REST para gerenciar usuários</code>
+                    </div>
+                    <div class="example">
+                        <p class="example-label new" data-i18n="newWay">✅ Forma Nova:</p>
+                        <code data-i18n="naturalExample">Desenvolva uma API REST completa para gerenciar usuários com validações, tratamento de erros, resiliência e segurança usando Spring Boot 3.x</code>
+                    </div>
+                </div>
+
+                <p class="benefit" data-i18n="naturalBenefit"><strong>Benefício:</strong> Prompts mais detalhados e específicos geram código de melhor qualidade e mais adequado às suas necessidades.</p>
+            </div>
+        </section>
+
+        <section class="kiro-ide-features">
+            <h2 data-i18n="kiroIdeFeaturesTitle">🎯 Kiro IDE: Funcionalidades Exclusivas</h2>
+            <p data-i18n="kiroIdeFeaturesIntro">A Kiro IDE trouxe funcionalidades únicas que a diferenciam de outras ferramentas AWS AI:</p>
+
+            <div class="feature-grid">
+                <div class="feature-card highlight">
+                    <h3 data-i18n="specDrivenTitle">Spec-Driven Development</h3>
+                    <p data-i18n="specDrivenDesc">Workflow único em três etapas:</p>
+                    <ol>
+                        <li><strong>Prompt</strong> → <span data-i18n="specDrivenStep1">Descreva o que quer construir</span></li>
+                        <li><strong>Spec</strong> → <span data-i18n="specDrivenStep2">Kiro gera especificações técnicas detalhadas</span></li>
+                        <li><strong>Code</strong> → <span data-i18n="specDrivenStep3">Código, documentação e testes são gerados automaticamente</span></li>
+                    </ol>
+                </div>
+
+                <div class="feature-card">
+                    <h3 data-i18n="integratedAgentsTitle">Agentes Integrados</h3>
+                    <p data-i18n="integratedAgentsDesc">Agentes especializados resolvem problemas complexos de forma autônoma, com controle total do desenvolvedor em cada etapa.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3 data-i18n="productionReadyTitle">Código Production-Ready</h3>
+                    <p data-i18n="productionReadyDesc">Foco em gerar código pronto para produção, não apenas protótipos. Inclui validações, tratamento de erros e testes automaticamente.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3 data-i18n="checkpointingTitle">Checkpointing</h3>
+                    <p data-i18n="checkpointingDesc">Recurso de rewind que permite voltar modificações feitas pelos agentes, garantindo controle total sobre o código.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3 data-i18n="propertyTestsTitle">Property-Based Tests</h3>
+                    <p data-i18n="propertyTestsDesc">Geração automática de testes baseados em propriedades, não apenas casos de uso específicos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3 data-i18n="multipleAuthTitle">Múltiplas Autenticações</h3>
+                    <p data-i18n="multipleAuthDesc">Suporte para AWS Builder ID, GitHub, Gmail e IAM Identity Center.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-features">
+            <h2 data-i18n="additionalFeaturesTitle">Recursos Adicionais (2025)</h2>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="icon">🔌</span>
+                    <div>
+                        <strong>MCP Server Management</strong>
+                        <p data-i18n="mcpDesc">Gerenciamento de servidores Model Context Protocol em todas as plataformas via comando <code>/mcp</code></p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="icon">🤖</span>
+                    <div>
+                        <strong>Custom Agents</strong>
+                        <p data-i18n="customAgentsDesc">Criação de agentes personalizados no Kiro CLI (<code>/agent</code>) e Kiro IDE</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="icon">📚</span>
+                    <div>
+                        <strong>Knowledge Base</strong>
+                        <p data-i18n="knowledgeBaseDesc">Upload de PDFs e documentos para contexto adicional via <code>/knowledge</code> no Kiro CLI</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="icon">🌳</span>
+                    <div>
+                        <strong>Tangent Conversations</strong>
+                        <p data-i18n="tangentDesc">Criação de checkpoints em conversas para explorar alternativas sem perder o contexto principal (<code>/tangent</code>)</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="icon">🧠</span>
+                    <div>
+                        <strong>Enhanced Thinking Mode</strong>
+                        <p data-i18n="thinkingDesc">Modo de raciocínio estendido para problemas mais complexos disponível no Kiro CLI</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="icon">🖼️</span>
+                    <div>
+                        <strong data-i18n="imageSupport">Suporte a Imagens</strong>
+                        <p data-i18n="imageSupportDesc">Cole imagens diretamente no chat do Kiro CLI para análise e discussão</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="blog-nav">
+            <a href="/blog/aws-amazon-q-vs-kiro-comparison/" class="nav-link" data-i18n="nextPost">Próximo: Comparação de Plataformas →</a>
+            <a href="/blog/aws-amazon-q-vs-kiro-versions/" class="nav-link" data-i18n="prevPost">← Anterior: Versões Atuais</a>
+        </nav>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong data-i18n="publishDate">Data de Publicação:</strong> <time datetime="2025-11-27">27 de Novembro de 2025</time></p>
+        <p><strong data-i18n="source">Fonte:</strong> <span data-i18n="sourceText">Documentação oficial AWS, changelog e anúncios</span></p>
+        <p><small data-i18n="disclaimer">Conteúdo educacional baseado em documentação pública. Não afiliado à AWS.</small></p>
+    </footer>
+
+    <script src="/assets/js/core.js"></script>
+    <script src="i18n.js"></script>
+    <script src="/assets/js/local-i18n.js"></script>
+</body>
+
+</html>

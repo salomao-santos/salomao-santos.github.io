@@ -1,0 +1,14 @@
+# robots.txt for salomao-santos.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://salomao-santos.github.io/sitemap.xml
+
+# Crawl delay (optional, adjust if needed)
+# Crawl-delay: 1
+
+# Disallow specific paths (if any)
+# Disallow: /private/
+# Disallow: /temp/

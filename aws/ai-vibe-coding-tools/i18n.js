@@ -18,7 +18,20 @@ const translations = {
     },
     comparison: { title: "Comparison Table by Platform", feature: "Feature", inline: "Inline Suggestions", chat: "Code Chat", dev: "Feature Development", test: "Test Generation", doc: "Documentation Generation", review: "Code Review", mcp: "MCP Server Management", agents: "Custom Agents", spec: "Spec-Driven Development", auth: "GitHub/Gmail Authentication" },
     details: { title: "Details by Platform" },
-    prompts: { title: "Alternative Prompt Examples", info: "Use natural conversation instead of deprecated slash commands", instead: "Instead of", old: "❌ Old:", new: "✅ New:" }
+    prompts: { title: "Alternative Prompt Examples", info: "Use natural conversation instead of deprecated slash commands", instead: "Instead of", old: "❌ Old:", new: "✅ New:" },
+    relatedArticles: "📚 Related Articles",
+    relatedSubtitle: "Explore topics in detail",
+    articleVersionsTitle: "Current Versions",
+    articleVersionsDesc: "Track the latest versions of all AWS AI tools with release dates and official links.",
+    articleFeaturesTitle: "News and Features",
+    articleFeaturesDesc: "Discover new features, Claude 4 models, and exclusive Kiro CLI and Kiro IDE capabilities.",
+    articleComparisonTitle: "Detailed Comparison",
+    articleComparisonDesc: "Compare features, pricing, plans, and functionality between Amazon Q Developer and Kiro.",
+    articleDetailsTitle: "Installation and Configuration",
+    articleDetailsDesc: "Step-by-step guides for installation, configuration, and use of tools on different platforms.",
+    articlePromptsTitle: "Prompt Examples",
+    articlePromptsDesc: "Practical prompts and real-world examples to maximize productivity with AWS AI tools.",
+    readMore: "Read article →"
   },
   pt: {
     title: "AWS AI Coding Tools: Amazon Q vs Kiro",
@@ -39,7 +52,20 @@ const translations = {
     },
     comparison: { title: "Tabela Comparativa por Plataforma", feature: "Funcionalidade", inline: "Sugestões Inline", chat: "Chat sobre Código", dev: "Desenvolvimento de Features", test: "Geração de Testes", doc: "Geração de Documentação", review: "Revisão de Código", mcp: "MCP Server Management", agents: "Custom Agents", spec: "Spec-Driven Development", auth: "Autenticação GitHub/Gmail" },
     details: { title: "Detalhes por Plataforma" },
-    prompts: { title: "Exemplos de Prompts Alternativos", info: "Use conversação natural em vez dos comandos slash depreciados", instead: "Em vez de", old: "❌ Antigo:", new: "✅ Novo:" }
+    prompts: { title: "Exemplos de Prompts Alternativos", info: "Use conversação natural em vez dos comandos slash depreciados", instead: "Em vez de", old: "❌ Antigo:", new: "✅ Novo:" },
+    relatedArticles: "📚 Artigos Relacionados",
+    relatedSubtitle: "Explore os tópicos em detalhes",
+    articleVersionsTitle: "Versões Atuais",
+    articleVersionsDesc: "Acompanhe as versões mais recentes de todas as ferramentas AWS AI com datas de lançamento e links oficiais.",
+    articleFeaturesTitle: "Novidades e Funcionalidades",
+    articleFeaturesDesc: "Descubra as novas funcionalidades, modelos Claude 4, e recursos exclusivos do Kiro CLI e Kiro IDE.",
+    articleComparisonTitle: "Comparação Detalhada",
+    articleComparisonDesc: "Compare recursos, preços, planos e funcionalidades entre Amazon Q Developer e Kiro.",
+    articleDetailsTitle: "Instalação e Configuração",
+    articleDetailsDesc: "Guias passo a passo para instalação, configuração e uso das ferramentas em diferentes plataformas.",
+    articlePromptsTitle: "Exemplos de Prompts",
+    articlePromptsDesc: "Prompts práticos e exemplos de uso real para maximizar a produtividade com as ferramentas AWS AI.",
+    readMore: "Ler artigo →"
   },
   es: {
     title: "AWS AI Coding Tools: Amazon Q vs Kiro",

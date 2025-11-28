@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Detalhes AWS AI Tools: Comandos, Funcionalidades e Integrações</title>
+    <meta name="description" data-i18n="description" content="Detalhes completos de cada plataforma AWS AI: comandos do IntelliJ, VS Code, Kiro CLI e Kiro IDE. Integrações com AWS e linguagens suportadas.">
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/aws-amazon-q-vs-kiro-details/">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="language-selector" id="language-selector">
+        </div>
+        <h1 data-i18n="pageTitle">🔍 Detalhes das Plataformas AWS AI Tools</h1>
+        <p class="subtitle" data-i18n="pageSubtitle">Comandos • Funcionalidades • Integrações | Guia Completo</p>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <section class="platform-details">
+            <article class="platform-card">
+                <h2>Amazon Q Developer IntelliJ (AWS Toolkit)</h2>
+                <p><strong data-i18n="version">Versão:</strong> 3.99 (21/11/2025)</p>
+                <p><strong data-i18n="supportedIdes">IDEs Suportadas:</strong> <span data-i18n="jetbrainsIdes">Todos os JetBrains IDEs 2023.3+</span></p>
+                <p class="ide-list"><em>IntelliJ IDEA, PyCharm, WebStorm, PhpStorm, GoLand, Rider, CLion, RubyMine, DataGrip, AppCode</em></p>
+
+                <h3 data-i18n="chatCommands">Comandos de Chat:</h3>
+                <ul class="command-list">
+                    <li><code>/clear</code> - <span data-i18n="clearDesc">Limpar conversa atual</span></li>
+                    <li><code>/compact</code> - <span data-i18n="compactDesc">Compactar histórico de chat</span></li>
+                    <li><code>/help</code> - <span data-i18n="helpDesc">Exibir ajuda e comandos disponíveis</span></li>
+                    <li><code>/model</code> - <span data-i18n="modelDesc">Selecionar modelo AI</span></li>
+                    <li class="deprecated"><code>/dev</code> - ⚠️ <span data-i18n="devDeprecated">Depreciado v3.85 (use conversação natural)</span></li>
+                    <li class="deprecated"><code>/test</code> - ⚠️ <span data-i18n="testDeprecated">Depreciado v3.85 (use conversação natural)</span></li>
+                    <li class="deprecated"><code>/doc</code> - ⚠️ <span data-i18n="docDeprecated">Depreciado v3.85 (use conversação natural)</span></li>
+                    <li class="deprecated"><code>/review</code> - ⚠️ <span data-i18n="reviewDeprecated">Depreciado v3.68 (use conversação natural)</span></li>
+                </ul>
+
+                <h3 data-i18n="mainFeatures">Funcionalidades Principais:</h3>
+                <ul>
+                    <li data-i18n="intellijFeature1">✅ Sugestões inline em tempo real (auto-trigger)</li>
+                    <li data-i18n="intellijFeature2">✅ Chat contextual sobre código</li>
+                    <li data-i18n="intellijFeature3">✅ Agentic coding (atualiza arquivos diretamente)</li>
+                    <li data-i18n="intellijFeature4">✅ Desenvolvimento de features (conversação natural)</li>
+                    <li data-i18n="intellijFeature5">✅ Transformação e modernização de código</li>
+                    <li data-i18n="intellijFeature6">✅ Customizações com modelos personalizados</li>
+                    <li data-i18n="intellijFeature7">✅ Project Rules (<code>.amazonq/rules/</code>)</li>
+                    <li data-i18n="intellijFeature8">✅ MCP Server Management</li>
+                </ul>
+
+                <h3 data-i18n="awsServices">Serviços AWS Integrados:</h3>
+                <ul>
+                    <li>☁️ <strong>CloudFormation</strong>: <span data-i18n="cfDesc">View events, resources, outputs</span></li>
+                    <li>📊 <strong>CloudWatch Logs</strong>: <span data-i18n="cwDesc">View e search de log streams</span></li>
+                    <li>λ <strong>Lambda</strong>: <span data-i18n="lambdaDesc">Run/Debug local, invoke remote, package & deploy</span></li>
+                    <li>📊 <strong>RDS/Redshift</strong>: <span data-i18n="rdsDesc">Conexão com credenciais temporárias</span></li>
+                    <li>📦 <strong>S3</strong>: <span data-i18n="s3Desc">View, manage, upload/download buckets</span></li>
+                    <li>🚀 <strong>SAM</strong>: <span data-i18n="samDesc">Sync & track SAM-based applications</span></li>
+                </ul>
+
+                <h3 data-i18n="languages">Linguagens Suportadas (SAM):</h3>
+                <p>Java, Python, Node.js, .NET Core, Go</p>
+            </article>
+
+            <article class="platform-card">
+                <h2>Amazon Q Developer Visual Studio Code</h2>
+                <p><strong data-i18n="version">Versão:</strong> 3.89.0 (25/11/2025)</p>
+                <p><strong>IDE:</strong> Visual Studio Code</p>
+
+                <h3 data-i18n="chatCommands">Comandos de Chat:</h3>
+                <ul class="command-list">
+                    <li><code>/clear</code> - <span data-i18n="clearDesc">Limpar conversa atual</span></li>
+                    <li><code>/compact</code> - <span data-i18n="compactDesc">Compactar histórico de chat</span></li>
+                    <li><code>/help</code> - <span data-i18n="helpDesc">Exibir ajuda e comandos disponíveis</span></li>
+                    <li><code>/model</code> - <span data-i18n="modelDesc">Selecionar modelo AI</span></li>
+                    <li class="deprecated"><code>/dev</code>, <code>/test</code>, <code>/doc</code> - ⚠️ <span data-i18n="devDeprecated">Depreciados v3.85</span></li>
+                    <li class="deprecated"><code>/review</code> - ⚠️ <span data-i18n="reviewDeprecated">Depreciado v3.68</span></li>
+                </ul>
+
+                <h3 data-i18n="mainFeatures">Funcionalidades Principais:</h3>
+                <ul>
+                    <li data-i18n="vscodeFeature1">✅ Sugestões inline em tempo real</li>
+                    <li data-i18n="vscodeFeature2">✅ Inline chat (Ctrl+I / Cmd+I)</li>
+                    <li data-i18n="vscodeFeature3">✅ Chat contextual sobre código</li>
+                    <li data-i18n="vscodeFeature4">✅ Agentic coding (atualiza arquivos)</li>
+                    <li data-i18n="vscodeFeature5">✅ Project Rules (<code>.amazonq/rules/</code>)</li>
+                    <li data-i18n="vscodeFeature6">✅ MCP Server Management</li>
+                    <li data-i18n="vscodeFeature7">✅ Context management (@workspace)</li>
+                </ul>
+
+                <h3 data-i18n="awsServices">Serviços AWS Integrados:</h3>
+                <ul>
+                    <li>☁️ <strong>CloudFormation</strong>, λ <strong>Lambda</strong>, 📦 <strong>S3</strong></li>
+                    <li>🚀 <strong>SAM</strong>, 📊 <strong>CloudWatch Logs</strong>, 🐳 <strong>ECS</strong></li>
+                    <li>📊 <strong>DynamoDB</strong> Table viewer</li>
+                </ul>
+
+                <h3 data-i18n="languages">Linguagens Suportadas:</h3>
+                <p>Java, Python, JavaScript, TypeScript, C#, Go, Ruby, PHP, Kotlin, Rust, Scala, Shell, SQL, C, C++</p>
+            </article>
+
+            <article class="platform-card highlight">
+                <h2>Kiro CLI (ex-Amazon Q CLI)</h2>
+                <p><strong data-i18n="version">Versão:</strong> v1.19.7 → Kiro CLI</p>
+                <p><strong data-i18n="environments">Ambientes:</strong> macOS, Linux (AppImage, Ubuntu), AWS CloudShell</p>
+
+                <div class="warning">
+                    <p data-i18n="kiroWarning"><strong>⚠️ IMPORTANTE:</strong> Amazon Q CLI foi renomeado para Kiro CLI em 17/11/2025. Comandos <code>q</code> e <code>q chat</code> continuam funcionando (retrocompatibilidade).</p>
+                </div>
+
+                <h3 data-i18n="mainCommands">Comandos Principais:</h3>
+                <ul class="command-list">
+                    <li><code>kiro-cli chat</code> ou <code>q chat</code> - <span data-i18n="chatSession">Iniciar sessão de chat interativa</span></li>
+                    <li><code>q translate</code> - <span data-i18n="translate">Traduzir linguagem natural para comandos shell</span></li>
+                    <li><code>q inline enable/disable</code> - <span data-i18n="inline">Gerenciar sugestões inline</span></li>
+                    <li><code>q doctor</code> - <span data-i18n="doctor">Diagnosticar problemas</span></li>
+                    <li><code>q update</code> - <span data-i18n="update">Atualizar CLI</span></li>
+                    <li><code>q login</code> - <span data-i18n="login">Autenticar (Builder ID, IAM, GitHub, Gmail)</span></li>
+                </ul>
+
+                <h3 data-i18n="chatInternalCommands">Comandos dentro do Chat (<code>kiro-cli chat</code>):</h3>
+                <ul class="command-list">
+                    <li><code>/clear</code>, <code>/compact</code>, <code>/help</code>, <code>/usage</code></li>
+                    <li><code>/editor</code> - <span data-i18n="editor">Abrir editor para prompts longos</span></li>
+                    <li><code>/model</code> - <span data-i18n="modelSelect">Selecionar modelo (Claude Sonnet 4, 3.7, 3.5)</span></li>
+                    <li><code>/save</code>, <code>/load</code> - <span data-i18n="saveLoad">Exportar/importar conversa JSON</span></li>
+                    <li><code>/tools</code> - <span data-i18n="tools">Gerenciar ferramentas disponíveis</span></li>
+                    <li><code>/mcp</code> - <span data-i18n="mcp">Gerenciar servidores MCP</span></li>
+                    <li><code>/agent</code> - <span data-i18n="agent">Gerenciar agentes customizados</span></li>
+                    <li><code>/knowledge</code> - <span data-i18n="knowledge">Gerenciar base de conhecimento (PDFs)</span></li>
+                    <li><code>/tangent</code> - <span data-i18n="tangent">Criar checkpoints de conversa</span></li>
+                    <li><code>!</code> - <span data-i18n="shell">Executar comando shell diretamente</span></li>
+                </ul>
+
+                <h3 data-i18n="mainFeatures">Funcionalidades Principais:</h3>
+                <ul>
+                    <li data-i18n="kiroFeature1">✅ Autocompletar para CLIs populares (git, npm, docker, aws, kubectl)</li>
+                    <li data-i18n="kiroFeature2">✅ Tradução de linguagem natural para comandos shell</li>
+                    <li data-i18n="kiroFeature3">✅ Custom agents (agentes personalizados)</li>
+                    <li data-i18n="kiroFeature4">✅ Enhanced thinking mode (raciocínio estendido)</li>
+                    <li data-i18n="kiroFeature5">✅ Knowledge base (PDFs, documentos)</li>
+                    <li data-i18n="kiroFeature6">✅ Tangent conversations (checkpoints)</li>
+                    <li data-i18n="kiroFeature7">✅ MCP Server support</li>
+                    <li data-i18n="kiroFeature8">✅ Suporte a imagens (paste)</li>
+                </ul>
+
+                <h3 data-i18n="authentication">Autenticação Suportada:</h3>
+                <ul>
+                    <li>AWS Builder ID</li>
+                    <li>IAM Identity Center (SSO)</li>
+                    <li>GitHub (Kiro CLI)</li>
+                    <li>Gmail (Kiro CLI)</li>
+                </ul>
+            </article>
+
+            <article class="platform-card highlight">
+                <h2>Kiro IDE</h2>
+                <p><strong>Status:</strong> General Availability (GA) <span data-i18n="since">desde</span> 17/11/2025</p>
+                <p><strong data-i18n="base">Base:</strong> VS Code (Code-OSS)</p>
+                <p><strong data-i18n="aiModels">Modelos AI:</strong> Claude Sonnet 4 (principal), Claude 3.7 Sonnet (fallback)</p>
+
+                <h3 data-i18n="specDrivenWorkflow">Workflow Spec-Driven Development:</h3>
+                <ol>
+                    <li><strong>Prompt</strong> → <span data-i18n="step1">Descreva o que quer construir em linguagem natural</span></li>
+                    <li><strong>Spec</strong> → <span data-i18n="step2">Kiro transforma em especificações técnicas detalhadas</span></li>
+                    <li><strong>Code</strong> → <span data-i18n="step3">Gera código funcional, documentação e testes automaticamente</span></li>
+                </ol>
+
+                <h3 data-i18n="mainFeatures">Funcionalidades Principais:</h3>
+                <ul>
+                    <li data-i18n="kiroIdeFeature1">✅ Desenvolvimento spec-driven (diferencial único)</li>
+                    <li data-i18n="kiroIdeFeature2">✅ Agentes integrados para problemas complexos</li>
+                    <li data-i18n="kiroIdeFeature3">✅ Geração automática de documentação e testes</li>
+                    <li data-i18n="kiroIdeFeature4">✅ Código production-ready desde o início</li>
+                    <li data-i18n="kiroIdeFeature5">✅ Checkpointing (rewind de modificações)</li>
+                    <li data-i18n="kiroIdeFeature6">✅ Property-based tests</li>
+                    <li data-i18n="kiroIdeFeature7">✅ Custom agents e hooks</li>
+                    <li data-i18n="kiroIdeFeature8">✅ MCP (Model Context Protocol) support</li>
+                </ul>
+
+                <h3 data-i18n="plans">Planos de Assinatura:</h3>
+                <ul>
+                    <li><strong>Free:</strong> <span data-i18n="freeDesc">Uso básico com limitações</span></li>
+                    <li><strong>Pro:</strong> <span data-i18n="proDesc">Recursos avançados</span></li>
+                    <li><strong>Pro+:</strong> <span data-i18n="proPlus">Recursos premium</span></li>
+                    <li><strong>Power:</strong> <span data-i18n="power">Uso ilimitado para equipes</span></li>
+                </ul>
+
+                <h3 data-i18n="differentials">Diferenciais vs Outras IDEs:</h3>
+                <ul>
+                    <li data-i18n="diff1">🎯 Workflow completo: Prompt → Spec → Code</li>
+                    <li data-i18n="diff2">🎯 Código production-ready desde o início</li>
+                    <li data-i18n="diff3">🎯 Especificações técnicas detalhadas antes do código</li>
+                    <li data-i18n="diff4">🎯 Validação automática contra especificações</li>
+                    <li data-i18n="diff5">🎯 Property-based testing integrado</li>
+                </ul>
+            </article>
+
+            <article class="platform-card">
+                <h2 data-i18n="langSupport">Idiomas Suportados (Chat)</h2>
+                <p data-i18n="langIntro">Todos os ambientes suportam chat em <strong>10 idiomas</strong>:</p>
+                <ul class="language-list">
+                    <li>🇺🇸 Inglês</li>
+                    <li>🇨🇳 Mandarim</li>
+                    <li>🇫🇷 Francês</li>
+                    <li>🇩🇪 Alemão</li>
+                    <li>🇮🇹 Italiano</li>
+                    <li>🇯🇵 Japonês</li>
+                    <li>🇪🇸 Espanhol</li>
+                    <li>🇰🇷 Coreano</li>
+                    <li>🇮🇳 Hindi</li>
+                    <li>🇧🇷 Português</li>
+                </ul>
+            </article>
+        </section>
+
+        <nav class="blog-nav">
+            <a href="/blog/aws-amazon-q-vs-kiro-prompts/" class="nav-link" data-i18n="nextPost">Próximo: Exemplos de Prompts →</a>
+            <a href="/blog/aws-amazon-q-vs-kiro-comparison/" class="nav-link" data-i18n="prevPost">← Anterior: Comparação de Plataformas</a>
+        </nav>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong data-i18n="publishDate">Data de Publicação:</strong> <time datetime="2025-11-27">27 de Novembro de 2025</time></p>
+        <p><small data-i18n="disclaimer">Conteúdo educacional baseado em documentação pública. Não afiliado à AWS.</small></p>
+    </footer>
+
+    <script src="/assets/js/core.js"></script>
+    <script src="i18n.js"></script>
+    <script src="/assets/js/local-i18n.js"></script>
+</body>
+
+</html>

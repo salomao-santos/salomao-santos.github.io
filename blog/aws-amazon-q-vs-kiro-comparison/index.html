@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title data-i18n="title">Comparação AWS AI Tools: IntelliJ vs VS Code vs Kiro CLI vs Kiro IDE</title>
+    <meta name="description" data-i18n="description" content="Tabela comparativa completa das ferramentas AWS AI: funcionalidades de IntelliJ, VS Code, Kiro CLI e Kiro IDE. Sugestões inline, chat, agents, MCP e autenticação.">
+    <meta name="keywords" content="AWS AI Tools, comparação, IntelliJ, VS Code, Kiro CLI, Kiro IDE, Amazon Q">
+    <meta name="author" content="Salomão Santos">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" data-i18n="title" content="Comparação AWS AI Tools: IntelliJ vs VS Code vs Kiro CLI vs Kiro IDE">
+    
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/aws-amazon-q-vs-kiro-comparison/">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="language-selector" id="language-selector">
+        </div>
+        <h1 data-i18n="pageTitle">⚖️ Comparação AWS AI Tools: IntelliJ vs VS Code vs Kiro CLI vs Kiro IDE</h1>
+        <p class="subtitle" data-i18n="pageSubtitle">IntelliJ • VS Code • Kiro CLI • Kiro IDE | Tabela Completa</p>
+    </header>
+
+    <main id="main-content" class="container" role="main">
+        <section class="intro">
+            <p data-i18n="intro">Compare as funcionalidades de todas as plataformas AWS AI Tools lado a lado. Veja o que está disponível em cada IDE e ferramenta.</p>
+        </section>
+
+        <section class="comparison-table-section">
+            <h2 data-i18n="tableTitle">Tabela Comparativa Completa</h2>
+            
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="feature">Funcionalidade</th>
+                            <th>IntelliJ</th>
+                            <th>Visual Studio Code</th>
+                            <th>Kiro CLI</th>
+                            <th>Kiro IDE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="inlineSuggestions">Sugestões Inline</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="codeChat">Chat sobre Código</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td data-i18n="featureDev">Desenvolvimento de Features</td>
+                            <td class="yes">✅ <span class="dep">/dev - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/dev - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ spec-driven</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td data-i18n="testGen">Geração de Testes</td>
+                            <td class="yes">✅ <span class="dep">/test - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/test - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ automático</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td data-i18n="docGen">Geração de Documentação</td>
+                            <td class="yes">✅ <span class="dep">/doc - v3.85</span></td>
+                            <td class="yes">✅ <span class="dep">/doc - v3.85</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ automático</td>
+                        </tr>
+                        <tr class="deprecated">
+                            <td data-i18n="codeReview">Revisão de Código</td>
+                            <td class="yes">✅ <span class="dep">/review - v3.68</span></td>
+                            <td class="yes">✅ <span class="dep">/review - v3.68</span></td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="mcpManagement">MCP Server Management</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅ <code>/mcp</code></td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="customAgents">Custom Agents</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ <code>/agent</code></td>
+                            <td class="yes">✅ built-in</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="specDriven">Spec-Driven Development</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ core</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="githubGmailAuth">Autenticação GitHub/Gmail</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ Kiro CLI</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="multiLang">Suporte Multilíngue (10 idiomas)</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="modelSelection">Seleção de Modelo (<code>/model</code>)</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="projectRules">Project Rules</td>
+                            <td class="yes">✅ <code>.amazonq/rules/</code></td>
+                            <td class="yes">✅ <code>.amazonq/rules/</code></td>
+                            <td class="partial">⚠️</td>
+                            <td class="yes">✅ steering</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="contextMgmt">Context Management</td>
+                            <td class="yes">✅ @workspace</td>
+                            <td class="yes">✅ @workspace</td>
+                            <td class="yes">✅</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="inlineChat">Inline Chat</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ Ctrl+I / Cmd+I</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="knowledgeBase">Knowledge Base (PDFs)</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ <code>/knowledge</code></td>
+                            <td class="yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tangent">Tangent Conversations</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ <code>/tangent</code></td>
+                            <td class="no">❌</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="imageSupport">Suporte a Imagens</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅ paste</td>
+                            <td class="partial">⚠️</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="checkpointing">Checkpointing/Rewind</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="no">❌</td>
+                            <td class="yes">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="legend">
+                <h3 data-i18n="legendTitle">Legenda:</h3>
+                <ul>
+                    <li><span class="yes">✅</span> - <span data-i18n="legendAvailable">Funcionalidade disponível</span></li>
+                    <li><span class="no">❌</span> - <span data-i18n="legendNotAvailable">Funcionalidade não disponível</span></li>
+                    <li><span class="partial">⚠️</span> - <span data-i18n="legendPartial">Suporte parcial ou limitado</span></li>
+                    <li><span class="dep">comando - versão</span> - <span data-i18n="legendDeprecated">Comando descontinuado (use conversação natural)</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="key-differences">
+            <h2 data-i18n="differenceTitle">Principais Diferenças</h2>
+            
+            <div class="diff-grid">
+                <article class="diff-card">
+                    <h3>IntelliJ IDEA</h3>
+                    <p class="strength" data-i18n="intellijStrength"><strong>Força:</strong> Melhor para desenvolvimento Java e ecossistema JetBrains</p>
+                    <ul>
+                        <li data-i18n="intellijFeature1">Integração nativa com IDEs JetBrains</li>
+                        <li data-i18n="intellijFeature2">Suporte completo a serviços AWS</li>
+                        <li data-i18n="intellijFeature3">Project rules com .amazonq/rules/</li>
+                        <li data-i18n="intellijFeature4">Excelente para Java, Kotlin, Scala</li>
+                    </ul>
+                    <p class="limitation" data-i18n="intellijLimit"><strong>Limitação:</strong> Sem custom agents ou features avançadas do Kiro</p>
+                </article>
+
+                <article class="diff-card">
+                    <h3>Visual Studio Code</h3>
+                    <p class="strength" data-i18n="vscodeStrength"><strong>Força:</strong> Versatilidade e inline chat</p>
+                    <ul>
+                        <li data-i18n="vscodeFeature1">Inline chat (Ctrl+I / Cmd+I)</li>
+                        <li data-i18n="vscodeFeature2">Suporte a múltiplas linguagens</li>
+                        <li data-i18n="vscodeFeature3">Integração com Remote Development</li>
+                        <li data-i18n="vscodeFeature4">Extensão AWS Toolkit completa</li>
+                    </ul>
+                    <p class="limitation" data-i18n="vscodeLimit"><strong>Limitação:</strong> Sem custom agents ou knowledge base</p>
+                </article>
+
+                <article class="diff-card highlight">
+                    <h3>Kiro CLI</h3>
+                    <p class="strength" data-i18n="kiroCliStrength"><strong>Força:</strong> Terminal-first com recursos avançados</p>
+                    <ul>
+                        <li data-i18n="kiroCliFeature1">Custom agents (<code>/agent</code>)</li>
+                        <li data-i18n="kiroCliFeature2">Knowledge base com PDFs</li>
+                        <li data-i18n="kiroCliFeature3">Tangent conversations</li>
+                        <li data-i18n="kiroCliFeature4">Suporte a imagens</li>
+                        <li data-i18n="kiroCliFeature5">Autenticação GitHub/Gmail</li>
+                    </ul>
+                    <p class="limitation" data-i18n="kiroCliLimit"><strong>Limitação:</strong> Sem sugestões inline (terminal)</p>
+                </article>
+
+                <article class="diff-card highlight">
+                    <h3>Kiro IDE</h3>
+                    <p class="strength" data-i18n="kiroIdeStrength"><strong>Força:</strong> Desenvolvimento spec-driven único</p>
+                    <ul>
+                        <li data-i18n="kiroIdeFeature1">Spec-driven development completo</li>
+                        <li data-i18n="kiroIdeFeature2">Agentes integrados e custom agents</li>
+                        <li data-i18n="kiroIdeFeature3">Checkpointing/rewind de modificações</li>
+                        <li data-i18n="kiroIdeFeature4">Property-based tests automáticos</li>
+                        <li data-i18n="kiroIdeFeature5">Código production-ready desde início</li>
+                    </ul>
+                    <p class="limitation" data-i18n="kiroIdeLimit"><strong>Limitação:</strong> Ainda em GA, algumas features em evolução</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="use-cases">
+            <h2 data-i18n="useCasesTitle">Qual escolher?</h2>
+            
+            <div class="use-case-grid">
+                <div class="use-case">
+                    <h3 data-i18n="useCase1Title">Desenvolvimento Java/Kotlin Enterprise</h3>
+                    <p class="recommendation">→ <strong>IntelliJ IDEA</strong></p>
+                    <p data-i18n="useCase1Desc">Melhor integração com ecossistema JetBrains, Spring Boot e serviços AWS.</p>
+                </div>
+
+                <div class="use-case">
+                    <h3 data-i18n="useCase2Title">Desenvolvimento Web/Multi-linguagem</h3>
+                    <p class="recommendation">→ <strong>VS Code</strong></p>
+                    <p data-i18n="useCase2Desc">Excelente para JavaScript, TypeScript, Python, e desenvolvimento full-stack.</p>
+                </div>
+
+                <div class="use-case">
+                    <h3 data-i18n="useCase3Title">Terminal-first / DevOps / Scripting</h3>
+                    <p class="recommendation">→ <strong>Kiro CLI</strong></p>
+                    <p data-i18n="useCase3Desc">Ideal para trabalho em terminal, automação e custom agents.</p>
+                </div>
+
+                <div class="use-case">
+                    <h3 data-i18n="useCase4Title">Novos Projetos / Código Production-Ready</h3>
+                    <p class="recommendation">→ <strong>Kiro IDE</strong></p>
+                    <p data-i18n="useCase4Desc">Melhor para desenvolvimento spec-driven com especificações técnicas detalhadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <nav class="blog-nav">
+            <a href="/blog/aws-amazon-q-vs-kiro-details/" class="nav-link" data-i18n="nextPost">Próximo: Detalhes das Plataformas →</a>
+            <a href="/blog/aws-amazon-q-vs-kiro-features/" class="nav-link" data-i18n="prevPost">← Anterior: Novidades e Funcionalidades</a>
+        </nav>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong data-i18n="publishDate">Data de Publicação:</strong> <time datetime="2025-11-27">27 de Novembro de 2025</time></p>
+        <p><small data-i18n="disclaimer">Conteúdo educacional baseado em documentação pública. Não afiliado à AWS.</small></p>
+    </footer>
+
+    <script src="/assets/js/core.js"></script>
+    <script src="i18n.js"></script>
+    <script src="/assets/js/local-i18n.js"></script>
+</body>
+
+</html>
