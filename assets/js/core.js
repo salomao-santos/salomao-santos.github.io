@@ -188,7 +188,7 @@
   function setupLanguageSwitcher() {
     const langButtons = document.querySelectorAll('.lang-btn');
     
-    if (!langButtons.length || !window.i18n) return;
+    if (!langButtons.length) return;
 
     // Set initial active state
     function updateActiveButton(lang) {
@@ -217,9 +217,24 @@
     langButtons.forEach(btn => {
       btn.addEventListener('click', async () => {
         const lang = btn.dataset.lang;
-        if (window.i18n) {
-          await window.i18n.setLanguage(lang);
+        
+        // Wait for i18n to be ready if not available yet
+        if (!window.i18n) {
+          console.warn('i18n not ready yet, waiting...');
+          
+          // Wait for i18n:ready event
+          return new Promise((resolve) => {
+            document.addEventListener('i18n:ready', async () => {
+              if (window.i18n) {
+                await window.i18n.setLanguage(lang);
+                resolve();
+              }
+            }, { once: true });
+          });
         }
+        
+        // i18n is available, change language directly
+        await window.i18n.setLanguage(lang);
       });
     });
   }

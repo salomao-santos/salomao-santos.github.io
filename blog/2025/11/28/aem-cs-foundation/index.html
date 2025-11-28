@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AEM Foundation updates: dependency upgrades, Eclipse tools, performance improvements">
+    <meta name="author" content="Salomao da Silva Santos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="AEM Foundation, Oak, Eclipse tools">
+    <meta name="theme-color" content="#0b0e14">
+    
+    <title>AEM Foundation 2025: Technical Updates - Salomao Santos</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-foundation/">
+    <meta property="og:title" content="AEM Foundation 2025: Technical Updates">
+    <meta property="og:description" content="AEM Foundation updates: dependency upgrades, Eclipse tools, performance improvements">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2025-11-28">
+    <meta property="article:author" content="Salomao da Silva Santos">
+    <meta property="article:tag" content="AEM">
+    <meta property="article:tag" content="Cloud Service">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AEM Foundation 2025: Technical Updates">
+    <meta name="twitter:description" content="AEM Foundation updates: dependency upgrades, Eclipse tools, performance improvements">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-foundation/">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/aem/aem-cloud-service/aem-2025-updates.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AEM Foundation 2025: Technical Updates",
+      "description": "AEM Foundation updates: dependency upgrades, Eclipse tools, performance improvements",
+      "author": {
+        "@type": "Person",
+        "name": "Salomao da Silva Santos"
+      },
+      "datePublished": "2025-11-28",
+      "dateModified": "2025-11-28",
+      "keywords": "AEM Foundation, Oak, Eclipse tools",
+      "inLanguage": "en"
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <div style="text-align: right; padding: 10px;">
+            <div class="language-switcher" aria-label="Language Switcher" style="display: inline-flex; gap: 8px;">
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="pt-BR" aria-label="Mudar para Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+            </div>
+        </div>
+
+        <nav class="breadcrumb">
+            <a href="/">Home</a> / 
+            <a href="/blog/">Blog</a> / 
+            <a href="/blog/2025/">2025</a> / 
+            <a href="/blog/2025/11/">November</a> / 
+            <a href="/blog/2025/11/28/">28</a>
+        </nav>
+        <h1>AEM Foundation 2025: Technical Updates</h1>
+        <p class="subtitle">AEM Foundation updates: dependency upgrades, Eclipse tools, performance improvements</p>
+        <p class="meta">
+            <time datetime="2025-11-28">November 28, 2025</time> · 
+            <span>By Salomao da Silva Santos</span>
+        </p>
+    </header>
+
+    <main id="main-content" role="main">
+        
+            <h2 data-i18n="foundation.title">AEM Foundation - Atualizações Técnicas</h2>
+
+            <div class="platform-card">
+                <h3>Atualizações de Dependências</h3>
+                <h4>Principais Atualizações:</h4>
+                <ul>
+                    <li><strong>Oak</strong>: Atualizado para 1.88.0</li>
+                    <li><strong>joda-time</strong>: Atualizado para 2.12.7</li>
+                    <li><strong>commons-lang</strong>: Atualizado para 3.19.0</li>
+                    <li><strong>filevault</strong>: Atualizado para 4.1.4</li>
+                    <li><strong>JCR Resource</strong>: Atualizado para 3.3.6</li>
+                    <li><strong>Sling bundles</strong>: Atualizações em discovery.standalone, jcr.packageinit,
+                        commons.fsclassloader</li>
+                </ul>
+            </div>
+
+            <div class="platform-card">
+                <h3>AEM Developer Tools for Eclipse 1.4.0</h3>
+                <h4>Novidades:</h4>
+                <ul>
+                    <li>✅ Suporte a Eclipse IDE 2022-12 ou mais recente</li>
+                    <li>✅ Validado com versão atual (2025-09)</li>
+                    <li>✅ Funciona com versões modernas do AEM Project Archetype</li>
+                    <li>✅ Melhorias do Sling IDE Tooling 1.3.0 incorporadas</li>
+                </ul>
+                <p><a href="https://marketplace.eclipse.org/content/aem-developer-tools-eclipse" target="_blank">Eclipse
+                        Marketplace</a> | <a href="https://eclipse.adobe.com" target="_blank">AEM Developer Tools</a>
+                </p>
+            </div>
+
+            <div class="platform-card">
+                <h3>Melhorias de Performance e Resiliência</h3>
+                <ul>
+                    <li>✅ Política de retry melhorada em RepositoryServiceHttpClient</li>
+                    <li>✅ Correção de issue com GC na primeira execução após restart do AEM</li>
+                    <li>✅ Correção de publicações agendadas interrompidas durante pipeline full-stack</li>
+                </ul>
+            </div>
+
+            <div class="platform-card">
+                <h3>Correções de Segurança</h3>
+                <p>Múltiplas correções de segurança aplicadas no release 23385. Consulte as <a
+                        href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest"
+                        target="_blank">Maintenance Release Notes</a> para detalhes completos.</p>
+            </div>
+        
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>Published:</strong> <time datetime="2025-11-28">November 28, 2025</time></p>
+        <p><strong>Author:</strong> Salomao da Silva Santos</p>
+        <p><strong>Source:</strong> Adobe Experience League Official Documentation</p>
+        <p><small>Educational content based on public documentation. Not affiliated with Adobe.</small></p>
+        <p><a href="/" style="color: white; text-decoration: underline;">← Back to Home</a></p>
+    </footer>
+
+    
+    <!-- i18n and core scripts -->
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/core.js"></script>
+    <script src="/aem/aem-cloud-service/aem-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-content-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-2025-updates.js"></script>
+</body>
+</html>

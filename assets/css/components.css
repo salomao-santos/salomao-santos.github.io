@@ -40,7 +40,6 @@
   transition: all var(--duration-base) var(--ease-out);
   min-height: var(--touch-target-min);
   position: relative;
-  overflow: hidden;
 }
 
 .btn::before {
@@ -117,9 +116,10 @@
 
 /* Button Sizes */
 .btn-sm {
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-5);
   font-size: var(--font-size-sm);
   min-height: 36px;
+  white-space: nowrap;
 }
 
 .btn-lg {
@@ -208,6 +208,17 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.card-footer > div:first-child {
+  flex: 1;
+  min-width: 180px;
+}
+
+.card-footer > a {
+  flex-shrink: 0;
+  min-width: fit-content;
 }
 
 /* Card Variants */
@@ -2193,6 +2204,16 @@
     border-radius: 0;
     margin-left: calc(var(--space-4) * -1);
     margin-right: calc(var(--space-4) * -1);
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .card-footer > a {
+    width: 100%;
+    text-align: center;
   }
 }
 
