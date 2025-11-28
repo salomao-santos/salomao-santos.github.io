@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "title": "Salomao da Silva Santos - Arquitecto de Soluciones, Líder Técnico y Evangelista",
+    "description": "Arquitecto de Soluciones y Líder Técnico con amplia experiencia en Adobe Experience Manager (AEM) y AWS AI Coding Tools. Apasionado por compartir conocimientos y construir soluciones empresariales escalables.",
+    "keywords": "Arquitecto de Soluciones, Líder Técnico, Evangelista AEM, Herramientas AWS AI, Adobe Experience Manager, Tecnologías Cloud, Desarrollador, Arquitectura de Software"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "current": "AEM CS Novedades",
+    "backBlog": "← Volver al Blog"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Salomao",
+    "role": "Arquitecto de Soluciones y Líder Técnico",
+    "subtitle": "Evangelista AEM y AWS AI Vibe Coding Tools",
+    "description": "Apasionado por construir soluciones escalables y compartir conocimientos sobre Adobe Experience Manager y Tecnologías Cloud.",
+    "cta_blog": "Ver Blog",
+    "cta_contact": "Contactar"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "intro": "Soy Salomao da Silva Santos, Arquitecto de Soluciones y Líder Técnico con amplia experiencia en la construcción de soluciones empresariales escalables.",
+    "expertise": "Como evangelista de Adobe Experience Manager (AEM) y las herramientas AWS AI Vibe Coding Tools, me apasiona compartir conocimientos y ayudar a los equipos a aprovechar tecnologías de vanguardia para resolver desafíos comerciales complejos.",
+    "skills_title": "Experiencia Principal",
+    "skills": {
+      "architecture": "Arquitectura de Soluciones",
+      "aem": "Adobe Experience Manager",
+      "aws": "Servicios AWS Cloud",
+      "ai": "Herramientas de Desarrollo con IA",
+      "leadership": "Liderazgo Técnico",
+      "mentoring": "Mentoría de Equipos"
+    }
+  },
+  "blog": {
+    "title": "Últimos Artículos",
+    "subtitle": "Perspectivas sobre AEM, AWS y Tecnologías Cloud",
+    "filter_all": "Todos",
+    "filter_aem": "AEM",
+    "filter_aws": "AWS",
+    "filter_cloud": "Cloud",
+    "read_more": "Leer Artículo",
+    "reading_time": "min de lectura",
+    "published": "Publicado",
+    "updated": "Actualizado",
+    "categories": "Categorías",
+    "tags": "Etiquetas",
+    "share": "Compartir Artículo",
+    "new_badge": "Nuevo",
+    "articles": {
+      "aem": {
+        "title": "Adobe Experience Manager 2025: Guía Completa de Actualizaciones",
+        "description": "Guía completa de actualizaciones de AEM Cloud Service 2025: nuevas funcionalidades, APIs obsoletas, migración Java 21, Edge Computing y mejores prácticas.",
+        "date": "2025-11-27",
+        "reading_time": "15",
+        "level": "Experto",
+        "tags": ["AEM", "Cloud Service", "Java 21", "Edge Computing"]
+      },
+      "aws": {
+        "title": "AWS AI Coding Tools: Guía Completa Amazon Q vs Kiro",
+        "description": "Inmersión profunda en las herramientas de desarrollo con IA de AWS: Amazon Q Developer, Kiro CLI, comparación de funcionalidades, guía de migración y ejemplos prácticos.",
+        "date": "2025-11-27",
+        "reading_time": "12",
+        "level": "Intermedio",
+        "tags": ["AWS", "IA", "DevTools", "Amazon Q", "Kiro"]
+      },
+      "aws_versions": {
+        "title": "Herramientas AWS AI: Versiones Actuales y Fechas de Lanzamiento",
+        "description": "Siga las últimas versiones de Kiro CLI v1.19.7, VS Code v3.89.0, IntelliJ v3.99 y Kiro IDE GA con fechas de lanzamiento y enlaces oficiales."
+      },
+      "aws_features": {
+        "title": "Nuevas Características: Modelos Claude 4 y Exclusivos Kiro",
+        "description": "Descubra los nuevos modelos Claude 4 (Sonnet, Opus, Haiku), desarrollo basado en especificaciones de Kiro IDE, agentes personalizados y características exclusivas."
+      },
+      "aws_comparison": {
+        "title": "Amazon Q vs Kiro: Comparación de Características y Precios",
+        "description": "Comparación detallada de características, precios, planes y capacidades en las plataformas IntelliJ, VS Code, CLI e IDE."
+      },
+      "aws_details": {
+        "title": "Instalación y Configuración: Guía Paso a Paso",
+        "description": "Guías completas de instalación para Kiro CLI, VS Code, IntelliJ y Kiro IDE en las plataformas Windows, macOS y Linux."
+      },
+      "aws_prompts": {
+        "title": "Ejemplos de Prompts: Maximice Su Productividad",
+        "description": "Ejemplos prácticos de prompts y mejores prácticas para maximizar la productividad con las herramientas de codificación AWS AI y conversación natural."
+      }
+    }
+  },
+  "footer": {
+    "title": "Salomao Santos",
+    "description": "Arquitecto de Soluciones y Líder Técnico compartiendo conocimientos sobre tecnologías empresariales.",
+    "sections": {
+      "navigation": {
+        "title": "Navegación",
+        "home": "Inicio",
+        "about": "Acerca de",
+        "blog": "Blog",
+        "contact": "Contacto"
+      },
+      "content": {
+        "title": "Contenido",
+        "aem_articles": "Artículos AEM",
+        "aws_articles": "Artículos AWS",
+        "tutorials": "Tutoriales",
+        "case_studies": "Casos de Estudio"
+      },
+      "connect": {
+        "title": "Conectar",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "twitter": "Twitter",
+        "email": "Correo"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Uso",
+        "cookies": "Política de Cookies"
+      }
+    },
+    "copyright": "Todos los derechos reservados.",
+    "made_with": "Hecho con",
+    "and": "y",
+    "coffee": "café",
+    "about": "Acerca",
+    "skills": "Habilidades",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Intentar Nuevamente",
+    "close": "Cerrar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Volver",
+    "home": "Inicio",
+    "search": "Buscar",
+    "menu": "Menú",
+    "skip_to_content": "Saltar al contenido principal",
+    "dark_mode": "Modo Oscuro",
+    "light_mode": "Modo Claro",
+    "language": "Idioma"
+  },
+  "badge": {
+    "new": "Nuevo",
+    "featured": "Destacado",
+    "updated": "Actualizado",
+    "important": "Importante",
+    "tech": "Análisis Técnico",
+    "series": "Serie",
+    "comparison": "Comparación",
+    "guide": "Guía",
+    "practical": "Práctico"
+  },
+  "article": {
+    "title": "AEM Cloud Service: Principales Novedades 2025",
+    "author": "Por Salomao Santos",
+    "date": "27 de Noviembre, 2025",
+    "readTime": "⏱️ 8 min de lectura",
+    "description": "Explore las novedades revolucionarias de AEM Cloud Service 2025: Edge Computing, control de actualizaciones, autenticación, canary deployments y snapshots para entornos de desarrollo.",
+    "share": "📤 Compartir"
+  },
+  "toc": {
+    "title": "Índice",
+    "pause": "Pausar Actualizaciones",
+    "edge": "Edge Computing (Beta)",
+    "auth": "Edge Authentication (Beta)",
+    "canary": "Canary Deployments (Beta)",
+    "snapshots": "RDE Snapshots (Alpha)"
+  },
+  "content": {
+    "pause": {
+      "title": "🎯 Pausar Actualizaciones Automáticas de Mantenimiento",
+      "tag": "NUEVO: Control total sobre actualizaciones en momentos críticos",
+      "features": {
+        "title": "Recursos Disponibles:",
+        "item1": "Quiet Hours: Bloquee actualizaciones automáticas durante horarios específicos del día",
+        "item2": "Update-Free Period: Bloquee actualizaciones por una semana completa",
+        "item3": "Ideal para: Go-live, eventos en vivo, picos de ventas, Black Friday",
+        "item4": "Self-service: Configure directamente sin necesidad de soporte"
+      },
+      "contact": "Contacto"
+    },
+    "edge": {
+      "title": "🚀 Edge Computing (Beta)",
+      "intro": "Execute JavaScript en la capa CDN, procesando datos más cerca del usuario final.",
+      "usecases": {
+        "title": "Casos de Uso:",
+        "item1": "Personalización basada en geolocalización, dispositivo o atributos del usuario",
+        "item2": "Middleware entre CDN y origen",
+        "item3": "Reformateo de respuestas de APIs de terceros",
+        "item4": "Composición de HTML server-rendered en el edge",
+        "item5": "Exposición de servidor MCP para LLMs (ChatGPT, Claude)"
+      },
+      "contact": "Contacto"
+    },
+    "auth": {
+      "title": "🔐 Edge Authentication (Beta)",
+      "intro": "Restrinja acceso a páginas Edge Delivery Services solo para usuarios autenticados vía IdP.",
+      "item1": "Configuración vía archivo YAML OpenID Connect (OIDC)",
+      "item2": "Integración con proveedores de identidad corporativos",
+      "item3": "Protección de contenido sensible en el edge"
+    },
+    "canary": {
+      "title": "🧪 Canary Production Deployments (Beta)",
+      "intro": "Valide builds de producción con tráfico interno antes de exponer a usuarios finales.",
+      "item1": "Deploy en producción con tráfico restringido (header especial)",
+      "item2": "Monitoree comportamiento antes de aceptar tráfico real",
+      "item3": "Rollback sin impacto a clientes",
+      "contact": "Contacto"
+    },
+    "snapshots": {
+      "title": "📸 Snapshots para RDEs (Alpha)",
+      "intro": "Tome snapshots del estado actual de código y contenido en Rapid Development Environments.",
+      "item1": "Restaure código y contenido en cualquier momento",
+      "item2": "Útil para revertir cambios o alternar entre features",
+      "item3": "Restauración selectiva solo de contenido mutable",
+      "contact": "Contacto"
+    },
+    "related": {
+      "title": "📚 Artículos Relacionados",
+      "releases": "📦 Releases Actuales",
+      "edge": "🚀 Edge Computing Deep Dive",
+      "practices": "✨ Mejores Prácticas"
+    }
+  },
+  "a11y": {
+    "skip": "Saltar al contenido principal"
+  }
+}

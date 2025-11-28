@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://salomao-santos.github.io/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/?lang=es"/>
+  </url>
+  
+  <!-- Blog Posts - AEM 2025 Updates -->
+  <url>
+    <loc>https://salomao-santos.github.io/blog/aem-2025-updates/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/blog/aem-2025-updates/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/blog/aem-2025-updates/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/blog/aem-2025-updates/?lang=es"/>
+  </url>
+  
+  <!-- Blog Posts - AWS AI Coding Tools -->
+  <url>
+    <loc>https://salomao-santos.github.io/blog/aws-ai-coding-tools/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/blog/aws-ai-coding-tools/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/blog/aws-ai-coding-tools/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/blog/aws-ai-coding-tools/?lang=es"/>
+  </url>
+  
+  <!-- Blog Posts - AEM Edge Computing -->
+  <url>
+    <loc>https://salomao-santos.github.io/blog/aem-edge-computing/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/blog/aem-edge-computing/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/blog/aem-edge-computing/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/blog/aem-edge-computing/?lang=es"/>
+  </url>
+  
+  <!-- Blog Posts - AEM Java 21 Migration -->
+  <url>
+    <loc>https://salomao-santos.github.io/blog/aem-java21-migration/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/blog/aem-java21-migration/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/blog/aem-java21-migration/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/blog/aem-java21-migration/?lang=es"/>
+  </url>
+  
+  <!-- Legacy URLs (kept for backwards compatibility) -->
+  <url>
+    <loc>https://salomao-santos.github.io/aem/aem-cloud-service/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://salomao-santos.github.io/aws/ai-vibe-coding-tools/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test i18n</title>
+</head>
+<body>
+    <h1 data-i18n="article.title">Loading...</h1>
+    <p data-i18n="article.description">Loading...</p>
+    
+    <script>
+        // Test if translations load
+        fetch('/data/translations/pt-BR.json')
+            .then(r => r.json())
+            .then(data => {
+                console.log('Translations loaded:', data);
+                console.log('article.title:', data.article.title);
+            })
+            .catch(err => console.error('Error:', err));
+    </script>
+    <script src="/assets/js/i18n.js"></script>
+</body>
+</html>
