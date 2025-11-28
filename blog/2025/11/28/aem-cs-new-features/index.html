@@ -1,178 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <!-- Essential Meta Tags -->
+    <!-- Meta Tags Essenciais -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Latest features in Adobe Experience Manager 2025: Edge Computing, Canary Deployments, RDE Snapshots">
+    <title data-i18n="meta.title">AEM Cloud Service: Principais Novidades 2025 | Professional Blog</title>
+    <meta name="description" data-i18n="meta.description" content="Descubra as principais novidades do AEM Cloud Service 2025: Edge Computing, pausar atualizações, autenticação no edge, canary deployments e snapshots para RDEs.">
+    <meta name="keywords" content="AEM Cloud Service, AEM 2025, Edge Computing, Edge Authentication, Canary Deployments, RDE Snapshots">
     <meta name="author" content="Salomao da Silva Santos">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="AEM new features, Edge Computing, Canary Deployments">
-    <meta name="theme-color" content="#0b0e14">
-    
-    <title>AEM 2025: New Features and Innovations - Salomao Santos</title>
-    
-    <!-- Open Graph -->
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-new-features/">
-    <meta property="og:title" content="AEM 2025: New Features and Innovations">
-    <meta property="og:description" content="Latest features in Adobe Experience Manager 2025: Edge Computing, Canary Deployments, RDE Snapshots">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:published_time" content="2025-11-28">
-    <meta property="article:author" content="Salomao da Silva Santos">
-    <meta property="article:tag" content="AEM">
-    <meta property="article:tag" content="Cloud Service">
-    
+    <meta property="og:url" content="https://salomao-santos.github.io/blog/aem-cs-new-features/">
+    <meta property="og:title" content="AEM Cloud Service: Principais Novidades 2025">
+    <meta property="og:description" content="Descubra as principais novidades do AEM Cloud Service 2025.">
+    <meta property="og:locale" content="pt_BR">
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AEM 2025: New Features and Innovations">
-    <meta name="twitter:description" content="Latest features in Adobe Experience Manager 2025: Edge Computing, Canary Deployments, RDE Snapshots">
-    
+    <meta name="twitter:url" content="https://salomao-santos.github.io/blog/aem-cs-new-features/">
+    <meta name="twitter:title" content="AEM Cloud Service: Principais Novidades 2025">
+
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-new-features/">
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/aem-cs-new-features/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://salomao-santos.github.io/blog/aem-cs-new-features/?lang=en">
+    <link rel="alternate" hreflang="pt-BR" href="https://salomao-santos.github.io/blog/aem-cs-new-features/?lang=pt-BR">
+    <link rel="alternate" hreflang="es" href="https://salomao-santos.github.io/blog/aem-cs-new-features/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://salomao-santos.github.io/blog/aem-cs-new-features/">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/core.css">
     <link rel="stylesheet" href="/assets/css/components.css">
-    <link rel="stylesheet" href="/aem/aem-cloud-service/aem-2025-updates.css">
-    
-    <!-- Structured Data -->
+
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "AEM 2025: New Features and Innovations",
-      "description": "Latest features in Adobe Experience Manager 2025: Edge Computing, Canary Deployments, RDE Snapshots",
+      "headline": "AEM Cloud Service: Principais Novidades 2025",
+      "description": "Principais novidades do Adobe Experience Manager Cloud Service 2025",
       "author": {
         "@type": "Person",
-        "name": "Salomao da Silva Santos"
+        "name": "Salomao da Silva Santos",
+        "url": "https://salomao-santos.github.io"
       },
-      "datePublished": "2025-11-28",
-      "dateModified": "2025-11-28",
-      "keywords": "AEM new features, Edge Computing, Canary Deployments",
-      "inLanguage": "en"
+      "datePublished": "2025-11-27",
+      "dateModified": "2025-11-27",
+      "keywords": "AEM Cloud Service, Edge Computing, Novidades 2025",
+      "articleSection": "Enterprise Content Management",
+      "inLanguage": "pt-BR"
     }
     </script>
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="reading-progress">
+        <div class="reading-progress-bar"></div>
+    </div>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Pular para o conteúdo principal</a>
 
-    <header role="banner">
-        <div style="text-align: right; padding: 10px;">
-            <div class="language-switcher" aria-label="Language Switcher" style="display: inline-flex; gap: 8px;">
-                <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
-                <button class="lang-btn" data-lang="pt-BR" aria-label="Mudar para Português">PT</button>
-                <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
-            </div>
-        </div>
-
-        <nav class="breadcrumb">
-            <a href="/">Home</a> / 
-            <a href="/blog/">Blog</a> / 
-            <a href="/blog/2025/">2025</a> / 
-            <a href="/blog/2025/11/">November</a> / 
-            <a href="/blog/2025/11/28/">28</a>
+    <header class="site-header" role="banner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/" data-i18n="nav.home">Home</a> /
+            <a href="/#blog" data-i18n="nav.blog">Blog</a> /
+            <span aria-current="page" data-i18n="nav.current">AEM CS Novidades</span>
         </nav>
-        <h1>AEM 2025: New Features and Innovations</h1>
-        <p class="subtitle">Latest features in Adobe Experience Manager 2025: Edge Computing, Canary Deployments, RDE Snapshots</p>
-        <p class="meta">
-            <time datetime="2025-11-28">November 28, 2025</time> · 
-            <span>By Salomao da Silva Santos</span>
-        </p>
+        <div class="language-selector">
+            <select id="lang-selector" aria-label="Select language">
+                <option value="en">🇺🇸 English</option>
+                <option value="pt-BR" selected>🇧🇷 Português</option>
+                <option value="es">🇪🇸 Español</option>
+            </select>
+        </div>
     </header>
 
-    <main id="main-content" role="main">
-        
-            <h2 data-i18n="novidades.title">Principais Novidades 2025</h2>
+    <main id="main-content" class="blog-post" role="main">
+        <article>
+            <header class="article-header">
+                <div class="badges">
+                    <span class="badge badge-new" data-i18n="badge.new">New</span>
+                    <span class="badge badge-featured">Featured</span>
+                </div>
+                <h1 data-i18n="article.title">AEM Cloud Service: Principais Novidades 2025</h1>
+                
+                <div class="article-meta">
+                    <span class="author" data-i18n="article.author">Por Salomao Santos</span>
+                    <time datetime="2025-11-27" data-i18n="article.date">27 de Novembro, 2025</time>
+                    <span class="reading-time" data-i18n="article.readTime">⏱️ 8 min de leitura</span>
+                </div>
 
-            <div class="news-card highlight">
-                <h3 data-i18n="novidades.pause.title">🎯 Pausar Atualizações Automáticas de Manutenção</h3>
-                <p class="important" data-i18n="novidades.pause.badge">NOVO: Controle total sobre atualizações em momentos críticos</p>
-                <h4 data-i18n="novidades.pause.subtitle">Recursos Disponíveis:</h4>
-                <ul>
-                    <li data-i18n="novidades.pause.item1"><strong>Quiet Hours</strong>: Bloqueie atualizações automáticas durante horários específicos do
-                        dia</li>
-                    <li data-i18n="novidades.pause.item2"><strong>Update-Free Period</strong>: Bloqueie atualizações por uma semana completa</li>
-                    <li data-i18n="novidades.pause.item3">Ideal para: Go-live, eventos ao vivo, picos de vendas, Black Friday</li>
-                    <li data-i18n="novidades.pause.item4">Self-service: Configure diretamente sem necessidade de suporte</li>
-                </ul>
-                <p><strong data-i18n="novidades.pause.contact">Contato</strong>: <a
-                        href="mailto:aemcs-update-free@adobe.com">aemcs-update-free@adobe.com</a></p>
-            </div>
-
-            <div class="news-card">
-                <h3 data-i18n="novidades.edge.title">🚀 Edge Computing (Beta)</h3>
-                <p data-i18n="novidades.edge.intro">Execute JavaScript na camada CDN, processando dados mais próximo do usuário final.</p>
-                <h4 data-i18n="novidades.edge.subtitle">Casos de Uso:</h4>
-                <ul>
-                    <li data-i18n="novidades.edge.item1">Personalização baseada em geolocalização, dispositivo ou atributos do usuário</li>
-                    <li data-i18n="novidades.edge.item2">Middleware entre CDN e origem</li>
-                    <li data-i18n="novidades.edge.item3">Reformatação de respostas de APIs de terceiros</li>
-                    <li data-i18n="novidades.edge.item4">Composição de HTML server-rendered no edge</li>
-                    <li data-i18n="novidades.edge.item5">Exposição de servidor MCP para LLMs (ChatGPT, Claude)</li>
-                </ul>
-                <p><strong data-i18n="novidades.edge.contact">Contato</strong>: <a
-                        href="mailto:aemcs-edgecompute-feedback@adobe.com">aemcs-edgecompute-feedback@adobe.com</a></p>
-            </div>
-
-            <div class="news-card">
-                <h3 data-i18n="novidades.auth.title">🔐 Edge Authentication (Beta)</h3>
-                <p data-i18n="novidades.auth.intro">Restrinja acesso a páginas Edge Delivery Services apenas para usuários autenticados via IdP.</p>
-                <ul>
-                    <li data-i18n="novidades.auth.item1">Configuração via arquivo YAML OpenID Connect (OIDC)</li>
-                    <li data-i18n="novidades.auth.item2">Integração com provedores de identidade corporativos</li>
-                    <li data-i18n="novidades.auth.item3">Proteção de conteúdo sensível no edge</li>
-                </ul>
-            </div>
-
-            <div class="news-card">
-                <h3 data-i18n="novidades.canary.title">🧪 Canary Production Deployments (Beta)</h3>
-                <p data-i18n="novidades.canary.intro">Valide builds de produção com tráfego interno antes de expor aos usuários finais.</p>
-                <ul>
-                    <li data-i18n="novidades.canary.item1">Deploy em produção com tráfego restrito (header especial)</li>
-                    <li data-i18n="novidades.canary.item2">Monitore comportamento antes de aceitar tráfego real</li>
-                    <li data-i18n="novidades.canary.item3">Rollback sem impacto aos clientes</li>
-                </ul>
-                <p><strong data-i18n="novidades.canary.contact">Contato</strong>: <a
-                        href="mailto:aemcs-canary-deployments-beta@adobe.com">aemcs-canary-deployments-beta@adobe.com</a>
+                <p class="article-description" data-i18n="article.description">
+                    Explore as novidades revolucionárias do AEM Cloud Service 2025: Edge Computing, controle de atualizações, autenticação, canary deployments e snapshots para ambientes de desenvolvimento.
                 </p>
+
+                <button class="share-btn" aria-label="Compartilhar artigo" data-i18n="article.share">📤 Compartilhar</button>
+            </header>
+
+            <aside class="toc" aria-label="Índice">
+                <h2 data-i18n="toc.title">Índice</h2>
+            </aside>
+
+            <div class="article-content">
+                <section id="pause-updates" class="highlight-section">
+                    <h2 data-i18n="content.pause.title">🎯 Pausar Atualizações Automáticas de Manutenção</h2>
+                    <p class="tag-important" data-i18n="content.pause.tag">NOVO: Controle total sobre atualizações em momentos críticos</p>
+                    
+                    <h3 data-i18n="content.pause.features.title">Recursos Disponíveis:</h3>
+                    <ul class="feature-list">
+                        <li data-i18n="content.pause.features.item1"><strong>Quiet Hours</strong>: Bloqueie atualizações automáticas durante horários específicos do dia</li>
+                        <li data-i18n="content.pause.features.item2"><strong>Update-Free Period</strong>: Bloqueie atualizações por uma semana completa</li>
+                        <li data-i18n="content.pause.features.item3">Ideal para: Go-live, eventos ao vivo, picos de vendas, Black Friday</li>
+                        <li data-i18n="content.pause.features.item4">Self-service: Configure diretamente sem necessidade de suporte</li>
+                    </ul>
+                    <p><strong data-i18n="content.pause.contact">Contato</strong>: <a href="mailto:aemcs-update-free@adobe.com">aemcs-update-free@adobe.com</a></p>
+                </section>
+
+                <section id="edge-computing">
+                    <h2 data-i18n="content.edge.title">🚀 Edge Computing (Beta)</h2>
+                    <p data-i18n="content.edge.intro">Execute JavaScript na camada CDN, processando dados mais próximo do usuário final.</p>
+                    
+                    <h3 data-i18n="content.edge.usecases.title">Casos de Uso:</h3>
+                    <ul class="feature-list">
+                        <li data-i18n="content.edge.usecases.item1">Personalização baseada em geolocalização, dispositivo ou atributos do usuário</li>
+                        <li data-i18n="content.edge.usecases.item2">Middleware entre CDN e origem</li>
+                        <li data-i18n="content.edge.usecases.item3">Reformatação de respostas de APIs de terceiros</li>
+                        <li data-i18n="content.edge.usecases.item4">Composição de HTML server-rendered no edge</li>
+                        <li data-i18n="content.edge.usecases.item5">Exposição de servidor MCP para LLMs (ChatGPT, Claude)</li>
+                    </ul>
+                    
+                    <div class="code-block">
+                        <pre><code>// Exemplo de Edge Computing
+export async function onRequest(request, context) {
+  const country = request.headers.get('cf-ipcountry');
+  
+  if (country === 'BR') {
+    return new Response('Bem-vindo ao Brasil!');
+  }
+  
+  return context.next();
+}</code></pre>
+                    </div>
+                    
+                    <p><strong data-i18n="content.edge.contact">Contato</strong>: <a href="mailto:aemcs-edgecompute-feedback@adobe.com">aemcs-edgecompute-feedback@adobe.com</a></p>
+                </section>
+
+                <section id="edge-auth">
+                    <h2 data-i18n="content.auth.title">🔐 Edge Authentication (Beta)</h2>
+                    <p data-i18n="content.auth.intro">Restrinja acesso a páginas Edge Delivery Services apenas para usuários autenticados via IdP.</p>
+                    
+                    <ul class="feature-list">
+                        <li data-i18n="content.auth.item1">Configuração via arquivo YAML OpenID Connect (OIDC)</li>
+                        <li data-i18n="content.auth.item2">Integração com provedores de identidade corporativos</li>
+                        <li data-i18n="content.auth.item3">Proteção de conteúdo sensível no edge</li>
+                    </ul>
+                </section>
+
+                <section id="canary">
+                    <h2 data-i18n="content.canary.title">🧪 Canary Production Deployments (Beta)</h2>
+                    <p data-i18n="content.canary.intro">Valide builds de produção com tráfego interno antes de expor aos usuários finais.</p>
+                    
+                    <ul class="feature-list">
+                        <li data-i18n="content.canary.item1">Deploy em produção com tráfego restrito (header especial)</li>
+                        <li data-i18n="content.canary.item2">Monitore comportamento antes de aceitar tráfego real</li>
+                        <li data-i18n="content.canary.item3">Rollback sem impacto aos clientes</li>
+                    </ul>
+                    
+                    <p><strong data-i18n="content.canary.contact">Contato</strong>: <a href="mailto:aemcs-canary-deployments-beta@adobe.com">aemcs-canary-deployments-beta@adobe.com</a></p>
+                </section>
+
+                <section id="snapshots">
+                    <h2 data-i18n="content.snapshots.title">📸 Snapshots para RDEs (Alpha)</h2>
+                    <p data-i18n="content.snapshots.intro">Tire snapshots do estado atual de código e conteúdo em Rapid Development Environments.</p>
+                    
+                    <ul class="feature-list">
+                        <li data-i18n="content.snapshots.item1">Restaure código e conteúdo em qualquer momento</li>
+                        <li data-i18n="content.snapshots.item2">Útil para reverter alterações ou alternar entre features</li>
+                        <li data-i18n="content.snapshots.item3">Restauração seletiva apenas de conteúdo mutável</li>
+                    </ul>
+                    
+                    <p><strong data-i18n="content.snapshots.contact">Contato</strong>: <a href="mailto:aemcs-rde-support@adobe.com">aemcs-rde-support@adobe.com</a></p>
+                </section>
+
+                <section>
+                    <h2 data-i18n="content.related.title">📚 Artigos Relacionados</h2>
+                    <ul class="resource-list">
+                        <li><a href="/blog/2025/11/28/aem-cs-releases/" data-i18n="content.related.releases">📦 Releases Atuais</a></li>
+                        <li><a href="/blog/2025/11/28/aem-cs-new-features/" data-i18n="content.related.edge">🚀 Edge Computing Deep Dive</a></li>
+                        <li><a href="/blog/2025/11/28/aem-cs-best-practices/" data-i18n="content.related.practices">✨ Melhores Práticas</a></li>
+                    </ul>
+                </section>
             </div>
 
-            <div class="news-card">
-                <h3 data-i18n="novidades.snapshots.title">📸 Snapshots para RDEs (Alpha)</h3>
-                <p data-i18n="novidades.snapshots.intro">Tire snapshots do estado atual de código e conteúdo em Rapid Development Environments.</p>
-                <ul>
-                    <li data-i18n="novidades.snapshots.item1">Restaure código e conteúdo em qualquer momento</li>
-                    <li data-i18n="novidades.snapshots.item2">Útil para reverter alterações ou alternar entre features</li>
-                    <li data-i18n="novidades.snapshots.item3">Restauração seletiva apenas de conteúdo mutável</li>
-                </ul>
-                <p><strong data-i18n="novidades.snapshots.contact">Contato</strong>: <a
-                        href="mailto:aemcs-rde-support@adobe.com">aemcs-rde-support@adobe.com</a></p>
-            </div>
-        
+            <a href="/#blog" class="back-link" data-i18n="nav.backBlog">← Voltar para o Blog</a>
+        </article>
     </main>
 
-    <footer role="contentinfo">
-        <p><strong>Published:</strong> <time datetime="2025-11-28">November 28, 2025</time></p>
-        <p><strong>Author:</strong> Salomao da Silva Santos</p>
-        <p><strong>Source:</strong> Adobe Experience League Official Documentation</p>
-        <p><small>Educational content based on public documentation. Not affiliated with Adobe.</small></p>
-        <p><a href="/" style="color: white; text-decoration: underline;">← Back to Home</a></p>
+    <footer class="site-footer" role="contentinfo">
+        <p data-i18n="footer.copyright">&copy; 2025 Salomao Santos. Todos os direitos reservados.</p>
+        <nav aria-label="Footer navigation">
+            <a href="/#about" data-i18n="footer.about">Sobre</a>
+            <a href="/#skills" data-i18n="footer.skills">Habilidades</a>
+            <a href="/#blog" data-i18n="footer.blog">Blog</a>
+            <a href="/#contact" data-i18n="footer.contact">Contato</a>
+        </nav>
     </footer>
 
-    
-    <!-- i18n and core scripts -->
     <script src="/assets/js/i18n.js"></script>
     <script src="/assets/js/core.js"></script>
-    <script src="/aem/aem-cloud-service/aem-i18n.js"></script>
-    <script src="/aem/aem-cloud-service/aem-content-i18n.js"></script>
-    <script src="/aem/aem-cloud-service/aem-2025-updates.js"></script>
 </body>
 </html>
