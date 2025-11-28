@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Best practices for AEM Cloud Service: Java 21 migration, logging, Content Fragments, security">
+    <meta name="author" content="Salomao da Silva Santos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="AEM best practices, migration guide, security">
+    <meta name="theme-color" content="#0b0e14">
+    
+    <title>AEM 2025: Best Practices and Guidelines - Salomao Santos</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-best-practices/">
+    <meta property="og:title" content="AEM 2025: Best Practices and Guidelines">
+    <meta property="og:description" content="Best practices for AEM Cloud Service: Java 21 migration, logging, Content Fragments, security">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2025-11-28">
+    <meta property="article:author" content="Salomao da Silva Santos">
+    <meta property="article:tag" content="AEM">
+    <meta property="article:tag" content="Cloud Service">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AEM 2025: Best Practices and Guidelines">
+    <meta name="twitter:description" content="Best practices for AEM Cloud Service: Java 21 migration, logging, Content Fragments, security">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-best-practices/">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/aem/aem-cloud-service/aem-2025-updates.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AEM 2025: Best Practices and Guidelines",
+      "description": "Best practices for AEM Cloud Service: Java 21 migration, logging, Content Fragments, security",
+      "author": {
+        "@type": "Person",
+        "name": "Salomao da Silva Santos"
+      },
+      "datePublished": "2025-11-28",
+      "dateModified": "2025-11-28",
+      "keywords": "AEM best practices, migration guide, security",
+      "inLanguage": "en"
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <div style="text-align: right; padding: 10px;">
+            <div class="language-switcher" aria-label="Language Switcher" style="display: inline-flex; gap: 8px;">
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="pt-BR" aria-label="Mudar para Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+            </div>
+        </div>
+
+        <nav class="breadcrumb">
+            <a href="/">Home</a> / 
+            <a href="/blog/">Blog</a> / 
+            <a href="/blog/2025/">2025</a> / 
+            <a href="/blog/2025/11/">November</a> / 
+            <a href="/blog/2025/11/28/">28</a>
+        </nav>
+        <h1>AEM 2025: Best Practices and Guidelines</h1>
+        <p class="subtitle">Best practices for AEM Cloud Service: Java 21 migration, logging, Content Fragments, security</p>
+        <p class="meta">
+            <time datetime="2025-11-28">November 28, 2025</time> · 
+            <span>By Salomao da Silva Santos</span>
+        </p>
+    </header>
+
+    <main id="main-content" role="main">
+        
+            <h2 data-i18n="bestPractices.title">Melhores Práticas AEM 2025</h2>
+
+            <div class="prompt-card">
+                <h3>🎯 Migração para Java 21</h3>
+                <div class="prompt-example">
+                    <h4>Checklist de Migração:</h4>
+                    <pre>1. ANÁLISE DE DEPENDÊNCIAS
+   - Revise todas as dependências do projeto
+   - Identifique bibliotecas incompatíveis com Java 21
+   - Atualize para versões compatíveis
+   - Remova dependências depreciadas
+
+2. TESTES EM DEV/RDE
+   - Valide funcionalidades críticas
+   - Execute suite completa de testes
+   - Verifique performance e memory usage
+   - Monitore logs para warnings/errors
+
+3. CÓDIGO CUSTOMIZADO
+   - Revise uso de APIs depreciadas
+   - Atualize código para Java 21 features
+   - Remova workarounds para Java 11
+   - Aproveite novos recursos (Pattern Matching, Records, etc.)
+
+4. BUILD E DEPLOYMENT
+   - Atualize configuração do Maven/Gradle
+   - Configure Java 21 no Cloud Manager
+   - Teste processo de build completo
+   - Valide deployment em Stage
+
+5. MONITORAMENTO PÓS-MIGRAÇÃO
+   - Monitore performance (heap, GC, CPU)
+   - Acompanhe logs de erro
+   - Valide comportamento de features críticas
+   - Prepare rollback plan se necessário</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>📝 Configuração de Logs Conforme</h3>
+                <div class="prompt-example">
+                    <h4>Diretrizes de Logging:</h4>
+                    <pre>FORMATO PADRÃO AEM
+- Use apenas arquivos de log padrão
+- Mantenha níveis de log padrão para código AEM
+- Não customize formatação de logs
+- Não redirecione logs para arquivos customizados
+
+NÍVEIS DE LOG PERMITIDOS (Código Customizado)
+- DEBUG: Desenvolvimento e troubleshooting
+- INFO: Eventos importantes de negócio
+- WARN: Situações anormais mas recuperáveis
+- ERROR: Erros que requerem atenção
+
+AJUSTES EM LOG FORWARDING
+- Adapte regras de ingestão para formato padrão
+- Configure parsing para estrutura AEM padrão
+- Ajuste filtros e alertas conforme necessário
+- Teste volume de logs após reverter customizações
+
+MONITORAMENTO
+- Configure alertas para ERRORs críticos
+- Monitore volume de logs
+- Use Splunk/ELK para análise
+- Implemente dashboards de observabilidade</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>🚀 Edge Computing - Casos de Uso</h3>
+                <div class="prompt-example">
+                    <h4>Implementações Recomendadas:</h4>
+                    <pre>PERSONALIZAÇÃO NO EDGE
+- Geolocalização: Conteúdo baseado em país/região
+- Device Detection: Otimização mobile vs desktop
+- A/B Testing: Variantes servidas no edge
+- Feature Flags: Ativação/desativação dinâmica
+
+MIDDLEWARE E INTEGRAÇÃO
+- API Gateway: Roteamento e transformação
+- Response Aggregation: Combinar múltiplas APIs
+- Data Enrichment: Adicionar contexto a responses
+- Protocol Translation: REST ↔ GraphQL
+
+PERFORMANCE E CACHE
+- Edge Caching: Cache inteligente por contexto
+- Stale-While-Revalidate: Servir cache enquanto atualiza
+- Cache Warming: Pré-popular cache
+- Dynamic TTL: TTL baseado em tipo de conteúdo
+
+SEGURANÇA
+- Rate Limiting: Proteção contra abuse
+- Bot Detection: Filtrar tráfego malicioso
+- Request Validation: Validar inputs no edge
+- JWT Verification: Autenticação no edge</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>📦 Content Fragments - Otimização</h3>
+                <div class="prompt-example">
+                    <h4>Melhores Práticas:</h4>
+                    <pre>MODELAGEM
+- Crie modelos reutilizáveis e bem estruturados
+- Use tipos de dados apropriados (text, number, date, etc.)
+- Configure validações (required, min/max, regex)
+- Organize em pastas lógicas por domínio
+
+PERFORMANCE
+- Use parâmetro references=none quando não precisar de referências
+- Implemente paginação em queries GraphQL
+- Configure índices apropriados para queries frequentes
+- Use cache para queries repetitivas
+
+SEMANTIC SEARCH
+- Aplique upgrade procedure para novo mixin
+- Configure metadados semânticos relevantes
+- Use tags e taxonomia consistentemente
+- Otimize para descoberta de conteúdo
+
+VERSIONAMENTO E WORKFLOW
+- Use checkout para prevenir edição simultânea
+- Implemente workflow de aprovação
+- Configure políticas de retenção de versões
+- Documente processo de publicação
+
+GRAPHQL QUERIES
+- Use persisted queries para performance
+- Implemente error handling robusto
+- Configure timeouts apropriados
+- Monitore performance de queries</pre>
+                </div>
+            </div>
+
+            <div class="prompt-card">
+                <h3>🔐 Segurança e Compliance</h3>
+                <div class="prompt-example">
+                    <h4>Checklist de Segurança:</h4>
+                    <pre>AUTENTICAÇÃO E AUTORIZAÇÃO
+- Use IMS/SSO para autenticação
+- Implemente RBAC (Role-Based Access Control)
+- Configure permissões granulares
+- Revise acessos periodicamente
+
+PROTEÇÃO DE DADOS
+- Criptografe dados sensíveis em repouso
+- Use HTTPS para todas as comunicações
+- Implemente data masking quando apropriado
+- Configure backup e disaster recovery
+
+APIS E INTEGRAÇÕES
+- Use OAuth 2.0 para APIs
+- Implemente rate limiting
+- Valide e sanitize todos os inputs
+- Configure CORS apropriadamente
+
+MONITORAMENTO E AUDITORIA
+- Habilite audit logging
+- Monitore tentativas de acesso não autorizado
+- Configure alertas de segurança
+- Realize security scans regularmente
+
+COMPLIANCE
+- GDPR: Implemente right to be forgotten
+- LGPD: Configure consentimento de dados
+- Accessibility: Siga WCAG 2.1 AA
+- Documente políticas de privacidade</pre>
+                </div>
+            </div>
+        
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>Published:</strong> <time datetime="2025-11-28">November 28, 2025</time></p>
+        <p><strong>Author:</strong> Salomao da Silva Santos</p>
+        <p><strong>Source:</strong> Adobe Experience League Official Documentation</p>
+        <p><small>Educational content based on public documentation. Not affiliated with Adobe.</small></p>
+        <p><a href="/" style="color: white; text-decoration: underline;">← Back to Home</a></p>
+    </footer>
+
+    
+    <!-- i18n and core scripts -->
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/core.js"></script>
+    <script src="/aem/aem-cloud-service/aem-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-content-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-2025-updates.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Important deprecations in AEM Cloud Service: Java 11 EOL, deprecated APIs, logging policy changes">
+    <meta name="author" content="Salomao da Silva Santos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="AEM deprecations, Java 21 migration, deprecated APIs">
+    <meta name="theme-color" content="#0b0e14">
+    
+    <title>AEM 2025: Deprecations and Breaking Changes - Salomao Santos</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-deprecations/">
+    <meta property="og:title" content="AEM 2025: Deprecations and Breaking Changes">
+    <meta property="og:description" content="Important deprecations in AEM Cloud Service: Java 11 EOL, deprecated APIs, logging policy changes">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2025-11-28">
+    <meta property="article:author" content="Salomao da Silva Santos">
+    <meta property="article:tag" content="AEM">
+    <meta property="article:tag" content="Cloud Service">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AEM 2025: Deprecations and Breaking Changes">
+    <meta name="twitter:description" content="Important deprecations in AEM Cloud Service: Java 11 EOL, deprecated APIs, logging policy changes">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://salomao-santos.github.io/blog/2025/11/28/aem-cs-deprecations/">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/core.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/aem/aem-cloud-service/aem-2025-updates.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AEM 2025: Deprecations and Breaking Changes",
+      "description": "Important deprecations in AEM Cloud Service: Java 11 EOL, deprecated APIs, logging policy changes",
+      "author": {
+        "@type": "Person",
+        "name": "Salomao da Silva Santos"
+      },
+      "datePublished": "2025-11-28",
+      "dateModified": "2025-11-28",
+      "keywords": "AEM deprecations, Java 21 migration, deprecated APIs",
+      "inLanguage": "en"
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <div style="text-align: right; padding: 10px;">
+            <div class="language-switcher" aria-label="Language Switcher" style="display: inline-flex; gap: 8px;">
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="pt-BR" aria-label="Mudar para Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+            </div>
+        </div>
+
+        <nav class="breadcrumb">
+            <a href="/">Home</a> / 
+            <a href="/blog/">Blog</a> / 
+            <a href="/blog/2025/">2025</a> / 
+            <a href="/blog/2025/11/">November</a> / 
+            <a href="/blog/2025/11/28/">28</a>
+        </nav>
+        <h1>AEM 2025: Deprecations and Breaking Changes</h1>
+        <p class="subtitle">Important deprecations in AEM Cloud Service: Java 11 EOL, deprecated APIs, logging policy changes</p>
+        <p class="meta">
+            <time datetime="2025-11-28">November 28, 2025</time> · 
+            <span>By Salomao da Silva Santos</span>
+        </p>
+    </header>
+
+    <main id="main-content" role="main">
+        
+            <h2 data-i18n="depreciacoes.title">⚠️ Depreciações e Remoções</h2>
+
+            <div class="news-card deprecation">
+                <h3 data-i18n="depreciacoes.java11.title">Java 11 Runtime - DEPRECIADO</h3>
+                <p class="important" data-i18n="depreciacoes.java11.badge">Migração obrigatória para Java 21</p>
+                <h4 data-i18n="depreciacoes.java11.timeline">Timeline:</h4>
+                <ul>
+                    <li data-i18n="depreciacoes.java11.timeline1"><strong>18 de Setembro de 2025</strong>: Upgrade de ambientes Dev e RDE</li>
+                    <li data-i18n="depreciacoes.java11.timeline2"><strong>14 de Outubro de 2025</strong>: Upgrade de Stage e Production</li>
+                </ul>
+                <h4 data-i18n="depreciacoes.java11.actions">Ações Necessárias:</h4>
+                <ul>
+                    <li data-i18n="depreciacoes.java11.action1">Validar site e processos em Dev/RDE</li>
+                    <li data-i18n="depreciacoes.java11.action2">Resolver dependências incompatíveis com Java 21</li>
+                    <li data-i18n="depreciacoes.java11.action3">Verificar <a
+                            href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details#runtime-requirements"
+                            target="_blank">requisitos do Java 21</a></li>
+                </ul>
+            </div>
+
+            <div class="news-card deprecation">
+                <h3 data-i18n="depreciacoes.apis.title">APIs Java Depreciadas - Remoção em 31 de Agosto</h3>
+                <p class="important" data-i18n="depreciacoes.apis.badge">Remova uso dessas APIs imediatamente</p>
+                <h4 data-i18n="depreciacoes.apis.subtitle">APIs Marcadas para Remoção:</h4>
+                <ul>
+                    <li><code>org.apache.sling.commons.auth</code></li>
+                    <li><code>org.apache.felix.webconsole</code></li>
+                    <li><code>org.eclipse.jetty</code></li>
+                    <li><code>com.mongodb</code></li>
+                    <li><code>org.apache.abdera</code></li>
+                    <li><code>org.apache.felix.http.whiteboard</code></li>
+                    <li><code>org.apache.cocoon.xml</code></li>
+                    <li><code>ch.qos.logback</code></li>
+                    <li><code>org.slf4j.spi</code> e <code>org.slf4j.event</code></li>
+                    <li><code>org.apache.log4j</code></li>
+                    <li><code>com.google.common</code></li>
+                    <li><code>com.drew</code></li>
+                    <li><code>org.bson</code></li>
+                    <li><code>org.apache.jackrabbit.oak.plugins.blob</code></li>
+                    <li><code>org.apache.jackrabbit.oak.plugins.memory</code></li>
+                </ul>
+                <p data-i18n="depreciacoes.apis.note"><strong>Notificações:</strong> Actions Center alertará sobre uso detectado. Após 13 de novembro,
+                    avisos aparecerão em builds do Cloud Manager.</p>
+            </div>
+
+            <div class="news-card deprecation">
+                <h3 data-i18n="depreciacoes.logs.title">Política de Configuração de Logs Java - Enforcement</h3>
+                <p class="important" data-i18n="depreciacoes.logs.badge">A partir de 30 de Outubro: Configurações customizadas serão ignoradas</p>
+                <h4 data-i18n="depreciacoes.logs.changes">Mudanças:</h4>
+                <ul>
+                    <li data-i18n="depreciacoes.logs.change1">Logs devem seguir formato padrão AEM</li>
+                    <li data-i18n="depreciacoes.logs.change2">Configurações customizadas (formato, arquivos de saída, níveis de log) não são mais suportadas
+                    </li>
+                    <li data-i18n="depreciacoes.logs.change3">Logs devem permanecer nos arquivos padrão</li>
+                    <li data-i18n="depreciacoes.logs.change4">Níveis de log padrão para código AEM devem ser preservados</li>
+                </ul>
+                <h4 data-i18n="depreciacoes.logs.impacts">Impactos Potenciais:</h4>
+                <ul>
+                    <li data-i18n="depreciacoes.logs.impact1">Sistemas de log forwarding podem precisar ajustar regras de ingestão</li>
+                    <li data-i18n="depreciacoes.logs.impact2">Reverter para níveis padrão pode aumentar volume de logs</li>
+                    <li data-i18n="depreciacoes.logs.impact3">Processos downstream que dependem de formato customizado precisam ser atualizados</li>
+                </ul>
+            </div>
+        
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>Published:</strong> <time datetime="2025-11-28">November 28, 2025</time></p>
+        <p><strong>Author:</strong> Salomao da Silva Santos</p>
+        <p><strong>Source:</strong> Adobe Experience League Official Documentation</p>
+        <p><small>Educational content based on public documentation. Not affiliated with Adobe.</small></p>
+        <p><a href="/" style="color: white; text-decoration: underline;">← Back to Home</a></p>
+    </footer>
+
+    
+    <!-- i18n and core scripts -->
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/core.js"></script>
+    <script src="/aem/aem-cloud-service/aem-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-content-i18n.js"></script>
+    <script src="/aem/aem-cloud-service/aem-2025-updates.js"></script>
+</body>
+</html>
