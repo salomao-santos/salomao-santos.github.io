@@ -1,0 +1,431 @@
+// Content translations for AEM Blog sections - Comprehensive version
+const contentTranslations = {
+    en: {
+        // Releases section
+        "releases.title": "Current Releases (2025.11.0 - November 2025)",
+        "releases.card1.title": "AEM Cloud Service",
+        "releases.card1.date": "November 20, 2025",
+        "releases.card2.title": "Maintenance Release",
+        "releases.card2.date": "November 2025",
+        "releases.card3.title": "Java Runtime",
+        "releases.card3.date": "Migration in progress",
+        "releases.card4.title": "AEM Developer Tools",
+        "releases.card5.title": "Cloud Manager",
+        "releases.card5.date": "October 2025",
+        "releases.next.title": "📅 Next Planned Release",
+        "releases.next.content": "<strong>Release 2025.12.0</strong> is scheduled for <strong>December 11, 2025</strong>",
+        "releases.next.note": "Stay tuned for upcoming updates and features!",
+
+        // Novidades section
+        "novidades.title": "Main Features 2025",
+        "novidades.pause.title": "🎯 Pause Automatic Maintenance Updates",
+        "novidades.pause.badge": "NEW: Full control over updates during critical moments",
+        "novidades.pause.subtitle": "Available Features:",
+        "novidades.pause.item1": "<strong>Quiet Hours</strong>: Block automatic updates during specific times of day",
+        "novidades.pause.item2": "<strong>Update-Free Period</strong>: Block updates for a complete week",
+        "novidades.pause.item3": "Ideal for: Go-live, live events, sales peaks, Black Friday",
+        "novidades.pause.item4": "Self-service: Configure directly without support needed",
+        "novidades.pause.contact": "Contact",
+
+        "novidades.edge.title": "🚀 Edge Computing (Beta)",
+        "novidades.edge.intro": "Run JavaScript at the CDN layer, processing data closer to end users.",
+        "novidades.edge.subtitle": "Use Cases:",
+        "novidades.edge.item1": "Personalization based on geolocation, device, or user attributes",
+        "novidades.edge.item2": "Middleware between CDN and origin",
+        "novidades.edge.item3": "Reformatting third-party API responses",
+        "novidades.edge.item4": "Server-rendered HTML composition at the edge",
+        "novidades.edge.item5": "MCP server exposure for LLMs (ChatGPT, Claude)",
+        "novidades.edge.contact": "Contact",
+
+        "novidades.auth.title": "🔐 Edge Authentication (Beta)",
+        "novidades.auth.intro": "Restrict access to Edge Delivery Services pages to authenticated users only via IdP.",
+        "novidades.auth.item1": "Configuration via YAML OpenID Connect (OIDC) file",
+        "novidades.auth.item2": "Integration with corporate identity providers",
+        "novidades.auth.item3": "Sensitive content protection at the edge",
+
+        "novidades.canary.title": "🧪 Canary Production Deployments (Beta)",
+        "novidades.canary.intro": "Validate production builds with internal traffic before exposing to end users.",
+        "novidades.canary.item1": "Deploy to production with restricted traffic (special header)",
+        "novidades.canary.item2": "Monitor behavior before accepting real traffic",
+        "novidades.canary.item3": "Rollback without customer impact",
+        "novidades.canary.contact": "Contact",
+
+        "novidades.snapshots.title": "📸 Snapshots for RDEs (Alpha)",
+        "novidades.snapshots.intro": "Take snapshots of current code and content state in Rapid Development Environments.",
+        "novidades.snapshots.item1": "Restore code and content at any time",
+        "novidades.snapshots.item2": "Useful for reverting changes or switching between features",
+        "novidades.snapshots.item3": "Selective restoration of mutable content only",
+        "novidades.snapshots.contact": "Contact",
+
+        // Deprecations section
+        "depreciacoes.title": "⚠️ Deprecations and Removals",
+        "depreciacoes.java11.title": "Java 11 Runtime - DEPRECATED",
+        "depreciacoes.java11.badge": "Mandatory migration to Java 21",
+        "depreciacoes.java11.timeline": "Timeline:",
+        "depreciacoes.java11.timeline1": "<strong>September 18, 2025</strong>: Dev and RDE environments upgrade",
+        "depreciacoes.java11.timeline2": "<strong>October 14, 2025</strong>: Stage and Production upgrade",
+        "depreciacoes.java11.actions": "Required Actions:",
+        "depreciacoes.java11.action1": "Validate site and processes in Dev/RDE",
+        "depreciacoes.java11.action2": "Resolve dependencies incompatible with Java 21",
+        "depreciacoes.java11.action3": "Check Java 21 requirements",
+
+        "depreciacoes.apis.title": "Deprecated Java APIs - Removal on August 31",
+        "depreciacoes.apis.badge": "Remove use of these APIs immediately",
+        "depreciacoes.apis.subtitle": "APIs Marked for Removal:",
+        "depreciacoes.apis.note": "<strong>Notifications:</strong> Actions Center will alert about detected usage. After November 13, warnings will appear in Cloud Manager builds.",
+
+        "depreciacoes.logs.title": "Java Log Configuration Policy - Enforcement",
+        "depreciacoes.logs.badge": "Starting October 30: Custom configurations will be ignored",
+        "depreciacoes.logs.changes": "Changes:",
+        "depreciacoes.logs.change1": "Logs must follow standard AEM format",
+        "depreciacoes.logs.change2": "Custom configurations (format, output files, log levels) are no longer supported",
+        "depreciacoes.logs.change3": "Logs must remain in standard files",
+        "depreciacoes.logs.change4": "Default log levels for AEM code must be preserved",
+        "depreciacoes.logs.impacts": "Potential Impacts:",
+        "depreciacoes.logs.impact1": "Log forwarding systems may need to adjust ingestion rules",
+        "depreciacoes.logs.impact2": "Reverting to default levels may increase log volume",
+        "depreciacoes.logs.impact3": "Downstream processes depending on custom format need to be updated"
+    },
+    pt: {
+        // Releases section
+        "releases.title": "Releases Atuais (2025.11.0 - Novembro 2025)",
+        "releases.card1.title": "AEM Cloud Service",
+        "releases.card1.date": "20 de Novembro de 2025",
+        "releases.card2.title": "Maintenance Release",
+        "releases.card2.date": "Novembro 2025",
+        "releases.card3.title": "Java Runtime",
+        "releases.card3.date": "Migração em andamento",
+        "releases.card4.title": "AEM Developer Tools",
+        "releases.card5.title": "Cloud Manager",
+        "releases.card5.date": "Outubro 2025",
+        "releases.next.title": "📅 Próxima Release Planejada",
+        "releases.next.content": "<strong>Release 2025.12.0</strong> está prevista para <strong>11 de Dezembro de 2025</strong>",
+        "releases.next.note": "Fique atento às atualizações e novidades que serão anunciadas!",
+
+        // Novidades section
+        "novidades.title": "Principais Novidades 2025",
+        "novidades.pause.title": "🎯 Pausar Atualizações Automáticas de Manutenção",
+        "novidades.pause.badge": "NOVO: Controle total sobre atualizações em momentos críticos",
+        "novidades.pause.subtitle": "Recursos Disponíveis:",
+        "novidades.pause.item1": "<strong>Quiet Hours</strong>: Bloqueie atualizações automáticas durante horários específicos do dia",
+        "novidades.pause.item2": "<strong>Update-Free Period</strong>: Bloqueie atualizações por uma semana completa",
+        "novidades.pause.item3": "Ideal para: Go-live, eventos ao vivo, picos de vendas, Black Friday",
+        "novidades.pause.item4": "Self-service: Configure diretamente sem necessidade de suporte",
+        "novidades.pause.contact": "Contato",
+
+        "novidades.edge.title": "🚀 Edge Computing (Beta)",
+        "novidades.edge.intro": "Execute JavaScript na camada CDN, processando dados mais próximo do usuário final.",
+        "novidades.edge.subtitle": "Casos de Uso:",
+        "novidades.edge.item1": "Personalização baseada em geolocalização, dispositivo ou atributos do usuário",
+        "novidades.edge.item2": "Middleware entre CDN e origem",
+        "novidades.edge.item3": "Reformatação de respostas de APIs de terceiros",
+        "novidades.edge.item4": "Composição de HTML server-rendered no edge",
+        "novidades.edge.item5": "Exposição de servidor MCP para LLMs (ChatGPT, Claude)",
+        "novidades.edge.contact": "Contato",
+
+        "novidades.auth.title": "🔐 Edge Authentication (Beta)",
+        "novidades.auth.intro": "Restrinja acesso a páginas Edge Delivery Services apenas para usuários autenticados via IdP.",
+        "novidades.auth.item1": "Configuração via arquivo YAML OpenID Connect (OIDC)",
+        "novidades.auth.item2": "Integração com provedores de identidade corporativos",
+        "novidades.auth.item3": "Proteção de conteúdo sensível no edge",
+
+        "novidades.canary.title": "🧪 Canary Production Deployments (Beta)",
+        "novidades.canary.intro": "Valide builds de produção com tráfego interno antes de expor aos usuários finais.",
+        "novidades.canary.item1": "Deploy em produção com tráfego restrito (header especial)",
+        "novidades.canary.item2": "Monitore comportamento antes de aceitar tráfego real",
+        "novidades.canary.item3": "Rollback sem impacto aos clientes",
+        "novidades.canary.contact": "Contato",
+
+        "novidades.snapshots.title": "📸 Snapshots para RDEs (Alpha)",
+        "novidades.snapshots.intro": "Tire snapshots do estado atual de código e conteúdo em Rapid Development Environments.",
+        "novidades.snapshots.item1": "Restaure código e conteúdo em qualquer momento",
+        "novidades.snapshots.item2": "Útil para reverter alterações ou alternar entre features",
+        "novidades.snapshots.item3": "Restauração seletiva apenas de conteúdo mutável",
+        "novidades.snapshots.contact": "Contato",
+
+        // Deprecations section
+        "depreciacoes.title": "⚠️ Depreciações e Remoções",
+        "depreciacoes.java11.title": "Java 11 Runtime - DEPRECIADO",
+        "depreciacoes.java11.badge": "Migração obrigatória para Java 21",
+        "depreciacoes.java11.timeline": "Timeline:",
+        "depreciacoes.java11.timeline1": "<strong>18 de Setembro de 2025</strong>: Upgrade de ambientes Dev e RDE",
+        "depreciacoes.java11.timeline2": "<strong>14 de Outubro de 2025</strong>: Upgrade de Stage e Production",
+        "depreciacoes.java11.actions": "Ações Necessárias:",
+        "depreciacoes.java11.action1": "Validar site e processos em Dev/RDE",
+        "depreciacoes.java11.action2": "Resolver dependências incompatíveis com Java 21",
+        "depreciacoes.java11.action3": "Verificar requisitos do Java 21",
+
+        "depreciacoes.apis.title": "APIs Java Depreciadas - Remoção em 31 de Agosto",
+        "depreciacoes.apis.badge": "Remova uso dessas APIs imediatamente",
+        "depreciacoes.apis.subtitle": "APIs Marcadas para Remoção:",
+        "depreciacoes.apis.note": "<strong>Notificações:</strong> Actions Center alertará sobre uso detectado. Após 13 de novembro, avisos aparecerão em builds do Cloud Manager.",
+
+        "depreciacoes.logs.title": "Política de Configuração de Logs Java - Enforcement",
+        "depreciacoes.logs.badge": "A partir de 30 de Outubro: Configurações customizadas serão ignoradas",
+        "depreciacoes.logs.changes": "Mudanças:",
+        "depreciacoes.logs.change1": "Logs devem seguir formato padrão AEM",
+        "depreciacoes.logs.change2": "Configurações customizadas (formato, arquivos de saída, níveis de log) não são mais suportadas",
+        "depreciacoes.logs.change3": "Logs devem permanecer nos arquivos padrão",
+        "depreciacoes.logs.change4": "Níveis de log padrão para código AEM devem ser preservados",
+        "depreciacoes.logs.impacts": "Impactos Potenciais:",
+        "depreciacoes.logs.impact1": "Sistemas de log forwarding podem precisar ajustar regras de ingestão",
+        "depreciacoes.logs.impact2": "Reverter para níveis padrão pode aumentar volume de logs",
+        "depreciacoes.logs.impact3": "Processos downstream que dependem de formato customizado precisam ser atualizados",
+
+        // Sites section
+        "sites.title": "AEM Sites - What's New and Improvements",
+
+        // Assets section
+        "assets.title": "AEM Assets - What's New and Improvements",
+
+        // Cloud Manager section
+        "cloudManager.title": "Cloud Manager 2025 - What's New and Improvements",
+
+        // Foundation section
+        "foundation.title": "AEM Foundation - Technical Updates",
+
+        // Best Practices section
+        "bestPractices.title": "AEM 2025 Best Practices"
+    },
+    pt: {
+        // Releases section
+        "releases.title": "Releases Atuais (2025.11.0 - Novembro 2025)",
+        "releases.card1.title": "AEM Cloud Service",
+        "releases.card1.date": "20 de Novembro de 2025",
+        "releases.card2.title": "Maintenance Release",
+        "releases.card2.date": "Noviembre 2025",
+        "releases.card3.title": "Java Runtime",
+        "releases.card3.date": "Migración en curso",
+        "releases.card4.title": "AEM Developer Tools",
+        "releases.card5.title": "Cloud Manager",
+        "releases.card5.date": "Octubre 2025",
+        "releases.next.title": "📅 Próximo Release Planificado",
+        "releases.next.content": "<strong>Release 2025.12.0</strong> está programado para el <strong>11 de Diciembre de 2025</strong>",
+        "releases.next.note": "¡Esté atento a las próximas actualizaciones y funcionalidades!",
+
+        // Novidades section
+        "novidades.title": "Principales Novedades 2025",
+        "novidades.pause.title": "🎯 Pausar Actualizaciones Automáticas de Mantenimiento",
+        "novidades.pause.badge": "NUEVO: Control total sobre actualizaciones en momentos críticos",
+        "novidades.pause.subtitle": "Recursos Disponibles:",
+        "novidades.pause.item1": "<strong>Quiet Hours</strong>: Bloquear actualizaciones automáticas durante horarios específicos del día",
+        "novidades.pause.item2": "<strong>Update-Free Period</strong>: Bloquear actualizaciones por una semana completa",
+        "novidades.pause.item3": "Ideal para: Go-live, eventos en vivo, picos de ventas, Black Friday",
+        "novidades.pause.item4": "Self-service: Configure directamente sin necesidad de soporte",
+        "novidades.pause.contact": "Contacto",
+
+        "novidades.edge.title": "🚀 Edge Computing (Beta)",
+        "novidades.edge.intro": "Ejecute JavaScript en la capa CDN, procesando datos más cerca del usuario final.",
+        "novidades.edge.subtitle": "Casos de Uso:",
+        "novidades.edge.item1": "Personalización basada en geolocalización, dispositivo o atributos del usuario",
+        "novidades.edge.item2": "Middleware entre CDN y origen",
+        "novidades.edge.item3": "Reformateo de respuestas de APIs de terceros",
+        "novidades.edge.item4": "Composición de HTML server-rendered en el edge",
+        "novidades.edge.item5": "Exposición de servidor MCP para LLMs (ChatGPT, Claude)",
+        "novidades.edge.contact": "Contacto",
+
+        "novidades.auth.title": "🔐 Edge Authentication (Beta)",
+        "novidades.auth.intro": "Restrinja el acceso a páginas Edge Delivery Services solo para usuarios autenticados vía IdP.",
+        "novidades.auth.item1": "Configuración vía archivo YAML OpenID Connect (OIDC)",
+        "novidades.auth.item2": "Integración con proveedores de identidad corporativos",
+        "novidades.auth.item3": "Protección de contenido sensible en el edge",
+
+        "novidades.canary.title": "🧪 Canary Production Deployments (Beta)",
+        "novidades.canary.intro": "Valide builds de producción con tráfico interno antes de exponer a usuarios finales.",
+        "novidades.canary.item1": "Deploy en producción con tráfico restringido (header especial)",
+        "novidades.canary.item2": "Monitoree comportamiento antes de aceptar tráfico real",
+        "novidades.canary.item3": "Rollback sin impacto a clientes",
+        "novidades.canary.contact": "Contacto",
+
+        "novidades.snapshots.title": "📸 Snapshots para RDEs (Alpha)",
+        "novidades.snapshots.intro": "Tome snapshots del estado actual de código y contenido en Rapid Development Environments.",
+        "novidades.snapshots.item1": "Restaure código y contenido en cualquier momento",
+        "novidades.snapshots.item2": "Útil para revertir cambios o alternar entre features",
+        "novidades.snapshots.item3": "Restauración selectiva solo de contenido mutable",
+        "novidades.snapshots.contact": "Contacto",
+
+        // Deprecations section
+        "depreciacoes.title": "⚠️ Deprecaciones y Remociones",
+        "depreciacoes.java11.title": "Java 11 Runtime - DEPRECADO",
+        "depreciacoes.java11.badge": "Migración obligatoria a Java 21",
+        "depreciacoes.java11.timeline": "Cronología:",
+        "depreciacoes.java11.timeline1": "<strong>18 de Septiembre de 2025</strong>: Actualización de ambientes Dev y RDE",
+        "depreciacoes.java11.timeline2": "<strong>14 de Octubre de 2025</strong>: Actualización de Stage y Production",
+        "depreciacoes.java11.actions": "Acciones Requeridas:",
+        "depreciacoes.java11.action1": "Validar sitio y procesos en Dev/RDE",
+        "depreciacoes.java11.action2": "Resolver dependencias incompatibles con Java 21",
+        "depreciacoes.java11.action3": "Verificar requisitos de Java 21",
+
+        "depreciacoes.apis.title": "APIs Java Deprecadas - Remoción el 31 de Agosto",
+        "depreciacoes.apis.badge": "Remover uso de estas APIs inmediatamente",
+        "depreciacoes.apis.subtitle": "APIs Marcadas para Remoción:",
+        "depreciacoes.apis.note": "<strong>Notificaciones:</strong> Actions Center alertará sobre uso detectado. Después del 13 de noviembre, avisos aparecerán en builds de Cloud Manager.",
+
+        "depreciacoes.logs.title": "Política de Configuración de Logs Java - Enforcement",
+        "depreciacoes.logs.badge": "A partir del 30 de Octubre: Configuraciones personalizadas serán ignoradas",
+        "depreciacoes.logs.changes": "Cambios:",
+        "depreciacoes.logs.change1": "Logs deben seguir formato estándar AEM",
+        "depreciacoes.logs.change2": "Configuraciones personalizadas (formato, archivos de salida, niveles de log) ya no son soportadas",
+        "depreciacoes.logs.change3": "Logs deben permanecer en archivos estándar",
+        "depreciacoes.logs.change4": "Niveles de log estándar para código AEM deben ser preservados",
+        "depreciacoes.logs.impacts": "Impactos Potenciales:",
+        "depreciacoes.logs.impact1": "Sistemas de log forwarding pueden necesitar ajustar reglas de ingesta",
+        "depreciacoes.logs.impact2": "Reverter para níveis padrão pode aumentar volume de logs",
+        "depreciacoes.logs.impact3": "Processos downstream que dependem de formato customizado precisam ser atualizados",
+
+        // Sites section
+        "sites.title": "AEM Sites - Novidades e Melhorias",
+
+        // Assets section
+        "assets.title": "AEM Assets - Novidades e Melhorias",
+
+        // Cloud Manager section
+        "cloudManager.title": "Cloud Manager 2025 - Novidades e Melhorias",
+
+        // Foundation section
+        "foundation.title": "AEM Foundation - Atualizações Técnicas",
+
+        // Best Practices section
+        "bestPractices.title": "Melhores Práticas AEM 2025"
+    },
+    es: {
+        // Releases section
+        "releases.title": "Releases Actuales (2025.11.0 - Noviembre 2025)",
+        "releases.card1.title": "AEM Cloud Service",
+        "releases.card1.date": "20 de Noviembre de 2025",
+        "releases.card2.title": "Maintenance Release",
+        "releases.card2.date": "Noviembre 2025",
+        "releases.card3.title": "Java Runtime",
+        "releases.card3.date": "Migración en curso",
+        "releases.card4.title": "AEM Developer Tools",
+        "releases.card5.title": "Cloud Manager",
+        "releases.card5.date": "Octubre 2025",
+        "releases.next.title": "📅 Próximo Release Planificado",
+        "releases.next.content": "<strong>Release 2025.12.0</strong> está programado para el <strong>11 de Diciembre de 2025</strong>",
+        "releases.next.note": "¡Esté atento a las próximas actualizaciones y funcionalidades!",
+
+        // Novidades section
+        "novidades.title": "Principales Novedades 2025",
+        "novidades.pause.title": "🎯 Pausar Actualizaciones Automáticas de Mantenimiento",
+        "novidades.pause.badge": "NUEVO: Control total sobre actualizaciones en momentos críticos",
+        "novidades.pause.subtitle": "Recursos Disponibles:",
+        "novidades.pause.item1": "<strong>Quiet Hours</strong>: Bloquear actualizaciones automáticas durante horarios específicos del día",
+        "novidades.pause.item2": "<strong>Update-Free Period</strong>: Bloquear actualizaciones por una semana completa",
+        "novidades.pause.item3": "Ideal para: Go-live, eventos en vivo, picos de ventas, Black Friday",
+        "novidades.pause.item4": "Self-service: Configure directamente sin necesidad de soporte",
+        "novidades.pause.contact": "Contacto",
+
+        "novidades.edge.title": "🚀 Edge Computing (Beta)",
+        "novidades.edge.intro": "Ejecute JavaScript en la capa CDN, procesando datos más cerca del usuario final.",
+        "novidades.edge.subtitle": "Casos de Uso:",
+        "novidades.edge.item1": "Personalización basada en geolocalización, dispositivo o atributos del usuario",
+        "novidades.edge.item2": "Middleware entre CDN y origen",
+        "novidades.edge.item3": "Reformateo de respuestas de APIs de terceros",
+        "novidades.edge.item4": "Composición de HTML server-rendered en el edge",
+        "novidades.edge.item5": "Exposición de servidor MCP para LLMs (ChatGPT, Claude)",
+        "novidades.edge.contact": "Contacto",
+
+        "novidades.auth.title": "🔐 Edge Authentication (Beta)",
+        "novidades.auth.intro": "Restrinja el acceso a páginas Edge Delivery Services solo para usuarios autenticados vía IdP.",
+        "novidades.auth.item1": "Configuración vía archivo YAML OpenID Connect (OIDC)",
+        "novidades.auth.item2": "Integración con proveedores de identidad corporativos",
+        "novidades.auth.item3": "Protección de contenido sensible en el edge",
+
+        "novidades.canary.title": "🧪 Canary Production Deployments (Beta)",
+        "novidades.canary.intro": "Valide builds de producción con tráfico interno antes de exponer a usuarios finales.",
+        "novidades.canary.item1": "Deploy en producción con tráfico restringido (header especial)",
+        "novidades.canary.item2": "Monitoree comportamiento antes de aceptar tráfico real",
+        "novidades.canary.item3": "Rollback sin impacto a clientes",
+        "novidades.canary.contact": "Contacto",
+
+        "novidades.snapshots.title": "📸 Snapshots para RDEs (Alpha)",
+        "novidades.snapshots.intro": "Tome snapshots del estado actual de código y contenido en Rapid Development Environments.",
+        "novidades.snapshots.item1": "Restaure código y contenido en cualquier momento",
+        "novidades.snapshots.item2": "Útil para revertir cambios o alternar entre features",
+        "novidades.snapshots.item3": "Restauración selectiva solo de contenido mutable",
+        "novidades.snapshots.contact": "Contacto",
+
+        // Deprecations section
+        "depreciacoes.title": "⚠️ Deprecaciones y Remociones",
+        "depreciacoes.java11.title": "Java 11 Runtime - DEPRECADO",
+        "depreciacoes.java11.badge": "Migración obligatoria a Java 21",
+        "depreciacoes.java11.timeline": "Cronología:",
+        "depreciacoes.java11.timeline1": "<strong>18 de Septiembre de 2025</strong>: Actualización de ambientes Dev y RDE",
+        "depreciacoes.java11.timeline2": "<strong>14 de Octubre de 2025</strong>: Actualización de Stage y Production",
+        "depreciacoes.java11.actions": "Acciones Requeridas:",
+        "depreciacoes.java11.action1": "Validar sitio y procesos en Dev/RDE",
+        "depreciacoes.java11.action2": "Resolver dependencias incompatibles con Java 21",
+        "depreciacoes.java11.action3": "Verificar requisitos de Java 21",
+
+        "depreciacoes.apis.title": "APIs Java Deprecadas - Remoción el 31 de Agosto",
+        "depreciacoes.apis.badge": "Remover uso de estas APIs inmediatamente",
+        "depreciacoes.apis.subtitle": "APIs Marcadas para Remoción:",
+        "depreciacoes.apis.note": "<strong>Notificaciones:</strong> Actions Center alertará sobre uso detectado. Después del 13 de noviembre, avisos aparecerán en builds de Cloud Manager.",
+
+        "depreciacoes.logs.title": "Política de Configuración de Logs Java - Enforcement",
+        "depreciacoes.logs.badge": "A partir del 30 de Octubre: Configuraciones personalizadas serán ignoradas",
+        "depreciacoes.logs.changes": "Cambios:",
+        "depreciacoes.logs.change1": "Logs deben seguir formato estándar AEM",
+        "depreciacoes.logs.change2": "Configuraciones personalizadas (formato, archivos de salida, niveles de log) ya no son soportadas",
+        "depreciacoes.logs.change3": "Logs deben permanecer en archivos estándar",
+        "depreciacoes.logs.change4": "Niveles de log estándar para código AEM deben ser preservados",
+        "depreciacoes.logs.impacts": "Impactos Potenciales:",
+        "depreciacoes.logs.impact1": "Sistemas de log forwarding pueden necesitar ajustar reglas de ingesta",
+        "depreciacoes.logs.impact2": "Revertir a niveles estándar puede aumentar volumen de logs",
+        "depreciacoes.logs.impact3": "Procesos downstream que dependen de formato personalizado necesitan ser actualizados",
+
+        // Sites section
+        "sites.title": "AEM Sites - Novedades y Mejoras",
+
+        // Assets section
+        "assets.title": "AEM Assets - Novedades y Mejoras",
+
+        // Cloud Manager section
+        "cloudManager.title": "Cloud Manager 2025 - Novedades y Mejoras",
+
+        // Foundation section
+        "foundation.title": "AEM Foundation - Actualizaciones Técnicas",
+
+        // Best Practices section
+        "bestPractices.title": "Mejores Prácticas AEM 2025"
+    }
+};
+
+// Simpler function to update content based on data-i18n attributes
+function updateAllContent(lang) {
+    const translations = contentTranslations[lang];
+    if (!translations) {
+        console.warn(`Content translations not found for language: ${lang}`);
+        return;
+    }
+
+    // Find all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[key]) {
+            // Check if it should be innerHTML or textContent
+            if (translations[key].includes('<')) {
+                element.innerHTML = translations[key];
+            } else {
+                element.textContent = translations[key];
+            }
+        }
+    });
+    
+    console.log(`Content updated to ${lang}`);
+}
+
+// Listen for language change events
+document.addEventListener('languageChanged', function(e) {
+    updateAllContent(e.detail.lang);
+});
+
+// Initialize content translations on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Get current language immediately
+    const currentLang = localStorage.getItem('aem-blog-language') || 'pt';
+    updateAllContent(currentLang);
+});
+
+// Export function for global access
+window.updateAllContent = updateAllContent;
